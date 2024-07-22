@@ -1,0 +1,62 @@
+:root {
+    --font-family: "Lato", sans-serif;
+    --second-family: "Nunito", sans-serif;
+    --third-family: "Roboto", sans-serif;
+    --font3: "Ubuntu", sans-serif;
+    --font4: "Manrope", sans-serif;
+    --font5: "Montserrat", sans-serif;
+    --font6: "American Retro", sans-serif;
+
+    --green: #0e6a63;
+    --yellow: #ffa900;
+    --white: #fff;
+    --green-light: #e7efee;
+    --text: #000;
+    --textlight: #6b6b6b;
+    --green50: rgba(14, 106, 99, 0.5);
+
+
+    --box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03),
+        0 12px 10px -6px rgba(154, 156, 165, 0.04),
+        0 30px 24px -10px rgba(154, 156, 165, 0.05),
+        0 80px 80px -20px rgba(154, 156, 165, 0.08);
+
+    --border-radius: 4px;
+
+    // --hero-slider-speed: 500;
+
+    --burger-width: 40px;
+    --burger-height: 20px;
+    --burger-line-height: 2px;
+}
+
+
+@mixin transition ($transition-property: color, $transition-duration: 350ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+}
+
+
+// <svg class="projects__item-svg" width="30" height="30" aria-label="РРєРѕРЅРєР° РїРѕРёСЃРєР°">
+// <use href="./images/projects/icons.svg#icon-search"></use>
+// </svg>
+
+//  Линия под заголовками
+//  padding-bottom: 23px;
+// margin-bottom: 23px;
+// position: relative;
+
+// &::after {
+//   position: absolute;
+//   content: '';
+//   width: 200px;
+//   height: 1px;
+//   left: calc(50% - 100px);
+//   bottom: 0;
+//   background-color: #6D7278;
+//   border: 1px solid var(--line);
+//   border-radius: 0.5px;
+// }
+// }
+
+//       box-shadow: -3px -3px 49px rgb(10 1 1 / 4%), 3px 10px 36px rgb(0 0 0 / 10%);
