@@ -1,1 +1,16 @@
-.catalog-menu {}
+.catalog-menu {
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__btn {
+    // font-family: var(--second-family);
+    // font-weight: 600;
+    @extend %second-family-600;
+    // font-size: 20px;
+    color: #0a0a0a;
+  }
+}

@@ -24,6 +24,8 @@ const browserSync = require("browser-sync").create();
 const fonter = require("gulp-fonter");
 const ttf2woff2 = require("gulp-ttf2woff2");
 
+const svgSprite = require("gulp-svg-sprite");
+
 const include = require("gulp-include");
 
 function fonts() {
@@ -93,6 +95,20 @@ function styles() {
     .pipe(dest("./css/"))
     .pipe(browserSync.stream());
 }
+
+const svgSprites = () => {
+  return src("./src/img/**.svg")
+    .pipe(
+      svgSprite({
+        mode: {
+          stack: {
+            sprite: "../sprite.svg",
+          },
+        },
+      })
+    )
+    .pipe(dest("./app/img"));
+};
 
 const watchFiles = () => {
   browserSync.init({
