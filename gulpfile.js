@@ -27,7 +27,7 @@ const ttf2woff2 = require("gulp-ttf2woff2");
 const include = require("gulp-include");
 
 function fonts() {
-  return src("fonts/src/*.*")
+  return src("src/fonts/*.*")
     .pipe(
       fonter({
         formats: ["woff", "ttf"],

@@ -1,37 +1,331 @@
+// 100: Thin;
+// 200: Extra Light (Ultra Light);
+// 300: Light;
+// 400: Normal;
+// 500: Medium;
+// 600: Semi Bold (Demi Bold);
+// 700: Bold;
+// 800: Extra Bold (Ultra Bold);
+// 900: Black (Heavy).
+
+
+
+// 300: Light;
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Light.woff2') format('woff2'), url('../fonts/Lato-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+%font-family-300 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Light.woff2') format('woff2'), url('../fonts/Manrope-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+%font4-300 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.woff2') format('woff2'), url('../fonts/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+%third-family-300 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+
 // 400
 
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('../fonts/Ubuntu-R.woff2') format('woff2'), url('../fonts/Ubuntu-R.woff') format('woff');
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.woff2') format('woff2'), url('../fonts/Lato-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 
-%Ubuntu-400 {
-    font-family: 'Ubuntu', sans-serif;
+%font-family-400 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'AmericanRetro';
+    src: url('../fonts/AmericanRetro.woff2') format('woff2'), url('../fonts/AmericanRetro.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+// %AmericanRetro-400 {
+//     font-family: 'AmericanRetro', sans-serif;
+//     font-weight: 400;
+// }
+
+%font6-400 {
+    font-family: 'AmericanRetro', sans-serif;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Regular.woff2') format('woff2'), url('../fonts/Manrope-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+%font4-400 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'), url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+%font5-400 {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
 
 
-// 700
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito-Regular.woff2') format('woff2'), url('../fonts/Nunito-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+%second-family-400 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'), url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+%third-family-400 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
 @font-face {
     font-family: 'Ubuntu';
-    src: url('../fonts/Ubuntu-B.woff2') format('woff2'), url('../fonts/Ubuntu-B.woff') format('woff');
+    src: url('../fonts/Ubuntu-Regular.woff2') format('woff2'), url('../fonts/Ubuntu-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+%font3-400 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+
+
+// 500: Medium;
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Medium.woff2') format('woff2'), url('../fonts/Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+%font3-500 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'), url('../fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+%third-family-500 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'), url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+%font5-500 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+
+// 600: SemiBold (Demi Bold);
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'), url('../fonts/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+%font5-600 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito-SemiBold.woff2') format('woff2'), url('../fonts/Nunito-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+%second-family-600 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-SemiBold.woff2') format('woff2'), url('../fonts/Lato-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+%font-family-600 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+
+
+// 700: Bold;
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bold.woff2') format('woff2'), url('../fonts/Lato-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 
-%Ubuntu-700 {
-    font-family: 'Ubuntu', sans-serif;
-    font-style: normal;
+%font-family-700 {
+    font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
 
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Bold.woff2') format('woff2'), url('../fonts/Manrope-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
 
-// 900
+%font4-700 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2'), url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+%font5-700 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito-Bold.woff2') format('woff2'), url('../fonts/Nunito-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+%second-family-700 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Bold.woff2') format('woff2'), url('../fonts/Ubuntu-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+%font3-700 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+// 800: ExtraBold (Ultra Bold);
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito-ExtraBold.woff2') format('woff2'), url('../fonts/Nunito-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+%second-family-800 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+}
+
+// 900: Black (Heavy).
+
 @font-face {
     font-family: 'Lato';
     src: url('../fonts/Lato-Black.woff2') format('woff2'), url('../fonts/Lato-Black.woff') format('woff');
@@ -40,11 +334,35 @@
     font-display: swap;
 }
 
-// @font-face {
-//     font-family: 'Inter';
-//     src: url('../../fonts/Inter-Bold.woff2') format('woff2'), url('../fonts/Inter-Bold.woff') format('woff');
-//     font-weight: 700;
-//     font-style: normal;
-// }
+%font-family-900 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
 
-// @extend %yne-700;
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Black.woff2') format('woff2'), url('../fonts/Montserrat-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+%font5-900 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito-Black.woff2') format('woff2'), url('../fonts/Nunito-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+%second-family-900 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+}
+
+// // @extend %yne-700;
