@@ -2,11 +2,17 @@
 
   &__item {
     &:not(:last-child) {
-      margin-bottom: 35px;
+      margin-bottom: 26px;
     }
   }
 
-  &__btn {
+  &__svg {}
+
+  &__btn-secondary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
     // font-family: var(--second-family);
     // font-weight: 600;
     @extend %second-family-600;

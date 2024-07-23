@@ -277,4 +277,4 @@ exports.build = series(cleanDist, building);
 
 // exports.default = parallel(styles, images, scripts, watching);
 
-exports.default = series(parallel(htmlInclude, svgSprites), styles, watchFiles);
+exports.default = series(parallel(htmlInclude), styles, watchFiles);

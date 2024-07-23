@@ -22,207 +22,214 @@
         <a class="header__logo logo" href="./index.html">
           <img class="logo-svg" src="./images/icons/logo.svg" alt="Логотип">
         </a>
-        <button class="header__catalog-btn catalog-btn">
-          <span class="catalog-btn__line"></span>
-          <span class="catalog-btn__line"></span>
-          <span class="catalog-btn__line"></span>
-          Каталог
-        </button>
-        <ul class="catalog__list catalog-menu">
-          <li class="catalog-menu__item">
-            <button class="catalog-menu__btn btn btn--catalog">Акции
-              <svg class="projects__item-svg" width="7" height="12" aria-label="icon next">
-                <use href="./images/sprite/sprite.svg#icon-arrow-next"></use>
-              </svg>
+        <div class="catalog-menu">
+          <button class="header__catalog-btn catalog-menu__btn-main btn-main btn-main-open" aria-label="Open menu">
+            <div class="btn-main__line-box">
+              <span class="btn-main__line"></span>
+              <span class="btn-main__line"></span>
+              <span class="btn-main__line"></span>
+              <span class="btn-main__line"></span>
+            </div>
+            Каталог
+          </button>
+          <ul class="catalog-menu__list">
+            <li class="catalog-menu__item">
+              <button class="catalog-menu__btn-secondary btn btn--catalog">Акции
+                <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+                  <use href="./images/sprite/sprite.svg#arrow-next"></use>
+                </svg>
+              </button>
+              <div class="dropdown">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">пункт 1</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Сделай предзаказ
+                      в кулинарии
+                      со скидкой</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Праздник
+                      к нам приходит</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Скидка на третий
+                      товар в корзине
+                      «Чистая линия»</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Комбо-набор
+                      3 пиццы за 1500 ₴</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog-menu__item">
+              <button class="catalog-menu__btn-secondary">Популярное
+                <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+                  <use href="./images/sprite/sprite.svg#arrow-next"></use>
+                </svg>
+              </button>
+              <div class="dropdown">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Пункт1</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog-menu__item">
+              <button class="catalog-menu__btn-secondary">Супермаркет
+                <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+                  <use href="./images/sprite/sprite.svg#arrow-next"></use>
+                </svg>
+              </button>
+              <div class="dropdown">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <!-- <a class="dropdown__link" href="">Супермаркет</a> -->
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Вода и напитки</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Молоко, масло и яйца</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Кофе, чай и сладости</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Макароны и крупы</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Хлеб и выпечка</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog-menu__item">
+              <button class="catalog-menu__btn-secondary">Кулинария
+                <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+                  <use href="./images/sprite/sprite.svg#arrow-next"></use>
+                </svg>
+              </button>
+              <div class="dropdown">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <!-- <a class="dropdown__link" href="">Кулинария</a> -->
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Выпечка</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Пиццы</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Гриль-меню</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Свежее мясо</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Салаты</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Супы</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Горячие блюда</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Десерты</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog-menu__item">
+              <button class="catalog-menu__btn-secondary">Заморозка
+                <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+                  <use href="./images/sprite/sprite.svg#arrow-next"></use>
+                </svg>
+              </button>
+              <div class="dropdown">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <!-- <a class="dropdown__link" href="">Заморозкая</a> -->
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Пельмени, вареники и равиоли</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Хинкали и манты</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Полуфабрикаты</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Замороженные овощи</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Рыба и морепродукты</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Мясо</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog-menu__item">
+              <button class="catalog-menu__btn-secondary">Другое
+                <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+                  <use href="./images/sprite/sprite.svg#arrow-next"></use>
+                </svg>
+              </button>
+              <div class="dropdown">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <!-- <a class="dropdown__link" href="">Другое</a> -->
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Красота и гигиена</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Стирка и уборка</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Полезные мелочи</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">Бытовая техника</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-            </button>
-            <div class="dropdown">
-              <ul class="dropdown__list">
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">пункт 1</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Сделай предзаказ
-                    в кулинарии
-                    со скидкой</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Праздник
-                    к нам приходит</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Скидка на третий
-                    товар в корзине
-                    «Чистая линия»</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Комбо-набор
-                    3 пиццы за 1500 ₴</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="catalog-menu__item">
-            <button class="catalog-menu__btn">Популярное</button>
-            <div class="dropdown">
-              <ul class="dropdown__list">
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Пункт1</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="catalog-menu__item">
-            <button class="catalog-menu__btn">Супермаркет</button>
-            <div class="dropdown">
-              <ul class="dropdown__list">
-                <li class="dropdown__item">
-                  <!-- <a class="dropdown__link" href="">Супермаркет</a> -->
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Вода и напитки</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Молоко, масло и яйца</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Кофе, чай и сладости</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Макароны и крупы</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Хлеб и выпечка</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="catalog-menu__item">
-            <button class="catalog-menu__btn">Кулинария</button>
-            <div class="dropdown">
-              <ul class="dropdown__list">
-                <li class="dropdown__item">
-                  <!-- <a class="dropdown__link" href="">Кулинария</a> -->
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Выпечка</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Пиццы</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Гриль-меню</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Свежее мясо</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Салаты</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Супы</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Горячие блюда</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Десерты</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="catalog-menu__item">
-            <button class="catalog-menu__btn">Заморозка</button>
-            <div class="dropdown">
-              <ul class="dropdown__list">
-                <li class="dropdown__item">
-                  <!-- <a class="dropdown__link" href="">Заморозкая</a> -->
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Пельмени, вареники и равиоли</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Хинкали и манты</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Полуфабрикаты</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Замороженные овощи</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Рыба и морепродукты</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Мясо</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="catalog-menu__item">
-            <button class="catalog-menu__btn">Другое</button>
-            <div class="dropdown">
-              <ul class="dropdown__list">
-                <li class="dropdown__item">
-                  <!-- <a class="dropdown__link" href="">Другое</a> -->
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Красота и гигиена</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Стирка и уборка</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Полезные мелочи</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Бытовая техника</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="catalog-menu__item">
-            <button class="catalog-menu__btn">Другое</button>
-            <div class="dropdown">
-              <ul class="dropdown__list">
-                <li class="dropdown__item">
-                  <!-- <a class="dropdown__link" href="">Другое</a> -->
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Красота и гигиена</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Стирка и уборка</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Полезные мелочи</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">Бытовая техника</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="catalog-menu__item">
-            <button class="catalog-menu__btn">Продукция от «Ильинского</button>
-            <div class="dropdown">
-              <ul class="dropdown__list">
-                <li class="dropdown__item">
-                  <!-- <a class="dropdown__link" href="">Другое</a> -->
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">1</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">2</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="">3</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
+            <li class="catalog-menu__item">
+              <button class="catalog-menu__btn-secondary">Продукция от «Ильинского
+                <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+                  <use href="./images/sprite/sprite.svg#arrow-next"></use>
+                </svg>
+              </button>
+              <div class="dropdown">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <!-- <a class="dropdown__link" href="">Другое</a> -->
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">1</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">2</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="">3</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
 
         <form action="#" class="header__search-form search">
           <div class="search__box">
