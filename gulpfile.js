@@ -24,8 +24,6 @@ const browserSync = require("browser-sync").create();
 const fonter = require("gulp-fonter");
 const ttf2woff2 = require("gulp-ttf2woff2");
 
-const svgSprite = require("gulp-svg-sprite");
-
 const include = require("gulp-include");
 
 function fonts() {
@@ -97,7 +95,7 @@ function styles() {
 }
 
 const svgSprites = () => {
-  return src("./src/img/**.svg")
+  return src("./src/images/sprite/**.svg")
     .pipe(
       svgSprite({
         mode: {
@@ -107,7 +105,7 @@ const svgSprites = () => {
         },
       })
     )
-    .pipe(dest("./app/img"));
+    .pipe(dest("images/sprite"));
 };
 
 const watchFiles = () => {
@@ -122,7 +120,7 @@ const watchFiles = () => {
   // watch("./src/img/**.jpg", imgToApp);
   // watch("./src/img/**.png", imgToApp);
   // watch("./src/img/**.jpeg", imgToApp);
-  // watch("./src/img/**.svg", svgSprites);
+  watch("./src/images/sprite/**.svg", svgSprites);
   // watch("./src/resources/**", resources);
   // watch("./src/fonts/**.ttf", fonts);
   // watch("./src/fonts/**.ttf", fontsStyle);
@@ -217,20 +215,20 @@ function images() {
   );
 }
 
-function sprite() {
-  return src("images/src/icons/*.svg")
-    .pipe(
-      svgSprite({
-        mode: {
-          stack: {
-            sprite: "../sprite.svg",
-            example: true,
-          },
-        },
-      })
-    )
-    .pipe(dest("images"));
-}
+// function sprite() {
+//   return src("images/src/icons/*.svg")
+//     .pipe(
+//       svgSprite({
+//         mode: {
+//           stack: {
+//             sprite: "../sprite.svg",
+//             example: true,
+//           },
+//         },
+//       })
+//     )
+//     .pipe(dest("images"));
+// }
 
 // функция удаления папок
 function cleanDist() {
@@ -269,7 +267,8 @@ exports.htmlInclude = htmlInclude;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.images = images;
-exports.sprite = sprite;
+// exports.sprite = sprite;
+exports.svgSprites = svgSprites;
 exports.building = building;
 exports.watching = watching;
 exports.watchFiles = watchFiles;
@@ -278,4 +277,4 @@ exports.build = series(cleanDist, building);
 
 // exports.default = parallel(styles, images, scripts, watching);
 
-exports.default = series(parallel(htmlInclude), styles, watchFiles);
+exports.default = series(parallel(htmlInclude, svgSprites), styles, watchFiles);
