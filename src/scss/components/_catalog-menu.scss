@@ -4,10 +4,11 @@
     position: relative;
   }
 
-  &__list {
+  &__ground {
     position: absolute;
+    padding: 38px 24px;
     border-radius: 14px;
-    width: 290px;
+    width: 688px;
     height: 403px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
     background: var(--white);
@@ -15,10 +16,15 @@
     opacity: 0;
     visibility: hidden;
     @include transition ($transition-property: (visibility, opacity));
-
   }
 
-  .catalog-menu__list.catalog-menu__list--open {
+  // &__list {
+  //   position: absolute;
+
+
+  // }
+
+  .catalog-menu__ground.catalog-menu__ground--open {
     opacity: 1;
     visibility: visible;
   }
