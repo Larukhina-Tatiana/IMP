@@ -1,58 +1,39 @@
 .btn {}
 
 .btn-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0 8px;
+  padding: 14px 19px 12px 48px;
 
-  padding: 14px 19px 12px 22px;
-
-  border-radius: var(--border-radius);
   width: 132px;
   height: 48px;
-  background-color: var(--red);
-
   @extend %second-family-800;
   font-size: 16px;
   color: var(--white);
-
-
-
-
-  &__line-box {
-    position: relative;
-    display: inline-block;
-
-    width: 18px;
-    height: 12px;
-    background: transparent;
-    z-index: 2;
-  }
+  background-color: var(--red);
+  border-radius: var(--border-radius);
 
   &__line {
     position: absolute;
-    left: 0;
-    width: 100%;
+    left: 22px;
+    width: 18px;
     height: 2px;
     border-radius: var(--border-radius);
     background: var(--white);
     @include transition ($transition-property: transform);
 
     &:nth-child(1) {
-      top: 0;
+      top: 18px;
     }
 
     &:nth-child(2) {
-      top: 6px;
+      top: 23px;
     }
 
     &:nth-child(3) {
-      top: 6px;
+      top: 23px;
     }
 
     &:nth-child(4) {
-      top: 11px;
+      top: 28px;
     }
   }
 

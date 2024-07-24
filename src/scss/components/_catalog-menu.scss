@@ -6,9 +6,11 @@
 
   &__ground {
     position: absolute;
-    padding: 38px 24px;
+    width: 53.33vw;
+    padding: 41px 10px 28px 37px;
+    top: 112px;
+    left: 16px;
     border-radius: 14px;
-    width: 688px;
     height: 403px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
     background: var(--white);
@@ -18,11 +20,33 @@
     @include transition ($transition-property: (visibility, opacity));
   }
 
-  // &__list {
-  //   position: absolute;
+  &__list {
+    width: 48%;
+    height: 343px;
+    padding-right: 23px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      // background-color: #FF9E9E;
+      background-color: #e0e0e0;
+      border-radius: 9px;
+
+    }
+
+    &::-webkit-scrollbar-track {
+
+      // background-color: var(--scroll-track);
+      background-color: #e0e0e0;
+      border-radius: 9px;
+    }
 
 
-  // }
+  }
 
   .catalog-menu__ground.catalog-menu__ground--open {
     opacity: 1;
@@ -37,17 +61,17 @@
     }
   }
 
-  &__svg {}
+  &__svg {
+    fill: currentColor;
+  }
 
   &__btn-secondary {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 280px;
-    // font-family: var(--second-family);
-    // font-weight: 600;
+    text-align: left;
+    width: 100%;
     @extend %second-family-600;
-    // font-size: 20px;
     color: #0a0a0a;
     @include transition ($transition-property: color);
 
