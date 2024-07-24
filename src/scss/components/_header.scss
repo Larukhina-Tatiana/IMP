@@ -4,5 +4,10 @@
 
   &__top {
     display: flex;
+    align-items: center;
+  }
+
+  &__catalog-btn {
+    margin-right: 26px;
   }
 }
