@@ -23,6 +23,12 @@
 	height: 100%;
 }
 
+.modal-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
 .modal__container {
 	position: relative;
 	width: 1260px;
@@ -40,6 +46,13 @@
 @media (max-width: 1024px) {
 	.modal__container {
 		width: 90%;
+	}
+}
+
+.modal-content {
+	&__left {
+		width: 39%;
+		padding: 33px;
 	}
 }
 

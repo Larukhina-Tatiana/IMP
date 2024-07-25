@@ -62,19 +62,36 @@
 
 .tabs-buttons__list {
   display: flex;
-
+  gap: 15px;
 }
 
 .tabs-buttons {
-  border-radius: 16px;
   width: 221px;
   height: 87px;
-  border: 1px solid var(--yellow);
-  background: var(--yellow);
+  padding: 16px 22px;
+  @extend %second-family-700;
+  font-size: 20px;
+  color: var(--cod-gray);
+  border-radius: 16px;
+  background-color: #fff8eb;
+  border: 1px solid rgba(255, 169, 0, 0.45);
+  text-align: left;
+  @include transition ($transition-property: (border-color, border, color));
 
   // &--delivery {
   //   border: 1px solid var(--yellow);
   //   background: var(--yellow);
   // }
+  &__text {
+    display: block;
+    margin-top: 6px;
+    @extend %second-family-600;
+    font-size: 16px;
+  }
+}
 
+.mixitup-control-active {
+  border: 1px solid var(--yellow);
+  background: var(--yellow);
+  color: var(--white);
 }
