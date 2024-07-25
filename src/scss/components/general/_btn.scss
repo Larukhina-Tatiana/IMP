@@ -58,3 +58,23 @@
   //   transform: translateY(0%);
   // }
 }
+
+
+.tabs-buttons__list {
+  display: flex;
+
+}
+
+.tabs-buttons {
+  border-radius: 16px;
+  width: 221px;
+  height: 87px;
+  border: 1px solid var(--yellow);
+  background: var(--yellow);
+
+  // &--delivery {
+  //   border: 1px solid var(--yellow);
+  //   background: var(--yellow);
+  // }
+
+}

@@ -1,0 +1,36 @@
+<div class="receiving">
+  <button class="receiving__main" data-path="first" data-animation="fadeInUp" data-speed="500"></button>
+  <button class="receiving__secondary" data-path="first" data-animation="fadeInUp" data-speed="500">
+    <span class="receiving__text">Выберите способ получения</span>
+    <span class="receiving__title">Доставка или самовывоз</span>
+  </button>
+</div>
+<div class="modal">
+  <div class="modal__container" data-target="first">
+    <button class="modal-close">Закрыть</button>
+    <div class="modal-content">
+      <div class="modal-content__left">
+        <ul class="tabs-buttons__list">
+          <li class="tabs-buttons__item">
+            <button class="tabs-buttons tabs-buttons--delivery" data-filter=".delivery">Доставка
+              <span class="tabs-buttons__btn-text">бесплатно от 1000₴</span>
+            </button>
+          </li>
+          <li class="tabs-buttons__item">
+            <button class="tabs-buttons tabs-buttons--pickup" data-filter=".pickup">Самовывоз
+              <span class="tabs-buttons__btn-text">бесплатно</span>
+            </button>
+          </li>
+        </ul>
+        <ul class="tabs-content">
+          <li class="tabs-content__item mix delivery">
+            delivery
+          </li>
+          <li class="tabs-content__item mix pickup">
+            pickup
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

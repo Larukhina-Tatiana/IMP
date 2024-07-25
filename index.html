@@ -32,7 +32,8 @@
   <div class="catalog-menu__ground">
     <ul class="catalog-menu__list">
       <li class="catalog-menu__item">
-        <button class="catalog-menu__btn-secondary btn btn--catalog catalog-menu__btn-secondary--active">Акции
+        <button class="catalog-menu__btn-secondary btn btn--catalog catalog-menu__btn-secondary--active"
+          data-menu-active>Акции
           <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
             <use href="./images/sprite/sprite.svg#arrow-next"></use>
           </svg>
@@ -325,36 +326,64 @@
     </ul>
   </div>
 </div>
-        <form action="#" class="header__search-form search">
-  <div class="search__box">
-    <input class="search__input" type="text" placeholder="Поиск" autocomplete="off">
-    <button class="search__btn" type="submit">
-      <svg class="header__icons-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z"
-          stroke="#565656" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M16.4429 16.4438L20.9992 21.0001" stroke="#565656" stroke-width="1.5" stroke-linecap="round"
-          stroke-linejoin="round" />
-      </svg>
-    </button>
-  </div>
-</form>
-
-
+        <div class="header__search-form search">
+  <input class="search__input" type="text" placeholder="Начать поиск" autocomplete="off">
+  <button class="search__btn" type="submit">
+    <svg class="header__icons-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z"
+        stroke="#565656" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M16.4429 16.4438L20.9992 21.0001" stroke="#565656" stroke-width="1.5" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </button>
+</div>
         <div class="header__actions actions">
-          <button class="receiving"></button>
+          <div class="receiving">
+  <button class="receiving__main" data-path="first" data-animation="fadeInUp" data-speed="500"></button>
+  <button class="receiving__secondary" data-path="first" data-animation="fadeInUp" data-speed="500">
+    <span class="receiving__text">Выберите способ получения</span>
+    <span class="receiving__title">Доставка или самовывоз</span>
+  </button>
+</div>
+<div class="modal">
+  <div class="modal__container" data-target="first">
+    <button class="modal-close">Закрыть</button>
+    <div class="modal-content">
+      <div class="modal-content__left">
+        <ul class="tabs-buttons__list">
+          <li class="tabs-buttons__item">
+            <button class="tabs-buttons tabs-buttons--delivery" data-filter=".delivery">Доставка
+              <span class="tabs-buttons__btn-text">бесплатно от 1000₴</span>
+            </button>
+          </li>
+          <li class="tabs-buttons__item">
+            <button class="tabs-buttons tabs-buttons--pickup" data-filter=".pickup">Самовывоз
+              <span class="tabs-buttons__btn-text">бесплатно</span>
+            </button>
+          </li>
+        </ul>
+        <ul class="tabs-content">
+          <li class="tabs-content__item mix delivery">
+            delivery
+          </li>
+          <li class="tabs-content__item mix pickup">
+            pickup
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
           <a class="header__favirite favorite" href=""></a>
           <button class="header__user user"></button>
           <div class="header__cart cart"></div>
         </div>
       </div>
-      <div class="header__bottom">
-
-      </div>
+      <div class="header__bottom"></div>
     </div>
   </div>
-
 </header>
   <main>
     
@@ -377,11 +406,13 @@
 
 
   <script src="./src/js/burgers.js"></script>
+  <script src="./src/js/script.js"></script>
 
 
 
 
   <script src="js/main.min.js"></script>
+  <script src="./src/js/my-mixitup.js"></script>
 </body>
 
 </html>
