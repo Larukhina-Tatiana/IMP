@@ -6,18 +6,27 @@
   }
 
   &__link {
-    padding: 13px 17px 13px 46px;
+    padding: 14px 17px 14px 46px;
     @extend %second-family-600;
     font-size: 16px;
     color: var(--cod-gray);
 
-
-    border: 1px solid rgba(255, 169, 0, 0.45);
+    border: 0.51px solid rgba(255, 169, 0, 0.45);
     border-radius: 16px;
-    background-color: #fff8eb;
+    background-color: $serenade;
+    ;
     background-position: left 14px center;
     background-repeat: no-repeat;
     background-size: 26px 26px;
+
+    @include transition ($transition-property: (background-color, border));
+
+    @media (any-hover: hover) {
+      &:hover {
+        border: 1px solid rgba(255, 169, 0, 0.45);
+        background-color: #ffe8bc;
+      }
+    }
 
     &--supermarket {
       background-image: url('../images/icons/icon-link1.png');
