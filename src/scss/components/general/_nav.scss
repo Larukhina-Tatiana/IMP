@@ -1,0 +1,46 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__link {
+    padding: 13px 17px 13px 46px;
+    @extend %second-family-600;
+    font-size: 16px;
+    color: var(--cod-gray);
+
+
+    border: 1px solid rgba(255, 169, 0, 0.45);
+    border-radius: 16px;
+    background-color: #fff8eb;
+    background-position: left 14px center;
+    background-repeat: no-repeat;
+    background-size: 26px 26px;
+
+    &--supermarket {
+      background-image: url('../images/icons/icon-link1.png');
+    }
+
+    &--cooking {
+      background-image: url('../images/icons/icon-link2.png');
+    }
+
+    &--freezing {
+      background-image: url('../images/icons/icon-link3.png');
+    }
+
+    &--other {
+      background-image: url('../images/icons/icon-link4.png');
+    }
+
+    &--stock {
+      background-image: url('../images/icons/icon-link5.png');
+    }
+
+    &--shops {
+      background-image: url('../images/icons/icon-link6.png');
+    }
+  }
+}
