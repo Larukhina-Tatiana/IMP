@@ -17,6 +17,7 @@
     --cod-gray: #0a0a0a;
     --textlight: #6b6b6b;
     --green50: rgba(14, 106, 99, 0.5);
+    --serenade: #fff8eb;
 
 
     --box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03),
@@ -33,6 +34,11 @@
     --burger-line-height: 2px;
 }
 
+$serenade: #fff8eb;
+$mercury: #e1e1e1;
+$yellow: #ffa900;
+$boulder: #7E7C7C;
+$red: #FF0000;
 
 @mixin transition ($transition-property: color, $transition-duration: 350ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
     transition-duration: $transition-duration;

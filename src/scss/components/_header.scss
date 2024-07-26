@@ -2,9 +2,11 @@
   padding-top: 23px;
   padding-bottom: 29px;
 
+
   &__top {
     display: flex;
     align-items: center;
+    color: var(--white);
   }
 
   &__catalog-btn {

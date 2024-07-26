@@ -1,0 +1,7 @@
+.section {}
+
+.section-h2 {
+  @extend %second-family-700;
+  font-size: 22px;
+  color: var(--text);
+}

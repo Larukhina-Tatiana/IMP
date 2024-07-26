@@ -1,0 +1,32 @@
+.user {
+  position: relative;
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e1e1e1;
+    border-radius: 16px;
+    width: 50px;
+    height: 48px;
+    color: $mercury;
+    background-color: var(--white);
+
+    @include transition ($transition-property: border);
+
+    @media (any-hover: hover) {
+      &:hover {
+        border: 1px solid var(--yellow);
+        background-color: $serenade;
+        color: $yellow;
+      }
+    }
+  }
+
+  &__go-login {
+    position: absolute;
+    top: 84px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}

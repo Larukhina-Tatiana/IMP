@@ -1,0 +1,43 @@
+.go-login {
+  width: 310px;
+  padding: 17px 23px 23px;
+  border: 1px solid $boulder;
+  border-radius: 12px;
+  background: var(--white);
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    &:not(:last-child) {
+      margin-bottom: 42px;
+    }
+  }
+
+  &__item {
+    padding-left: 65px;
+    @extend %font5-400;
+    font-size: 14px;
+    color: var(--text);
+    line-height: calc(22/14);
+    height: 44px;
+
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    &--sale {
+      background: url(../images/icons/go-login-sale.svg) left center / 45px 44px no-repeat;
+    }
+
+    &--delivery {
+      background: url(../images/icons/go-login-delivery.svg) left center / 45px 44px no-repeat;
+    }
+
+    &--stock {
+      background: url(../images/icons/go-login-stock.svg) left center / 45px 44px no-repeat;
+    }
+  }
+}

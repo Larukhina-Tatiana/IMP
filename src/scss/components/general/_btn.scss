@@ -1,4 +1,16 @@
-.btn {}
+.btn {
+  padding: 12px;
+  @extend %second-family-600;
+  font-size: 18px;
+  text-align: center;
+  color: var(--white);
+
+  border-radius: 16px;
+  // width: 264px;
+  // height: 46px;
+  background-color: $red;
+
+}
 
 .btn-main {
   padding: 14px 19px 12px 48px;
@@ -73,7 +85,7 @@
   font-size: 20px;
   color: var(--cod-gray);
   border-radius: 16px;
-  background-color: #fff8eb;
+  background-color: var(--serenade);
   border: 1px solid rgba(255, 169, 0, 0.45);
   text-align: left;
   @include transition ($transition-property: (border-color, border, color));
