@@ -28,5 +28,14 @@
     top: 84px;
     left: 50%;
     transform: translate(-50%, 0);
+    opacity: 0;
+    visibility: hidden;
+    @include transition ($transition-property: (visibility, opacity));
+  }
+
+  &:hover .user__go-login {
+    visibility: visible;
+    opacity: 1;
+    z-index: 12;
   }
 }
