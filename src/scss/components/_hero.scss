@@ -1,5 +1,9 @@
   .hero {
 
+    &__inner {
+      display: flex;
+      gap: 24px;
+    }
 
     &-slider {
       // position: relative;
@@ -79,5 +83,9 @@
       width: 32px;
       opacity: var(--swiper-pagination-bullet-opacity, 1);
       background: var(--white);
+    }
+
+    &__left {
+      width: 404px;
     }
   }

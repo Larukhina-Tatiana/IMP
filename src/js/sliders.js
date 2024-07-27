@@ -7,7 +7,7 @@ document.body.style.setProperty("--hero-slider-speed", heroSliderSpeed + "ms"); 
 
 const heroSlider = new Swiper(".hero-slider", {
   slidesPerView: 1,
-  loop: true,
+  // loop: true,
   infinite: true,
   // fade: true,
   navigation: {

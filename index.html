@@ -466,10 +466,11 @@
     <section class="hero">
   <div class="container">
     <h1 class="visually-hidden hero__title section__h1">Интернет-магазин Ильинский</h1>
-    <div class="hero-slider swiper">
-      <div class="swiper-wrapper">
+    <div class="hero__inner">
+      <div class="hero-slider swiper">
+        <div class="swiper-wrapper">
 
-        <div class="swiper-slide hero-slide" style="background-image:
+          <div class="swiper-slide hero-slide" style="background-image:
             -webkit-image-set(
         url(./images/hero/slide1@1x.avif) type('image/avif') 1x,
         url(./images/hero/slide1@2x.avif) type('image/avif') 2x, 
@@ -477,14 +478,14 @@
         url(./images/hero/slide1@2x.webp) type('image/webp') 2x,
         url(./images/hero/slide1@1x.jpg) 1x,
         url(./images/hero/slide1@2x.jpg) 2x)">
-          <div class="hero__content">
-            <h1 class="hero__title section-h1">
-              Начните день с&nbsp;вкусной выпечки из&nbsp;нашей кулинарии
-            </h1>
-            <button class="hero__btn btn-transparent btn-transparent--bg-white">Перейти к покупкам</button>
+            <div class="hero__content">
+              <h1 class="hero__title section-h1">
+                Начните день с&nbsp;вкусной выпечки из&nbsp;нашей кулинарии
+              </h1>
+              <button class="hero__btn btn-transparent btn-transparent--bg-white">Перейти к покупкам</button>
+            </div>
           </div>
-        </div>
-        <div class="swiper-slide hero-slide" style="background-image:
+          <div class="swiper-slide hero-slide" style="background-image:
             -webkit-image-set(
         url(./images/hero/slide1@1x.avif) type('image/avif') 1x,
         url(./images/hero/slide1@2x.avif) type('image/avif') 2x, 
@@ -492,14 +493,14 @@
         url(./images/hero/slide1@2x.webp) type('image/webp') 2x,
         url(./images/hero/slide1@1x.jpg) 1x,
         url(./images/hero/slide1@2x.jpg) 2x)">
-          <div class="hero__content">
-            <h1 class="hero__title section-h1">
-              Начните день с&nbsp;вкусной выпечки из&nbsp;нашей кулинарии
-            </h1>
-            <button class="hero__btn btn-transparent btn-transparent--bg-white">Перейти к покупкам</button>
+            <div class="hero__content">
+              <h1 class="hero__title section-h1">
+                Начните день с&nbsp;вкусной выпечки из&nbsp;нашей кулинарии
+              </h1>
+              <button class="hero__btn btn-transparent btn-transparent--bg-white">Перейти к покупкам</button>
+            </div>
           </div>
-        </div>
-        <div class="swiper-slide hero-slide" style="background-image:
+          <div class="swiper-slide hero-slide" style="background-image:
             -webkit-image-set(
         url(./images/hero/slide1@1x.avif) type('image/avif') 1x,
         url(./images/hero/slide1@2x.avif) type('image/avif') 2x, 
@@ -507,29 +508,46 @@
         url(./images/hero/slide1@2x.webp) type('image/webp') 2x,
         url(./images/hero/slide1@1x.jpg) 1x,
         url(./images/hero/slide1@2x.jpg) 2x)">
-          <div class="hero__content">
-            <h1 class="hero__title section-h1">
-              Начните день с&nbsp;вкусной выпечки из&nbsp;нашей кулинарии
-            </h1>
-            <button class="hero__btn btn-transparent btn-transparent--bg-white">Перейти к покупкам</button>
+            <div class="hero__content">
+              <h1 class="hero__title section-h1">
+                Начните день с&nbsp;вкусной выпечки из&nbsp;нашей кулинарии
+              </h1>
+              <button class="hero__btn btn-transparent btn-transparent--bg-white">Перейти к покупкам</button>
+            </div>
           </div>
+
         </div>
 
+        <button class="hero-arrow hero-arrow--next" aria-label="Следующий слайд">
+          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" fill="none">
+            <path fill="#323232"
+              d="m1.985.29 4.977 4.977a.995.995 0 0 1 0 1.404l-4.977 4.977A.995.995 0 0 1 .58 10.245l4.27-4.271-4.27-4.28a.995.995 0 0 1 0-1.404.995.995 0 0 1 1.404 0Z" />
+          </svg>
+        </button>
+        <button class="hero-arrow hero-arrow--prev" aria-label="Предыдущий слайд">
+          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" fill="none">
+            <path fill="#323232"
+              d="M6.015.29 1.038 5.267a.995.995 0 0 0 0 1.404l4.977 4.977a.995.995 0 0 0 1.404-1.403l-4.27-4.271 4.27-4.28a.995.995 0 0 0 0-1.404.995.995 0 0 0-1.404 0Z" />
+          </svg>
+        </button>
+        <div class="swiper-pagination hero-pagination"></div>
       </div>
-
-      <button class="hero-arrow hero-arrow--next" aria-label="Следующий слайд">
-        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" fill="none">
-          <path fill="#323232"
-            d="m1.985.29 4.977 4.977a.995.995 0 0 1 0 1.404l-4.977 4.977A.995.995 0 0 1 .58 10.245l4.27-4.271-4.27-4.28a.995.995 0 0 1 0-1.404.995.995 0 0 1 1.404 0Z" />
-        </svg>
-      </button>
-      <button class="hero-arrow hero-arrow--prev" aria-label="Предыдущий слайд">
-        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" fill="none">
-          <path fill="#323232"
-            d="M6.015.29 1.038 5.267a.995.995 0 0 0 0 1.404l4.977 4.977a.995.995 0 0 0 1.404-1.403l-4.27-4.271 4.27-4.28a.995.995 0 0 0 0-1.404.995.995 0 0 0-1.404 0Z" />
-        </svg>
-      </button>
-      <div class="swiper-pagination hero-pagination"></div>
+      <div class="hero__left">
+        <ul class="hero-invitations">
+          <li class="hero-invitations__item">
+            <a class="hero-invitations__link hero-invitations__link--cashback" href="#">
+              <span class="hero-invitations__text hero-invitations__text--cashback">Кэшбэк с&nbsp;каждой покупки</span>
+            </a>
+          </li>
+          <li class="hero-invitations__item">
+            <a class="hero-invitations__link hero-invitations__link--review" href="#">
+              <span class="hero-invitations__text hero-invitations__text--review">
+                Оставьте отзыв и&nbsp;получи&nbsp;5% скидку
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
