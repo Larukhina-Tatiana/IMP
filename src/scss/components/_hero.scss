@@ -1,0 +1,35 @@
+  .hero {
+
+    &-slider {
+      width: 862px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    &-slide {
+      position: relative;
+      // height: 460px;
+      // height: auto;
+      background-color: $yellow;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 26px;
+    }
+
+    &__title {
+      width: 488px;
+      margin-bottom: 24px;
+
+    }
+
+    &__content {
+      padding-top: 110px;
+      padding-bottom: 87px;
+      padding-left: 52px;
+      //   padding-top: clamp(4.375rem, 1.078rem + 16.48vw, 13.75rem);
+      //   padding-bottom: clamp(6.25rem, 0.668rem + 27.91vw, 22.125rem);
+      //   max-width: 580px;
+      //   z-index: 2;
+    }
+  }

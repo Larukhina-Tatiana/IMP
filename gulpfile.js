@@ -198,20 +198,20 @@ function scripts() {
 function images() {
   // return src(["app/images/**/*.*", "!app/images/**/*.svg"])
   return (
-    src(["images/src/*.*", "!images/src/*.svg"])
+    src(["src/images/*.*", "src/!images/*.svg"])
       .pipe(newer("images"))
       .pipe(avif({ quality: 50 }))
 
       // .pipe(src("app/images/**/*.*"))
-      .pipe(src("images/src/*.*"))
+      .pipe(src("src/images/*.*"))
       .pipe(newer("images"))
       .pipe(webp())
 
-      .pipe(src("images/src/*.*"))
+      .pipe(src("src/images/*.*"))
       .pipe(newer("images"))
       .pipe(imagemin())
 
-      .pipe(dest("images/contacts"))
+      .pipe(dest("images/hero"))
   );
 }
 
@@ -277,4 +277,4 @@ exports.build = series(cleanDist, building);
 
 // exports.default = parallel(styles, images, scripts, watching);
 
-exports.default = series(parallel(htmlInclude), styles, watchFiles);
+exports.default = series(parallel(htmlInclude), images, styles, watchFiles);
