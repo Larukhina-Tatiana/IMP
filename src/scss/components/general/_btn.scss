@@ -9,7 +9,6 @@
   // width: 264px;
   // height: 46px;
   background-color: $red;
-
 }
 
 .btn-main {
@@ -69,6 +68,19 @@
   // &-open .menu {
   //   transform: translateY(0%);
   // }
+}
+
+.btn-transparent {
+  padding: 14px 28px;
+  @extend %second-family-600;
+  font-size: 22px;
+  border-radius: 31px;
+  background-color: transparent;
+
+  &--bg-white {
+    color: var(--white);
+    border: 2px solid var(--white);
+  }
 }
 
 

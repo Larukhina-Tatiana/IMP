@@ -1,16 +1,13 @@
   .hero {
 
+
     &-slider {
+      // position: relative;
       width: 862px;
-      overflow: hidden;
-      position: relative;
+      // overflow: hidden;
     }
 
     &-slide {
-      position: relative;
-      // height: 460px;
-      // height: auto;
-      background-color: $yellow;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -31,5 +28,56 @@
       //   padding-bottom: clamp(6.25rem, 0.668rem + 27.91vw, 22.125rem);
       //   max-width: 580px;
       //   z-index: 2;
+    }
+
+    &-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      background-color: $serenade;
+      border-radius: 100%;
+      border: 1px solid #FFF1D6;
+      z-index: 2;
+      @include transition ($transition-property: (border, background-color));
+
+      @media (any-hover: hover) {
+        &:hover {
+          border: 1px solid rgba(255, 169, 0, 0.45);
+          background-color: #ffe8bc;
+        }
+      }
+
+      &--prev {
+        left: 0;
+      }
+
+      &--next {
+        right: 0;
+      }
+    }
+
+    .swiper {
+      margin: 0;
+    }
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+      background: rgb(255, 255, 255);
+      opacity: var(--swiper-pagination-bullet-inactive-opacity, .6);
+    }
+
+    .swiper-pagination-bullet-active {
+      border-radius: 43px;
+      width: 32px;
+      opacity: var(--swiper-pagination-bullet-opacity, 1);
+      background: var(--white);
     }
   }
