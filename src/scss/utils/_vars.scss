@@ -40,6 +40,11 @@ $yellow: #ffa900;
 $boulder: #7E7C7C;
 $red: #FF0000;
 
+$deco: #cce0a0;
+$martinique: #383c5c;
+
+
+
 @mixin transition ($transition-property: color, $transition-duration: 350ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
     transition-duration: $transition-duration;
     transition-timing-function: $transition-timing-function;
