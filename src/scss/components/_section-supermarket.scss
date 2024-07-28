@@ -1,0 +1,9 @@
+.section-supermarket {
+  padding-top: 55px;
+
+  &__inner-title {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+  }
+}

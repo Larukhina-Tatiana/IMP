@@ -1,4 +1,6 @@
   .hero {
+    padding-top: 25px;
+    padding-bottom: 55px;
 
     &__inner {
       display: flex;
@@ -7,7 +9,7 @@
 
     &-slider {
       // position: relative;
-      width: 862px;
+      width: 934px;
       // overflow: hidden;
     }
 
@@ -67,6 +69,23 @@
 
     .swiper {
       margin: 0;
+    }
+
+    .swiper-pagination {
+      text-align: left;
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      bottom: 35px;
+      left: 52px;
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 6px);
     }
 
     .swiper-pagination-bullet {

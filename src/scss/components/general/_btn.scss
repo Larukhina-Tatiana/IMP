@@ -83,6 +83,22 @@
   }
 }
 
+.see-all {
+  @extend %font3-500;
+  font-size: 22px;
+  color: #da9000;
+  padding: 9px 23px 12px 21px;
+
+  border: 1px solid #ffe7b9;
+  border-radius: 16px;
+  background: #fff8eb;
+
+  .icon-see-all {
+    display: inline-block;
+    margin-left: 15px;
+  }
+}
+
 
 .tabs-buttons__list {
   display: flex;

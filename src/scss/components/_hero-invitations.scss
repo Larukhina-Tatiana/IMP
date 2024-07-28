@@ -8,19 +8,22 @@
   }
 
   &__link {
+    padding: 86px 10px 17px 25px;
     @extend %second-family-700;
     font-size: 28px;
+    line-height: 1.3;
     border-radius: 26px;
+    min-height: 218px;
   }
 
 
   &__link--cashback {
-    padding: 112px 10px 17px 25px;
+    line-height: 1.3;
     background: url(../images/hero/bg-sale.jpg) left center / 404px 218px no-repeat;
   }
 
   &__link--review {
-    padding: 112px 10px 17px 25px;
+    padding-top: 123px;
     background: url(../images/hero/bg-star.jpg) left center / 404px 218px no-repeat;
   }
 

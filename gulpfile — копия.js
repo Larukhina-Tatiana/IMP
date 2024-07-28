@@ -94,19 +94,19 @@ function styles() {
     .pipe(browserSync.stream());
 }
 
-const svgSprites = () => {
-  return src("./src/images/sprite/**.svg")
-    .pipe(
-      svgSprite({
-        mode: {
-          stack: {
-            sprite: "../sprite.svg",
-          },
-        },
-      })
-    )
-    .pipe(dest("images/sprite"));
-};
+// const svgSprites = () => {
+//   return src("./src/images/sprite/**.svg")
+//     .pipe(
+//       svgSprite({
+//         mode: {
+//           stack: {
+//             sprite: "../sprite.svg",
+//           },
+//         },
+//       })
+//     )
+//     .pipe(dest("images/sprite"));
+// };
 
 const watchFiles = () => {
   browserSync.init({
@@ -117,6 +117,7 @@ const watchFiles = () => {
 
   watch("./src/scss/**/*.scss", styles);
   watch("./src/html/*.html", htmlInclude);
+  watch(["./src/images/**/*.*"], images);
   // watch("./src/images/**.jpg", imgToApp);
   // watch("./src/images/**.png", imgToApp);
   // watch("./src/images/**.jpeg", imgToApp);
@@ -215,6 +216,12 @@ function images() {
   );
 }
 
+// function createStack() {
+//   return src("./src/images/sprite/**/*.svg")
+//     .pipe(stacksvg())
+//     .pipe(dest("images/sprite"));
+// }
+
 // function sprite() {
 //   return src("images/src/icons/*.svg")
 //     .pipe(
@@ -267,6 +274,7 @@ exports.htmlInclude = htmlInclude;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.images = images;
+exports.createStack = createStack;
 // exports.sprite = sprite;
 exports.svgSprites = svgSprites;
 exports.building = building;

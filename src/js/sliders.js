@@ -8,16 +8,16 @@ document.body.style.setProperty("--hero-slider-speed", heroSliderSpeed + "ms"); 
 const heroSlider = new Swiper(".hero-slider", {
   slidesPerView: 1,
   // loop: true,
-  infinite: true,
+  // infinite: true,
   // fade: true,
   navigation: {
     nextEl: ".hero-arrow--next",
     prevEl: ".hero-arrow--prev",
   },
-  speed: heroSliderSpeed,
-  autoplay: {
-    delay: 1000,
-  },
+  // speed: heroSliderSpeed,
+  // autoplay: {
+  //   delay: 1000,
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
