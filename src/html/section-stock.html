@@ -1,0 +1,27 @@
+<section class="section-stock">
+  <div class="container">
+    <div class="section-other__inner-title section-catalog__inner-title">
+      <h2 class="section-h2">АКЦИИ</h2>
+      <a class="see-all" href="./stock.html">
+        Смотреть все
+        <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon see all">
+          <use href="./images/sprite/sprite.svg#arrow-next"></use>
+        </svg>
+      </a>
+      <div class="stock-swiper__nav">
+        <button class="stock-swiper__btn stock-swiper-prev">
+          <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+            <use href="./images/sprite/sprite.svg#arrow-next"></use>
+          </svg>
+        </button>
+        <button class="stock-swiper__btn stock-swiper-next">
+          <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon prev">
+            <use href="./images/sprite/sprite.svg#arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    @include('catalog-stock.html')
+  </div>
+
+</section>

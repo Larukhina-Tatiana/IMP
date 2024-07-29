@@ -125,29 +125,25 @@ const heroSlider = new Swiper(".hero-slider", {
 //   });
 // }
 
-// if (document.querySelector(".current__slider-box")) {
-//   var swiperTvo = new Swiper(".current__slider-box", {
-//     slidesPerView: 1,
-//     pagination: {
-//       el: ".swiper-pag",
-//       clickable: true,
-//     },
-//     navigation: {
-//       nextEl: ".swiper-next",
-//       prevEl: ".swiper-prev",
-//     },
-//     breakpoints: {
-//       661: {
-//         pagination: {
-//           type: "fraction",
-//         },
-//       },
-//     },
-//     on: {
-//       init: function (swiperTvo) {},
-//     },
-//   });
-// }
+if (document.querySelector(".stock-swiper")) {
+  var swiperTvo = new Swiper(".stock-swiper", {
+    slidesPerView: 4,
+    navigation: {
+      nextEl: ".stock-swiper-prev",
+      prevEl: ".stock-swiper-next",
+    },
+    // breakpoints: {
+    //   661: {
+    //     pagination: {
+    //       type: "fraction",
+    //     },
+    //   },
+    // },
+    on: {
+      init: function (swiperTvo) {},
+    },
+  });
+}
 
 // if (document.querySelector(".fashion-news")) {
 //   var swiper = new Swiper(".slider-1", {

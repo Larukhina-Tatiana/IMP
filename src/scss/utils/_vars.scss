@@ -49,7 +49,9 @@ $old-copper: #774631;
 $martinique: #383C5C;
 $moon-raker: #c0c5f2;
 $titan-white: #ebedff;
-
+$twilight-blue: #ebfdff;
+$sinbad: #a3d0d6;
+$plantation: #274447;
 
 @mixin transition ($transition-property: color, $transition-duration: 350ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
     transition-duration: $transition-duration;

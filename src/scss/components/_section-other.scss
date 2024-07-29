@@ -1,0 +1,34 @@
+.section-other {
+  padding-top: 157px;
+
+  &__inner-title {
+    margin-bottom: 18px;
+  }
+
+  .section-catalog__link {
+    color: $plantation;
+    border: 1px solid $sinbad;
+    background-color: $twilight-blue;
+
+
+    &--child1 {
+      padding-right: 113px;
+      background-image: -webkit-image-set(url(../images/other/image1@1x.png) 1x, url(../images/other/image1@2x.png) 2x);
+    }
+
+    &--child2 {
+      padding-right: 53px;
+      background-image: -webkit-image-set(url(../images/other/image2@1x.png) 1x, url(../images/other/image2@2x.png) 2x);
+    }
+
+    &--child3 {
+      padding-right: 65px;
+      background-image: -webkit-image-set(url(../images/other/image3@1x.png) 1x, url(../images/other/image3@2x.png) 2x);
+    }
+
+    &--child4 {
+      padding-right: 110px;
+      background-image: -webkit-image-set(url(../images/other/image4@1x.png) 1x, url(../images/other/image4@2x.png) 2x);
+    }
+  }
+}
