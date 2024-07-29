@@ -34,6 +34,7 @@
     --burger-line-height: 2px;
 }
 
+$white: #ffffff;
 $serenade: #fff8eb;
 $mercury: #e1e1e1;
 $yellow: #ffa900;
@@ -43,7 +44,11 @@ $red: #FF0000;
 $deco: #cce0a0;
 $martinique: #383c5c;
 $spring-sun: #F7FFE5;
-
+$peach :#ffe7b9;
+$old-copper: #774631;
+$martinique: #383C5C;
+$moon-raker: #c0c5f2;
+$titan-white: #ebedff;
 
 
 @mixin transition ($transition-property: color, $transition-duration: 350ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {

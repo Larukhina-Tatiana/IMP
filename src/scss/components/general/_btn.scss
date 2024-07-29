@@ -92,10 +92,21 @@
   border: 1px solid #ffe7b9;
   border-radius: 16px;
   background: #fff8eb;
+  @include transition ($transition-property: (color, background-color));
 
-  .icon-see-all {
+  @media (any-hover: hover) {
+    &:hover {
+      color: $white;
+      background-color: $yellow;
+    }
+  }
+
+  .catalog-menu__svg {
     display: inline-block;
     margin-left: 15px;
+    fill: currentColor;
+    color: inherit;
+    // @include transition ($transition-property: fill);
   }
 }
 

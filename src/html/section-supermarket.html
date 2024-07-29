@@ -1,44 +1,14 @@
 <section class="section-supermarket">
   <div class="container">
-    <div class="section-supermarket__inner-title">
-      <h2 class="section-supermarket__title section-h2">СУПЕРМАРКЕТ</h2>
-      <button class="section-supermarket__btn see-all">
+    <div class="section-supermarket__inner-title section-catalog__inner-title">
+      <h2 class="section-h2">СУПЕРМАРКЕТ</h2>
+      <button class="see-all">
         Смотреть все
-        <svg class="icon-see-all" xmlns="http://www.w3.org/2000/svg" width="7" height="12" fill="none">
-          <path fill="currentColor"
-            d="m1.693.29 4.978 4.977a.995.995 0 0 1 0 1.404l-4.978 4.978A.995.995 0 0 1 .29 10.245l4.27-4.27L.29 1.692A.995.995 0 0 1 .29.29a.995.995 0 0 1 1.403 0Z" />
+        <svg class="catalog-menu__svg" width="7" height="12" aria-label="see all">
+          <use href="./images/sprite/sprite.svg#arrow-next"></use>
         </svg>
       </button>
     </div>
-    @include('supermarket-catalog.html')
-    <!-- <ul class="section-supermarket__list section-catalog">
-      <li class="section-supermarket__item section-catalog__item">
-        <a class="section-supermarket__link section-catalog__link--child1" href="">Вода и&nbsp;напитки</a>
-      </li>
-      <li class="section-supermarket__item section-catalog__item">
-        <a class="section-supermarket__link section-catalog__link--child2" href="">Молоко, масло и&nbsp;яйца</a>
-      </li>
-      <li class="section-supermarket__item section-catalog__item">
-        <a class="section-supermarket__link section-catalog__link--child3" href="">Снэки и&nbsp;сухофрукты</a>
-      </li>
-      <li class="section-supermarket__item section-catalog__item">
-        <a class="section-supermarket__link section-catalog__link--child4" href="">
-          Кофе, чай и&nbsp;сладости
-        </a>
-      </li>
-      <li class="section-supermarket__item section-catalog__item">
-        <a class="section-supermarket__link section-catalog__link--child5" href="">Макароны и&nbsp;крупы</a>
-      </li>
-      <li class="section-supermarket__item section-catalog__item">
-        <a class="section-supermarket__link section-catalog__link--child6" href="">Хлеб и&nbsp;выпечка</a>
-      </li>
-      <li class="section-supermarket__item section-catalog__item">
-        <a class="section-supermarket__link section-catalog__link--child7" href="">Масло, соусы и&nbsp;специи</a>
-      </li>
-      <li class="section-supermarket__item section-catalog__item">
-        <a class="section-supermarket__link section-catalog__link--child8" href="">Консервы и&nbsp;соления</a>
-      </li>
-    </ul> -->
+    @include('catalog-supermarket.html')
   </div>
-
 </section>

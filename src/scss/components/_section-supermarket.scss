@@ -1,52 +1,53 @@
 .section-supermarket {
   padding-top: 55px;
-  padding-bottom: 55px;
 
   &__inner-title {
-    display: flex;
-    align-items: center;
-    gap: 29px;
-  }
-}
-
-.section-catalog__link {
-  &--child1 {
-    padding-right: 113px;
-    background: -webkit-image-set(url(../images/supermarket/image1@1x.png) 1x, url(../images/supermarket/image1@2x.png) 2x) right bottom / auto no-repeat $spring-sun;
+    margin-bottom: 20px;
   }
 
-  &--child2 {
-    padding-right: 53px;
-    background: -webkit-image-set(url(../images/supermarket/image2@1x.png) 1x, url(../images/supermarket/image2@2x.png) 2x) right bottom / auto no-repeat $spring-sun;
-  }
+  .section-catalog__link {
+    color: $martinique;
+    background-color: $spring-sun;
+    border: 1px solid $deco;
 
-  &--child3 {
-    padding-right: 65px;
-    background: -webkit-image-set(url(../images/supermarket/image3@1x.png) 1x, url(../images/supermarket/image3@2x.png) 2x) right bottom / auto no-repeat $spring-sun;
-  }
+    &--child1 {
+      padding-right: 113px;
+      background-image: -webkit-image-set(url(../images/supermarket/image1@1x.png) 1x, url(../images/supermarket/image1@2x.png) 2x);
+    }
 
-  &--child4 {
-    padding-right: 110px;
-    background: -webkit-image-set(url(../images/supermarket/image4@1x.png) 1x, url(../images/supermarket/image4@2x.png) 2x) right bottom / auto no-repeat $spring-sun;
-  }
+    &--child2 {
+      padding-right: 53px;
+      background-image: -webkit-image-set(url(../images/supermarket/image2@1x.png) 1x, url(../images/supermarket/image2@2x.png) 2x);
+    }
 
-  &--child5 {
-    padding-right: 106px;
-    background: -webkit-image-set(url(../images/supermarket/image5@1x.png) 1x, url(../images/supermarket/image5@2x.png) 2x) right bottom / auto no-repeat $spring-sun;
-  }
+    &--child3 {
+      padding-right: 65px;
+      background-image: -webkit-image-set(url(../images/supermarket/image3@1x.png) 1x, url(../images/supermarket/image3@2x.png) 2x);
+    }
 
-  &--child6 {
-    padding-right: 116px;
-    background: -webkit-image-set(url(../images/supermarket/image6@1x.png) 1x, url(../images/supermarket/image6@2x.png) 2x) right bottom / auto no-repeat $spring-sun;
-  }
+    &--child4 {
+      padding-right: 110px;
+      background-image: -webkit-image-set(url(../images/supermarket/image4@1x.png) 1x, url(../images/supermarket/image4@2x.png) 2x);
+    }
 
-  &--child7 {
-    padding-right: 74px;
-    background: -webkit-image-set(url(../images/supermarket/image7@1x.png) 1x, url(../images/supermarket/image7@2x.png) 2x) right bottom / auto no-repeat $spring-sun;
-  }
+    &--child5 {
+      padding-right: 106px;
+      background-image: -webkit-image-set(url(../images/supermarket/image5@1x.png) 1x, url(../images/supermarket/image5@2x.png) 2x);
+    }
 
-  &--child8 {
-    padding-right: 121px;
-    background: -webkit-image-set(url(../images/supermarket/image8@1x.png) 1x, url(../images/supermarket/image8@2x.png) 2x) right bottom / auto no-repeat $spring-sun;
+    &--child6 {
+      padding-right: 116px;
+      background-image: -webkit-image-set(url(../images/supermarket/image6@1x.png) 1x, url(../images/supermarket/image6@2x.png) 2x);
+    }
+
+    &--child7 {
+      padding-right: 74px;
+      background-image: -webkit-image-set(url(../images/supermarket/image7@1x.png) 1x, url(../images/supermarket/image7@2x.png) 2x);
+    }
+
+    &--child8 {
+      padding-right: 121px;
+      background-image: -webkit-image-set(url(../images/supermarket/image8@1x.png) 1x, url(../images/supermarket/image8@2x.png) 2x);
+    }
   }
 }
