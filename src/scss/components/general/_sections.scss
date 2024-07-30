@@ -10,12 +10,19 @@
 
 .section-h2 {
   @extend %second-family-700;
+  font-size: 38px;
+  text-transform: uppercase;
+  // color: $white;
+}
+
+.section-h3 {
+  @extend %second-family-700;
   font-size: 32px;
   text-transform: uppercase;
   color: var(--text);
 }
 
-.section-h3 {
+.section-h4 {
   @extend %second-family-700;
   font-size: 22px;
   color: var(--text);

@@ -1,0 +1,25 @@
+.promocode {
+  margin-top: 88px;
+  padding: 46px 55px;
+  color: $white;
+  border: 2px solid var(--white);
+  border-radius: 31px;
+  background: radial-gradient(1404.49% 180.6% at 73.62% -94.51%, rgb(255, 31, 0) 0%, rgb(255, 119, 21) 100%);
+
+  &__box {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__text {
+    margin-top: 7px;
+    display: block;
+    font-size: 22px;
+    text-transform: none;
+  }
+
+  &__btn {
+    margin-left: auto;
+    align-self: flex-start;
+  }
+}

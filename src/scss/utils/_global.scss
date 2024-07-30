@@ -63,9 +63,9 @@ address {
 }
 
 body {
-    // font-family: 'Lato', sans-serif;
-    @extend %font-family-400;
-    // font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+    // @extend %second-family-400;
+    font-weight: 400;
     font-size: 20px;
     // line-height: 1.6;
     color: var(--text);

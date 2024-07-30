@@ -1,0 +1,57 @@
+.footer {
+  padding-top: 38px;
+  padding-bottom: 18px;
+  background-color: $gardsman-red;
+  color: $white;
+
+  &__nav {
+    display: flex;
+    gap: 66px;
+    font-size: 14px;
+    line-height: 1.54;
+  }
+
+  &__title {
+    font-weight: 700;
+
+  }
+
+  &__link {}
+}
+
+.footer-communication {
+
+
+  &__link {
+    padding-left: 37px;
+
+    span {
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    &--phone {
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 20px;
+      background: url(../images/icons/phone-call2.svg) left top 15% / 24px 24px no-repeat;
+
+
+
+    }
+
+    &--compas {
+      background: url(../images/icons/compas.svg) left center / 14px 14px no-repeat;
+    }
+
+    &--insta {
+      background: url(../images/icons/insta.svg) left center / 14px 14px no-repeat;
+    }
+
+    &--mail {
+      background: url(../images/icons/mail.svg) left center / 15px 15px no-repeat;
+    }
+  }
+}

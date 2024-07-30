@@ -81,6 +81,11 @@
     color: var(--white);
     border: 2px solid var(--white);
   }
+
+  &--bg-red {
+    color: var(--red);
+    border: 2px solid var(--red);
+  }
 }
 
 .see-all {
