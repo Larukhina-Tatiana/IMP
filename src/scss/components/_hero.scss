@@ -4,12 +4,14 @@
 
     &__inner {
       display: flex;
-      gap: 24px;
+      // gap: 24px;
+      gap: clamp(1.063rem, 0.893rem + 0.75vw, 1.5rem);
     }
 
     &-slider {
       // position: relative;
-      width: 934px;
+      max-width: 934px;
+      // width: clamp(20.188rem, 5.405rem + 65.7vw, 58.375rem);
       // overflow: hidden;
     }
 
@@ -17,23 +19,44 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      border-radius: 26px;
+      border-radius: clamp(0.625rem, 0.238rem + 1.72vw, 1.625rem);
     }
 
     &__title {
-      width: 488px;
+      max-width: 488px;
       margin-bottom: 24px;
 
     }
 
     &__content {
-      padding-top: 110px;
-      padding-bottom: 87px;
-      padding-left: 52px;
+      // padding-top: 110px;
+      padding-top: clamp(2.688rem, 1.067rem + 7.2vw, 6.875rem);
+      // padding-bottom: 87px;
+      padding-bottom: clamp(0.875rem, -0.891rem + 7.85vw, 5.438rem);
+      // padding-left: 52px;
+      padding-left: clamp(1.188rem, 0.389rem + 3.55vw, 3.25rem);
       //   padding-top: clamp(4.375rem, 1.078rem + 16.48vw, 13.75rem);
       //   padding-bottom: clamp(6.25rem, 0.668rem + 27.91vw, 22.125rem);
       //   max-width: 580px;
       //   z-index: 2;
+    }
+
+
+    &__btn {
+      width: clamp(8.125rem, 4.69rem + 15.27vw, 17rem);
+      height: clamp(2.125rem, 1.593rem + 2.37vw, 3.5rem);
+
+      @media screen and (width < 768px) {
+        &--desktop {
+          display: none;
+        }
+      }
+
+      @media screen and (width > 768px) {
+        &--mobile {
+          display: none;
+        }
+      }
     }
 
     &-arrow {
@@ -56,6 +79,10 @@
           border: 1px solid rgba(255, 169, 0, 0.45);
           background-color: #ffe8bc;
         }
+      }
+
+      @media screen and (width < 768px) {
+        display: none;
       }
 
       &--prev {
@@ -105,6 +132,17 @@
     }
 
     &__left {
-      width: 404px;
+      max-width: 404px;
+    }
+
+    @media screen and (width < 768px) {
+      &__inner {
+        flex-direction: column;
+      }
+
+      &__left {
+        max-width: none;
+        width: 100%;
+      }
     }
   }

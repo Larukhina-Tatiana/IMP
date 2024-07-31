@@ -18,6 +18,9 @@ const heroSlider = new Swiper(".hero-slider", {
   // autoplay: {
   //   delay: 1000,
   // },
+  // breakpoints: {
+  //   768: {},
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

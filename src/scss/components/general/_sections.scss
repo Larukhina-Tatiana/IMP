@@ -2,7 +2,8 @@
 
 .section-h1 {
   @extend %second-family-700;
-  font-size: 50px;
+  // font-size: 50px;
+  font-size: clamp(1.063rem, 0.264rem + 3.55vw, 3.125rem);
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--white);

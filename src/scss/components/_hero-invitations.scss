@@ -2,29 +2,42 @@
   width: 100%;
 
   &__item {
-    &:not(:last-child) {
-      margin-bottom: 23px;
+    max-width: 404px;
+    // min-width: 157px;
+
+    // max-width: clamp(9.813rem, 3.837rem + 26.56vw, 25.25rem);
+    @media screen and (width > 768px) {
+      &:not(:last-child) {
+        margin-bottom: 23px;
+      }
     }
   }
 
   &__link {
-    padding: 86px 10px 17px 25px;
-    @extend %second-family-700;
-    font-size: 28px;
+    padding-left: clamp(0.625rem, 0.262rem + 1.61vw, 1.563rem);
+    width: 100%;
+    font-weight: 700;
+    // font-size: 28px;
+    font-size: clamp(0.75rem, 0.363rem + 1.72vw, 1.75rem);
     line-height: 1.3;
-    border-radius: 26px;
-    min-height: 218px;
+    // border-radius: 26px;
+    border-radius: clamp(0.625rem, 0.238rem + 1.72vw, 1.625rem);
+    // max-height: 218px;
+    // height: auto;
+    height: clamp(5.313rem, 2.095rem + 14.3vw, 13.625rem);
   }
 
 
   &__link--cashback {
-    line-height: 1.3;
-    background: url(../images/hero/bg-sale.jpg) left center / 404px 218px no-repeat;
+    // padding-top: 34px;
+    padding-top: clamp(2.125rem, 0.238rem + 8.39vw, 7rem);
+    background: url(../images/hero/bg-sale.jpg) left center / contain no-repeat;
   }
 
   &__link--review {
-    padding-top: 123px;
-    background: url(../images/hero/bg-star.jpg) left center / 404px 218px no-repeat;
+    // padding-top: 123px;
+    padding-top: clamp(3rem, 1.185rem + 8.06vw, 7.688rem);
+    background: url(../images/hero/bg-star.jpg) left center / contain no-repeat;
   }
 
   &__text {
@@ -32,12 +45,22 @@
   }
 
   &__text--cashback {
-    width: 135px;
+    max-width: 135px;
     color: #3e5828;
   }
 
   &__text--review {
-    width: 326px;
+    max-width: 326px;
     color: var(--white);
+  }
+
+  @media screen and (width < 768px) {
+    display: flex;
+    gap: 13px;
+    justify-content: space-between;
+
+    &__item {
+      width: calc((100% - 13px) / 2);
+    }
   }
 }
