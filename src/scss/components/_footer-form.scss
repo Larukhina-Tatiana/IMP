@@ -1,0 +1,36 @@
+.footer-form {
+  color: var(--white);
+
+  &__title {
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__label {
+    width: 251px;
+    height: 46px;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background-color: $white;
+    border: transparent;
+  }
+
+  &____btn {
+    padding: 7px 14px;
+    border: 1px solid var(--white);
+    font-size: 18px;
+    height: 46px;
+  }
+}

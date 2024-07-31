@@ -8,7 +8,8 @@
 @import "./utils/container";
 
 // @import "./components/_mixins";
-
+@import "./components/general/sections";
+@import "./components/general/_btn";
 @import "./components/header";
 @import "./components/_catalog-menu";
 @import "./components/dropdown";
@@ -32,6 +33,9 @@
 
 
 @import "./components/footer";
+@import "./components/footer-form";
+@import "./components/general/checkbox";
+@import "./components/general/footer-render";
 
 
 
@@ -42,13 +46,13 @@
 
 
 @import "./components/general/logo";
-@import "./components/general/_btn";
+
 @import "./components/general/search";
 @import "./components/general/modal";
 @import "./components/general/favorite";
 @import "./components/general/user";
 @import "./components/general/go-login";
-@import "./components/general/sections";
+
 @import "./components/general/tooltip";
 @import "./components/general/nav";
 @import "./components/general/page";
