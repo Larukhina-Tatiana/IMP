@@ -1,7 +1,5 @@
   .hero {
-    // padding-top: 25px;
     padding-top: clamp(1.375rem, 1.302rem + 0.32vw, 1.563rem);
-    padding-bottom: 55px;
 
     &__inner {
       display: flex;
@@ -48,13 +46,13 @@
       width: clamp(8.125rem, 4.69rem + 15.27vw, 17rem);
       height: clamp(2.125rem, 1.593rem + 2.37vw, 3.5rem);
 
-      @media screen and (width < 768px) {
+      @media screen and (width < 768.99px) {
         &--desktop {
           display: none;
         }
       }
 
-      @media screen and (width > 768px) {
+      @media screen and (width > 768.99px) {
         &--mobile {
           display: none;
         }
@@ -83,7 +81,7 @@
         }
       }
 
-      @media screen and (width < 768px) {
+      @media screen and (width < 768.99px) {
         display: none;
       }
 
@@ -157,6 +155,7 @@
 
     &__left {
       max-width: 404px;
+      width: 100%;
     }
 
     @media screen and (width < 768.99px) {

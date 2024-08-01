@@ -1,9 +1,9 @@
 .section-freezing {
-  padding-top: 180px;
-  padding-bottom: 55px;
+  // padding-top: 180px;
+  padding-top: clamp(4.063rem, 1.28rem + 12.37vw, 11.25rem);
 
   &__inner-title {
-    margin-bottom: 30px;
+    margin-bottom: clamp(1.25rem, 1.008rem + 1.08vw, 1.875rem);
   }
 
   .section-catalog__link {
@@ -13,32 +13,26 @@
 
 
     &--child1 {
-      padding-right: 113px;
       background-image: -webkit-image-set(url(../images/freezing/image1@1x.png) 1x, url(../images/freezing/image1@2x.png) 2x);
     }
 
     &--child2 {
-      padding-right: 53px;
       background-image: -webkit-image-set(url(../images/freezing/image2@1x.png) 1x, url(../images/freezing/image2@2x.png) 2x);
     }
 
     &--child3 {
-      padding-right: 65px;
       background-image: -webkit-image-set(url(../images/freezing/image3@1x.png) 1x, url(../images/freezing/image3@2x.png) 2x);
     }
 
     &--child4 {
-      padding-right: 110px;
       background-image: -webkit-image-set(url(../images/freezing/image4@1x.png) 1x, url(../images/freezing/image4@2x.png) 2x);
     }
 
     &--child5 {
-      padding-right: 106px;
       background-image: -webkit-image-set(url(../images/freezing/image5@1x.png) 1x, url(../images/freezing/image5@2x.png) 2x);
     }
 
     &--child6 {
-      padding-right: 116px;
       background-image: -webkit-image-set(url(../images/freezing/image6@1x.png) 1x, url(../images/freezing/image6@2x.png) 2x);
     }
   }
