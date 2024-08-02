@@ -130,18 +130,27 @@ const heroSlider = new Swiper(".hero-slider", {
 
 if (document.querySelector(".stock-swiper")) {
   var swiperTvo = new Swiper(".stock-swiper", {
-    slidesPerView: 4,
+    slidesPerView: 1,
+    spaceBetween: 12,
     navigation: {
       nextEl: ".stock-swiper-prev",
       prevEl: ".stock-swiper-next",
     },
-    // breakpoints: {
-    //   661: {
-    //     pagination: {
-    //       type: "fraction",
-    //     },
-    //   },
-    // },
+    breakpoints: {
+      456: {
+        slidesPerView: 2,
+        // pagination: {
+        //   type: "fraction",
+        // },
+      },
+      690: {
+        slidesPerView: 3,
+      },
+      1288: {
+        slidesPerView: 4,
+        spaceBetween: 16,
+      },
+    },
     on: {
       init: function (swiperTvo) {},
     },
