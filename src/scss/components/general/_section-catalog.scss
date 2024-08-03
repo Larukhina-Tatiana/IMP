@@ -5,6 +5,9 @@
   display: flex;
   gap: 22px 24px;
 
+  &:last-child {
+    margin-bottom: 20px;
+  }
 
   &__inner-title {
     display: flex;
