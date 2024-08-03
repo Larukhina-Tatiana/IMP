@@ -1,5 +1,6 @@
 .section-stock {
-  padding-top: 128px;
+  // padding-top: 128px;
+  padding-top: clamp(4.063rem, 2.538rem + 6.77vw, 8rem);
 
   &__inner-title {
     margin-bottom: 8px;

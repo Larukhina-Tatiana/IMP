@@ -1,5 +1,6 @@
 .section-delivery {
-  padding-top: 100px;
+  // padding-top: 100px;
+  padding-top: clamp(4.063rem, 3.216rem + 3.76vw, 6.25rem);
 
   &__title {
     margin-bottom: 51px;
