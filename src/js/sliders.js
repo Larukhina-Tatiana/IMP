@@ -132,10 +132,12 @@ if (document.querySelector(".stock-swiper")) {
   var swiperTvo = new Swiper(".stock-swiper", {
     slidesPerView: 1,
     spaceBetween: 12,
-    navigation: {
-      nextEl: ".stock-swiper-prev",
-      prevEl: ".stock-swiper-next",
+    navigation: false,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
+
     breakpoints: {
       456: {
         slidesPerView: 2,
@@ -145,10 +147,18 @@ if (document.querySelector(".stock-swiper")) {
       },
       690: {
         slidesPerView: 3,
+        navigation: {
+          nextEl: ".stock-swiper-prev",
+          prevEl: ".stock-swiper-next",
+        },
       },
       1288: {
         slidesPerView: 4,
         spaceBetween: 16,
+        navigation: {
+          nextEl: ".stock-swiper-prev",
+          prevEl: ".stock-swiper-next",
+        },
       },
     },
     on: {

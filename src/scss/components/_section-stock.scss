@@ -2,7 +2,7 @@
   padding-top: 128px;
 
   &__inner-title {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
 }
 
@@ -18,12 +18,17 @@
 // }
 
 .stock-swiper__nav {
+
   margin-left: auto;
   padding: 9px 8px;
   color: $yellow;
   border: 1px solid #ffe7b9;
   border-radius: 58px;
   background: #fff8eb;
+
+  @media screen and (width < 768.99px) {
+    display: none;
+  }
 }
 
 .stock-swiper__btn {
@@ -53,4 +58,11 @@
   svg {
     transform: rotate(180deg);
   }
+}
+
+.stock-swiper-next.swiper-button-disabled,
+.stock-swiper-prev.swiper-button-disabled {
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: auto;
 }

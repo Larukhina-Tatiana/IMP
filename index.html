@@ -360,6 +360,7 @@
       </a>
     </li>
   </ul>
+  <div class="swiper-pagination catalog-stock-pagination"></div>
 </div>
   </div>
 
@@ -393,19 +394,29 @@
       </ul>
       <div class="section-delivery__map">
         <span class="section-delivery__map-title">Карта доставки</span>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20537.995706450427!2d36.08101196861289!3d49.95042274015015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41279f6796f52923%3A0xf1e491463c7ca03d!2z0J_QtdGB0L7Rh9C40L0sINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYyNDE4!5e0!3m2!1sru!2sua!4v1722325622468!5m2!1sru!2sua"
-          width="633" height="480" style="border:0; border-radius: 23px;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="section-delivery__thumb">
+          <iframe class="section-delivery__map-ifreme"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20537.995706450427!2d36.08101196861289!3d49.95042274015015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41279f6796f52923%3A0xf1e491463c7ca03d!2z0J_QtdGB0L7Rh9C40L0sINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYyNDE4!5e0!3m2!1sru!2sua!4v1722325622468!5m2!1sru!2sua"
+            style="border:0; border-radius: 23px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </div>
   </div>
 </section>
     <section class="promocode container">
   <div class="promocode__box">
-    <h2 class="section-h2">БЕСПЛАТНАЯ ДОСТАВКА<span class="promocode__text">первого заказа</span></h2>
-    <span class="section-h2">+</span>
-    <h2 class="section-h2">Скидка 10% <span class="promocode__text">на заказы кулинарии</span> </h2>
+    <div class="promocode__content">
+      <div class="promocode__content-left">
+        <h2 class="promocode__head section-h2">БЕСПЛАТНАЯ ДОСТАВКА</h2>
+        <span class="promocode__text">первого заказа</span>
+      </div>
+      <h2 class="promocode__head promocode__head-plus section-h2">+</h2>
+      <div class="promocode__content-right">
+        <h2 class="promocode__head section-h2">Скидка 10%</h2>
+        <span class="promocode__text">на заказы кулинарии</span>
+      </div>
+    </div>
     <button class="promocode__btn btn-transparent btn-transparent--bg-white">Получить промокод</button>
   </div>
 </section>
@@ -441,126 +452,11 @@
     
   </main>
 
-  <footer class="footer">
-  <!-- <a href="#page" data-scroll class="to-top">
-    <span class="to-top__text">Go to top</span>
-    <span class="to-top__icon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
-        <path fill="#fff" fill-rule="evenodd"
-          d="M4.293 15.707a1 1 0 0 1 0-1.414l7-7a1 1 0 0 1 1.414 0l7 7a1 1 0 0 1-1.414 1.414L12 9.414l-6.293 6.293a1 1 0 0 1-1.414 0Z"
-          clip-rule="evenodd" />
-      </svg>
-    </span>
-  </a> -->
-  <div class="container">
-    <div class="footer__inner">
-      <nav class="footer__nav" title="secondary navigation">
-        <div class="footer__nav-col">
-          <span class="footer__title">Ильинский онлайн</span>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__link" href="./cooking.html">Кулинария</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="./supermarket.html">Супермаркет</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Заморозка</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Другое</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__nav-col">
-          <span class="footer__title">Ильинский клуб</span>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__link" href="">Акции</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="">Доставка и оплата</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="">Программа лояльности</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="">Политика конфиденциальности</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="">Вакансии</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__communication footer-communication">
-          <ul class="footer-communication__list">
-            <li class="footer-communication__item">
-              <a class="footer-communication__link footer-communication__link--phone" href="tel:+38000490999">+38 (000)
-                49-09-99<span>Ежедневно c&nbsp;09:00 до&nbsp;21:00</span></a>
-            </li>
-            <li class="footer-communication__item">
-              <a class="footer-communication__link footer-communication__link--compas" href="">Адреса магазинов</a>
-            </li>
-            <li class="footer-communication__item">
-              <a class="footer-communication__link footer-communication__link--insta" href="">Следите за нами</a>
-            </li>
-            <li class="footer-communication__item">
-              <a class="footer-communication__link footer-communication__link--mail" href="">Обратная связь</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <form class="footer__form footer-form">
-        <p class="footer-form__title">
-          Подпишитесь на&nbsp;вкусные и&nbsp;полезые новости
-        </p>
-        <div class="footer-form__inner">
-          <label class="footer-form__label" for="e-mail">
-            <input class="footer-form__input" type="email" name="e-mail" id="e-mail" required>
-          </label>
-          <button class="footer-form____btn btn-transparent btn-transparent--bg-white"
-            type="submit">Подписаться</button>
-        </div>
-        <input class="checkbox" type="checkbox" name="policy" id="policy" checked="">
-        <label class="checkbox__label" for="policy">
-          <span class="checkbox__castom-icon"></span>
-          <span class="checkbox__text">Согласен с&nbsp;политикой конфиденциальности</span>
-        </label>
-      </form>
-    </div>
-    <div class="footer__bottom">
-      <p class="footer__copyright">
-        &copy;&nbsp;2022 Ильинский онлайн&nbsp;&mdash; доставкатоваров и&nbsp;продуктов на&nbsp;дом
-      </p>
-      <p class="footer__copyright">
-        Информация на&nbsp;сайте не&nbsp;является публичной офертой
-      </p>
-      <ul class="footer-render">
-  <li class="footer-render__item">
-    <a class="footer-render__link" href="">
-      <img src="./images/icons/visa.svg" alt="иконка карты виза" width="37">
-    </a>
-  </li>
-  <li class="footer-render__item">
-    <a class="footer-render__link" href="">
-      <img src="./images/icons/mastercard.svg" alt="иконка карты мастеркард" width="117">
-    </a>
-  </li>
-  <li class="footer-render__item">
-    <a class="footer-render__link" href="">
-      <img src="./images/icons/googlePay.svg" alt="иконка карты мастеркард" width="44">
-    </a>
-  </li>
-</ul>
-    </div>
-  </div>
-</footer>
+  
 
-<div class="overlay"></div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
   <!-- <script src="libs/slick/slick.min.js"></script> -->
-  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="libs/swiper/swiper-bundle.min.js"></script> -->
   <!--<script src="libs/smoothscroll/smooth-scroll.min.js"></script> -->
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <!-- <script src="./src/js/main.js"></script> -->
@@ -570,6 +466,7 @@
   <script src="./src/js/progress.js"></script>
   <script src="./src/js/to-top.js"></script> -->
 
+  <script src="js/main.min.js"></script>
 
   <script src="./src/js/burgers.js"></script>
   <script src="./src/js/script.js"></script>
@@ -579,7 +476,6 @@
 
 
 
-  <script src="js/main.min.js"></script>
   <script src="./src/js/my-mixitup.js"></script>
 
 </body>

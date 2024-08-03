@@ -40,4 +40,36 @@
     font-size: 20px;
     color: var(--red);
   }
+
+  &__thumb {
+    // width: 633px; 
+    width: clamp(20.375rem, 12.948rem + 33.01vw, 39.563rem);
+    //  height: 480px;
+    height: clamp(15.5rem, 9.887rem + 24.95vw, 30rem);
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+  }
+
+  &__map-ifreme {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (width < 1024.99px) {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__list {
+      max-width: none;
+    }
+
+    &__thumb {
+      width: 100%;
+    }
+  }
 }

@@ -10,7 +10,8 @@
   &__group {
     position: relative;
     display: flex;
-    gap: 18px;
+    // gap: 18px;
+    gap: clamp(0.5rem, 0.258rem + 1.08vw, 1.125rem);
     flex-direction: row-reverse;
 
     // Для современных браузуров
