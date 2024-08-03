@@ -4,12 +4,14 @@
   &__title {
     margin-bottom: 9px;
     font-weight: 600;
-    font-size: 18px;
+    // font-size: 18px;
+    font-size: clamp(1rem, 0.952rem + 0.22vw, 1.125rem);
     letter-spacing: 0.03em;
   }
 
   &__inner {
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
   }
 
@@ -27,10 +29,29 @@
     border: transparent;
   }
 
-  &____btn {
-    padding: 7px 14px;
+  &__btn {
+    width: 141px;
     border: 1px solid var(--white);
     font-size: 18px;
     height: 46px;
   }
+
+  @media screen and (width < 646.99px) {
+    &__label {
+      width: 282px;
+      height: 51px;
+    }
+
+    &__input {
+      border-radius: 18px;
+    }
+
+    &__btn {
+      width: 158px;
+      height: 51px;
+      margin-bottom: 6px;
+
+    }
+  }
+
 }

@@ -28,7 +28,7 @@
   &__inner {
     padding: 33px 24px 24px 62px;
     padding-top: clamp(1.438rem, 1.196rem + 1.08vw, 2.063rem);
-    padding-left: clamp(0.375rem, -0.98rem + 6.02vw, 3.875rem);
+    padding-left: clamp(0.375rem, -0.665rem + 4.62vw, 3.063rem);
     display: flex;
     // gap: 142px;
     gap: clamp(0.625rem, -31.134rem + 49.62vw, 8.875rem);
@@ -73,7 +73,7 @@
   &__btn {
     margin-top: 13px;
     margin-left: auto;
-    width: clamp(11.188rem, 8.938rem + 10vw, 17rem);
+    width: clamp(11.188rem, 9.76rem + 6.34vw, 14.875rem);
     height: clamp(1.938rem, 1.333rem + 2.69vw, 3.5rem);
     // width: 238px;
     // width: clamp(11.188rem, 8.792rem + 10.65vw, 17.375rem);

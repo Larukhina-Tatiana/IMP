@@ -1,5 +1,6 @@
 .footer {
-  padding-top: 38px;
+  // padding-top: 38px;
+  padding-top: clamp(1.688rem, 1.421rem + 1.18vw, 2.375rem);
   padding-bottom: 18px;
   background-color: $gardsman-red;
   color: $white;
@@ -8,6 +9,7 @@
     margin-bottom: 79px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 10px;
     font-size: 14px;
     line-height: 1.54;
@@ -15,7 +17,8 @@
 
   &__nav {
     display: flex;
-    gap: 66px;
+    // gap: 66px;
+    gap: clamp(1.563rem, -13.003rem + 21.24vw, 4.125rem);
   }
 
   &__title {
@@ -33,7 +36,43 @@
     line-height: 1.609;
   }
 
+  @media screen and (width < 1097.99px) {
 
+    &__inner {
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 18px;
+    }
+
+    &__nav {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+
+    &__bottom {
+      flex-wrap: wrap-reverse;
+      gap: 16px;
+    }
+  }
+
+  @media screen and (width < 646.99px) {
+
+    &__inner {
+      justify-content: flex-start;
+    }
+
+    &__nav {
+      flex-wrap: wrap-reverse;
+      justify-content: space-around;
+    }
+  }
+
+  @media screen and (width < 425.99px) {
+    &__nav {
+
+      justify-content: space-between;
+    }
+  }
 
 }
 
@@ -66,6 +105,17 @@
 
     &--mail {
       background: url(../images/icons/mail.svg) left center / 15px 15px no-repeat;
+    }
+  }
+
+  @media screen and (width < 425.99px) {
+    &__link {
+      font-size: 16px;
+
+      &--phone {
+        margin-bottom: 16px;
+        font-size: 22px;
+      }
     }
   }
 }
