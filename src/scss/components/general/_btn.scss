@@ -72,6 +72,16 @@
   // }
 }
 
+.btn-cart {
+  border: 1px solid var(--red);
+  border-radius: 60px;
+  width: 146px;
+  height: 42px;
+  @extend %second-family-600;
+  color: var(--white);
+  background-color: $red;
+}
+
 .btn-transparent {
   // padding: 14px 28px;
   display: flex;

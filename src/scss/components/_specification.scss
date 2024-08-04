@@ -1,0 +1,16 @@
+.specification {
+  &__chars {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+
+  &__term {
+    display: inline-block;
+  }
+
+  &__descr {
+    display: inline;
+    line-height: 1.4;
+  }
+}

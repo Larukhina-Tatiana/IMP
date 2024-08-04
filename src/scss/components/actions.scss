@@ -1,0 +1,21 @@
+.actions {
+  display: flex;
+  align-items: center;
+
+
+  &__price {
+    margin-right: 22px;
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  &__btn {
+    margin-right: 10px;
+  }
+
+  &__favorite.favorite {
+    width: 44px;
+    height: 42px;
+    border-radius: 100%;
+  }
+}
