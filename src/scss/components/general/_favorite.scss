@@ -19,3 +19,18 @@
     }
   }
 }
+
+.card-favorite {
+  width: 22px;
+  height: 21px;
+  background-image: url('../images/icons/card-favorite.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  @include transition ($transition-property: background-image);
+}
+
+.card__favorite--active {
+  background-image: url('../images/icons/card-favorite-active.svg');
+}

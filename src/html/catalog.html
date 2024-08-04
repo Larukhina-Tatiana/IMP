@@ -1,25 +1,196 @@
 <section class="catalog">
   <div class="container">
-    <article class="card">
-      <a class="card__img-link" href="./сard-product.html">
-        <div class="card__img-cover">
-          <img class="card__img" src="./images/card-product/nozh-snegir1@1x.jpg"
-            alt="nozh-snegir-95H18-Nakladki-karelskaya-bereza">
+    <h3 class="catalog_title section-h3">Хлеб и ВЫПЕЧКА</h3>
+    <div class="catalog__view">
+      <select class="filter-style select-item">
+        <option>По полулярности</option>
+        <option>От дешевых к дорогим</option>
+        <option>3</option>
+      </select>
+    </div>
+    <div class="catalog__inner">
+      <aside class="catalog__aside aside"></aside>
+
+
+      <div class="catalog-content">
+        <div class="catalog-subcategory-wrap">
+          <div class="catalog-subcategory">
+            <div class="catalog-subcategory-list">
+              <span class="custom-tag custom-tag--white  custom-tag--white-active ">
+                <a class="custom-tag__text catalog-subcategory-list__link"
+                  href="/catalog/322-zamorozheni-produkti">Хлеб</a>
+              </span>
+              <span class="custom-tag custom-tag--white">
+                <a class="custom-tag__text catalog-subcategory-list__link"
+                  href="/catalog/356-vareniki-pel-meni-mlintsi">Выпечка</a>
+              </span>
+              <span class="custom-tag custom-tag--white">
+                <a class="custom-tag__text catalog-subcategory-list__link" href="/catalog/334-morozivo">Баранки и
+                  сухарики</a>
+              </span>
+              <span class="custom-tag custom-tag--white">
+                <a class="custom-tag__text catalog-subcategory-list__link"
+                  href="/catalog/457-napivfabrikati">Вегетарианцам</a>
+              </span>
+              <span class="custom-tag custom-tag--white">
+                <a class="custom-tag__text catalog-subcategory-list__link"
+                  href="/catalog/452-ovochi-ta-frukti-svizhozamorozheni">Безглютеновая продукция </a>
+              </span>
+              <span class="custom-tag custom-tag--white">
+                <a class="custom-tag__text catalog-subcategory-list__link"
+                  href="/catalog/430-tisto-vipichka-pitsa">Тісто,
+                  Безглютеновая продукция</a>
+              </span>
+            </div>
+          </div>
+
+          <button class="see-more-btn" show-more-btn="">
+            <span>Очистить фильтр</span>
+            <svg width="10" height="6" aria-hidden="true">
+              <use xlink:href="/images/sprites/sprite.svg#arrow-down"></use>
+            </svg>
+          </button>
+
         </div>
-        <button class="favorite"></button>
-        <div class="card__body">
-          <span class="card__availability">В наличии 4 шт</span>
-          <span class="price">27,00 ₴/шт</span>
-          <h5 class="title section-h5">
-            Гранола Мюсли Bionova ягодные запечённые хрустящие, 400г
-          </h5>
-        </div>
-        <div class="card__footer">
-          <span class="products-card__price">27,00 грн.</span>
-          <span class="products-card__price-old">30,00 грн.</span>
-          <button class="card__btn btn-cart">В корзину</button>
-        </div>
-      </a>
-    </article>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <article class="card">
+              <button class="card__favorite card-favorite"></button>
+              <a class="card__link" href="./page-product.html">
+                <div class="card__img-cover">
+                  <picture>
+                    <source type="image/avif" srcset="./images/card/image1@1x.avif 1x, ./images/card/image1@2x.avif 2x">
+                    <source type="image/webp" srcset="./images/card/image1@1x.webp 1x, ./images/card/image1@2x.webp 2x">
+                    <img class="card__img" src="./images/card/image1@1x.jpg" loading="lazy" decoding="async"
+                      alt='Хлеб "Домашний" кирпичек, 680г'>
+                  </picture>
+                </div>
+                <div class="card__box">
+                  <div class="card__body">
+                    <div class="card__body-inner">
+                      <span class="card__span card__availability">В наличии 4 шт</span>
+                      <span class="card__span price">27,00 грн</span>
+                    </div>
+                    <h5 class="title section-h5">
+                      Хлеб "Домашний" кирпичек, 680г
+                    </h5>
+                  </div>
+                </div>
+              </a>
+              <div class="card__footer">
+                <div class="card__footer-inner">
+                  <span class="card__price card__price--red">299,90 грн</span>
+                  <span class="card__span card__price-old">409,00 грн</span>
+                </div>
+                <button class=" card__btn card__btn--cart btn-cart">В корзину</button>
+                <button class="card__btn card__btn--tomorrow btn-cart">На завтра</button>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="card">
+              <button class="card__favorite card-favorite"></button>
+              <a class="card__link" href="./page-product.html">
+                <div class="card__img-cover">
+                  <picture>
+                    <source type="image/avif" srcset="./images/card/image2@1x.avif 1x, ./images/card/image2@2x.avif 2x">
+                    <source type="image/webp" srcset="./images/card/image2@1x.webp 1x, ./images/card/image2@2x.webp 2x">
+                    <img class="card__img" src="./images/card/image2@1x.jpg" loading="lazy" decoding="async"
+                      alt="Батон нарезной с кунжутом, 480г">
+                  </picture>
+                </div>
+                <div class="card__box">
+                  <div class="card__body">
+                    <div class="card__body-inner">
+                      <span class="card__span card__availability">В наличии 23 шт</span>
+                      <span class="card__span price">27,00 грн</span>
+                    </div>
+                    <h5 class="title section-h5">
+                      Батон нарезной с кунжутом, 480г
+                    </h5>
+                  </div>
+                </div>
+              </a>
+              <div class="card__footer">
+                <div class="card__footer-inner">
+                  <span class="card__price">27,00 грн</span>
+                  <span class="card__span card__price-old"></span>
+                </div>
+                <button class=" card__btn card__btn--cart btn-cart">В корзину</button>
+                <button class="card__btn card__btn--tomorrow btn-cart">На завтра</button>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="card">
+              <button class="card__favorite card-favorite"></button>
+              <a class="card__link" href="./page-product.html">
+                <div class="card__img-cover">
+                  <picture>
+                    <source type="image/avif" srcset="./images/card/image3@1x.avif 1x, ./images/card/image3@2x.avif 2x">
+                    <source type="image/webp" srcset="./images/card/image3@1x.webp 1x, ./images/card/image3@2x.webp 2x">
+                    <img class="card__img" src="./images/card/image3@1x.jpg" loading="lazy" decoding="async"
+                      alt='Хлеб "Крестьянский" бездрожжевой, 500г'>
+                  </picture>
+                </div>
+                <div class="card__box">
+                  <div class="card__body">
+                    <div class="card__body-inner">
+                      <span class="card__span card__availability">В наличии 23 шт</span>
+                      <span class="card__span price">27,00 грн</span>
+                    </div>
+                    <h5 class="title section-h5">
+                      Гранола Мюсли Bionova ягодные запечённые хрустящие, 400г
+                    </h5>
+                  </div>
+                </div>
+              </a>
+              <div class="card__footer">
+                <div class="card__footer-inner">
+                  <span class="card__price card__price--red">27,00 грн</span>
+                  <span class="card__span card__price-old">30,00 грн</span>
+                </div>
+                <button class=" card__btn card__btn--cart btn-cart">В корзину</button>
+                <button class="card__btn card__btn--tomorrow btn-cart">На завтра</button>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="card card--tomorrow">
+              <button class="card__favorite card-favorite"></button>
+              <a class="card__link" href="./page-product.html">
+                <div class="card__img-cover">
+                  <picture>
+                    <source type="image/avif" srcset="./images/card/image4@1x.avif 1x, ./images/card/image4@2x.avif 2x">
+                    <source type="image/webp" srcset="./images/card/image4@1x.webp 1x, ./images/card/image4@2x.webp 2x">
+                    <img class="card__img" src="./images/card/image4@1x.jpg" loading="lazy" decoding="async"
+                      alt='Хлеб "Крестьянский" бездрожжевой, 500г'>
+                  </picture>
+                </div>
+                <div class="card__box">
+                  <div class="card__body">
+                    <div class="card__body-inner">
+                      <span class="card__span card__availability">Появится завтра</span>
+                      <span class="card__span price">27,00 грн</span>
+                    </div>
+                    <h5 class="title section-h5">
+                      Хлеб "Крестьянский" бездрожжевой, 500г
+                    </h5>
+                  </div>
+                </div>
+              </a>
+              <div class="card__footer">
+                <div class="card__footer-inner">
+                  <span class="card__price card__price--red">27,00 грн</span>
+                  <span class="card__span card__price-old">30,00 грн</span>
+                </div>
+                <button class=" card__btn card__btn--cart btn-cart">В корзину</button>
+                <button class="card__btn card__btn--tomorrow btn-cart">На завтра</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
