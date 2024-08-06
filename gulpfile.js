@@ -43,6 +43,7 @@ function htmlInclude() {
     "./src/html/index.html",
     "./src/html/page-product.html",
     "./src/html/page-catalog.html",
+    "./src/html/select.html",
   ])
     .pipe(
       fileinclude({
@@ -155,13 +156,13 @@ function scripts() {
       "node_modules/mixitup/dist/mixitup.js",
       // "libs/mixitup3/mixitup.min.js",
       // "libs/smoothscroll/smooth-scroll.min.js",
-      // "libs/choices/choices.min.js",
+      "libs/choices/choices.min.js",
       // "libs/slick/slick.min.js",
       // "node_modules/nouislider/dist/nouislider.js",
       // "node_modules/simplelightbox/dist/simple-lightbox.min.js",
       // "node_modules/siema/dist/siema.min.js",
       // "node_modules/aos/dist/aos.js",
-      // "js/jquery.formstyler.min.js",
+      // "libs/formstyler/jquery.formstyler.min.js",
       // "js/ion.rangeSlider.min.js",
       // "js/jquery.rateyo.js",
       // "./src/js/burger.js",

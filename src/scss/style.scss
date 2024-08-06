@@ -2,6 +2,8 @@
 @import "././libs/swiper/swiper-bundle.min";
 // @import "././libs/slick/slick";
 // @import "././libs/choices/choices.min";
+@import "././libs/formstyler/jquery.formstyler";
+@import "././libs/formstyler/jquery.formstyler.theme";
 @import "./utils/vars";
 @import "./utils/global";
 @import "./utils/fonts";
@@ -12,7 +14,7 @@
 @import "./components/general/_btn";
 @import "./components/header";
 @import "./components/_catalog-menu";
-@import "./components/dropdown";
+@import "./components/dropdown-menu";
 @import "./components/_receiving";
 @import "./components/general/favorite";
 
@@ -48,6 +50,7 @@
 
 @import "./components/catalog";
 @import "./components/general/card";
+@import "./components/general/tabs-buttons";
 
 
 

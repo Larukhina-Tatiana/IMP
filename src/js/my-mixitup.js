@@ -5,3 +5,10 @@ if (document.querySelector(".tabs-content")) {
     },
   });
 }
+if (document.querySelector(".catalog__list")) {
+  var mixer = mixitup(".catalog__list", {
+    load: {
+      filter: ".all",
+    },
+  });
+}

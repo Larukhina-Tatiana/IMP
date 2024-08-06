@@ -1,0 +1,41 @@
+  .tabs-buttons__list {
+    display: flex;
+  }
+
+  .tabs-buttons {
+    border-radius: 16px;
+    background-color: var(--serenade);
+    border: 1px solid rgba(255, 169, 0, 0.45);
+    @include transition ($transition-property: (border-color, border, color));
+
+    &--receiving {
+      padding: 16px 22px;
+      font-weight: 700;
+      // width: 221px;
+      // height: 87px;
+      // font-size: 20px;
+      color: var(--cod-gray);
+      text-align: left;
+
+      &__text {
+        display: block;
+        margin-top: 6px;
+        @extend %second-family-600;
+        font-size: 16px;
+      }
+    }
+
+    &--catalog {
+      padding: 8px 24px;
+      font-weight: 600;
+      font-size: 16px;
+      text-align: center;
+      // color: var(--text);
+    }
+  }
+
+  .mixitup-control-active {
+    border: 1px solid var(--yellow);
+    background: var(--yellow);
+    color: var(--white);
+  }

@@ -25,12 +25,12 @@ window.addEventListener("click", function (event) {
 // });
 
 document.addEventListener("DOMContentLoaded", () => {
-  // 1 по клику на боковое меню открывать dropdown
-  // 2 по клику (повторному) на эти пункты - закрывать dropdown
-  // 3 по клику на любое место сайта, кроме меню - закрывать dropdown
+  // 1 по клику на боковое меню открывать dropdown-menu
+  // 2 по клику (повторному) на эти пункты - закрывать dropdown-menu
+  // 3 по клику на любое место сайта, кроме меню - закрывать dropdown-menu
 
   const catalogBtns = document.querySelectorAll(".catalog-menu__btn-secondary");
-  const drops = document.querySelectorAll(".dropdown");
+  const drops = document.querySelectorAll(".dropdown-menu");
   const ground = document.querySelectorAll(".catalog-menu__ground");
   const mainBtn = document.querySelectorAll(".btn-main");
   const activeBtn = document.querySelectorAll("[data-menu-active]");
@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
   catalogBtns.forEach((el) => {
     el.addEventListener("click", (e) => {
       let currentBtn = e.currentTarget;
-      let dropdown = currentBtn
+      let dropdownMenu = currentBtn
         .closest(".catalog-menu__item")
-        .querySelector(".dropdown");
+        .querySelector(".dropdown-menu");
 
       catalogBtns.forEach((el) => {
         if (el !== currentBtn) {
@@ -48,11 +48,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
       drops.forEach((el) => {
-        if (el !== dropdown) {
-          el.classList.remove("dropdown--active");
+        if (el !== dropdownMenu) {
+          el.classList.remove("dropdown-menu--active");
         }
       });
-      dropdown.classList.toggle("dropdown--active");
+      dropdownMenu.classList.toggle("dropdown-menu--active");
       currentBtn.classList.toggle("catalog-menu__btn-secondary--active");
     });
   });
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       drops.forEach((el) => {
-        el.classList.remove("dropdown--active");
+        el.classList.remove("dropdown-menu--active");
       });
       ground.forEach((el) => {
         el.classList.remove("catalog-menu__ground--open");
