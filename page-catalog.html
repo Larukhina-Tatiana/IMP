@@ -469,24 +469,227 @@
   <main>
     <section class="catalog">
   <div class="container">
-    <h3 class="catalog__title section-h3">Хлеб и ВЫПЕЧКА</h3>
-
+    <div class="catalog__head">
+      <h3 class="catalog__title section-h3">Хлеб и ВЫПЕЧКА</h3>
+      <div class="catalog__view">
+        <select class="filter-style select-item" aria-label="Сортировка">
+          <option value="/catalog/322-zamorozheni-produkti" data-sort="" selected="selected">По полулярности</option>
+          <option value="/catalog/322-zamorozheni-produkti?sort=price" data-sort="price">Дешевле</option>
+          <option value="/catalog/322-zamorozheni-produkti?sort=price" data-sort="price">Дороже</option>
+          <option>По названию</option>
+        </select>
+      </div>
+    </div>
 
     <div class="catalog__inner">
-
-      <aside class="catalog__aside aside"></aside>
+      <aside class="catalog__aside aside">
+        <h5 class="aside__title">Ососбенности</h5>
+        <form class="aside__form">
+          <ul class="aside__form-list">
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                <input class="filter-style" type="checkbox">
+                Со скидкой
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                <input class="filter-style" type="checkbox">
+                Доставка сегодня
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                <input class="filter-style" type="checkbox">
+                Продукция от «Ильинского»
+              </label>
+            </li>
+          </ul>
+          <ul class="aside__form-list">
+            <li class="aside__form-item">
+              <p class="aside__form-title title-form aside__btn">Супермаркет</p>
+              <label class="aside__form-content-label">
+                Вода и напитки
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Молоко, масло и яйца
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Снэки и сухофрукты
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Кофе, чай и сладости
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Макароны и крупы
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Хлеб и выпечка
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Масло, соусы и специи
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Консервы и соления
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+          </ul>
+          <ul class="aside__form-list">
+            <li class="aside__form-item">
+              <p class="aside__form-title title-form aside__btn">Кулинария</p>
+              <label class="aside__form-content-label">
+                Выпечка
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Пиццы
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Гриль-меню
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Свежее мясо
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Салаты
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Супы
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Горячие блюда
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Десерты
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Консервы и соления
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+          </ul>
+          <ul class="aside__form-list">
+            <li class="aside__form-item">
+              <p class="aside__form-title title-form aside__btn">Заморозка</p>
+              <label class="aside__form-content-label">
+                Пельмени, вареники и равиоли
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Хинкали и манты
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Гриль-меню
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Полуфабрикаты
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Замороженные овощи
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Рыба и морепродукты
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Мясо
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+          </ul>
+          <ul class="aside__form-list">
+            <li class="aside__form-item">
+              <p class="aside__form-title title-form aside__btn">Другое</p>
+              <label class="aside__form-content-label">
+                Красота и гигиена
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Стирка и уборка
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Полезные мелочи
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+            <li class="aside__form-item">
+              <label class="aside__form-content-label">
+                Бытовая техника
+                <input class="filter-style" type="checkbox">
+              </label>
+            </li>
+          </ul>
+        </form>
+      </aside>
 
 
       <div class="catalog__content">
-        <div class="catalog__view">
-          <!-- <select class="filter-select catalog__select-item" aria-label="Сортировка"> -->
-          <select class="filter-style select-item" aria-label="Сортировка">
-            <option value="/catalog/322-zamorozheni-produkti" data-sort="" selected="selected">По полулярности</option>
-            <option value="/catalog/322-zamorozheni-produkti?sort=price" data-sort="price">Дешевле</option>
-            <option value="/catalog/322-zamorozheni-produkti?sort=price" data-sort="price">Дороже</option>
-            <option>По названию</option>
-          </select>
-        </div>
         <ul class="tabs-buttons__list">
           <li class="tabs-buttons__item">
             <button class="tabs-buttons tabs-buttons--catalog" data-filter=".all">Всё</button>
@@ -998,7 +1201,7 @@
   <script src="./src/js/to-top.js"></script> -->
 
   <script src="js/main.min.js"></script>
-  <script src=" js/jquery.formstyler.min.js"></script>
+  <!-- <script src=" js/jquery.formstyler.min.js"></script> -->
 
   <script src="./src/js/burgers.js"></script>
   <script src="./src/js/script.js"></script>
