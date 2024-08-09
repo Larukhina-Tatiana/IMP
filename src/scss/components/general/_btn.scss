@@ -74,7 +74,8 @@
 
 .btn-cart {
   border: 1px solid var(--red);
-  border-radius: 60px;
+  // border-radius: 60px;
+  border-radius: clamp(0.563rem, -0.671rem + 5.48vw, 3.75rem);
   // width: 146px;
   // height: 42px;
   @extend %second-family-600;

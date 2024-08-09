@@ -1,0 +1,36 @@
+.swiper-button {
+  width: 29px;
+  height: 29px;
+  border-radius: 100%;
+  background-color: transparent;
+  @include transition ($transition-property: (background-color));
+
+  svg {
+    width: 7px;
+    height: 12px;
+    border-radius: 100%;
+    @include transition ($transition-property: (color, background-color));
+
+  }
+
+  &:hover {
+    background-color: $yellow;
+
+    &:hover svg {
+      color: $white;
+    }
+  }
+}
+
+.swiper-prev {
+  svg {
+    transform: rotate(180deg);
+  }
+}
+
+.swiper-next.swiper-button-disabled,
+.swiper-prev.swiper-button-disabled {
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: auto;
+}

@@ -1,10 +1,10 @@
 @import "./modern-normalize.min";
+@import "./utils/vars";
 @import "././libs/swiper/swiper-bundle.min";
 // @import "././libs/slick/slick";
 // @import "././libs/choices/choices.min";
 @import "././libs/formstyler/jquery.formstyler";
 @import "././libs/formstyler/jquery.formstyler.theme";
-@import "./utils/vars";
 @import "./utils/global";
 @import "./utils/fonts";
 @import "./utils/container";
@@ -21,7 +21,14 @@
 
 @import "./components/_hero";
 @import "./components/general/swiper-pagination";
+@import "./components/general/swiper-nav";
+@import "./components/general/swiper-button";
 @import "./components/hero-invitations";
+
+@import "./components/discounts";
+@import "./components/catalog-stock";
+@import "./components/general/sale";
+@import "./components/general/section-slider";
 
 
 @import "./components/section-supermarket";
@@ -29,7 +36,7 @@
 @import "./components/section-freezing";
 @import "./components/section-other";
 @import "./components/section-stock";
-@import "./components/catalog-stock";
+// @import "./components/catalog-stock";
 
 
 @import "./components/section-delivery";

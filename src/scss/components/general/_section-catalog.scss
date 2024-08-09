@@ -9,12 +9,7 @@
     margin-bottom: 20px;
   }
 
-  &__inner-title {
-    display: flex;
-    align-items: center;
-    // gap: 29px;
-    gap: clamp(0.813rem, 0.571rem + 1.08vw, 1.438rem);
-  }
+  &__inner-title {}
 
   &__link {
     position: relative;

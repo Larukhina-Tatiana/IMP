@@ -1,10 +1,5 @@
 .section-cooking {
   // padding-top: 180px;
-  padding-top: clamp(4.063rem, 1.28rem + 12.37vw, 11.25rem);
-
-  &__inner-title {
-    margin-bottom: 20px;
-  }
 
   .section-catalog__link {
     color: $old-copper;

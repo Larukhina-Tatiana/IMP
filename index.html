@@ -17,6 +17,7 @@
 
   
   <main>
+
     <section class="hero">
   <div class="container">
     <h1 class="visually-hidden hero__title section__h1">Интернет-магазин Ильинский</h1>
@@ -112,9 +113,322 @@
     </div>
   </div>
 </section>
-    <section class="section-supermarket">
+    <section class="discounts">
   <div class="container">
-    <div class="section-supermarket__inner-title section-catalog__inner-title">
+    <div class="discounts__head section-head">
+      <h3 class="section-h3">СКИДКИ</h3>
+      <a class="see-all" href="">
+        Смотреть все
+        <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon see all">
+          <use href="./images/sprite/sprite.svg#arrow-next"></use>
+        </svg>
+      </a>
+      <div class="swiper-nav">
+        <button class="swiper-button swiper-prev" aria-label="Предыдущий слайд">
+          <svg class="catalog-menu__svg" aria-label="icon prev">
+            <use href="./images/sprite/sprite.svg#arrow-next"></use>
+          </svg>
+        </button>
+        <button class="swiper-button swiper-next" aria-label="Следующий слайд">
+          <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+            <use href="./images/sprite/sprite.svg#arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="common-swiper swiper">
+  <ul class="section-slider swiper-wrapper">
+    <li class="section-slider__item swiper-slide">
+      <article class="card card--sale">
+        <div class="sale">10%</div>
+        <button class="card__favorite card-favorite"></button>
+        <a class="card__link" href="./page-product.html">
+          <div class="card__img-cover">
+            <picture>
+              <source type="image/avif" srcset="./images/card/image1@1x.avif 1x, ./images/card/image1@2x.avif 2x">
+              <source type="image/webp" srcset="./images/card/image1@1x.webp 1x, ./images/card/image1@2x.webp 2x">
+              <img class="card__img" src="./images/card/image1@1x.jpg" loading="lazy" decoding="async"
+                alt='Хлеб "Домашний" кирпичек, 680г'>
+            </picture>
+          </div>
+          <div class="card__box">
+            <div class="card__body">
+              <div class="card__body-inner">
+                <span class="card__span card__availability">В наличии 10 шт</span>
+                <span class="card__span price">27,00 грн</span>
+              </div>
+              <h5 class="title section-h5">
+                Хлеб "Домашний" кирпичик, 680г
+              </h5>
+            </div>
+          </div>
+        </a>
+        <div class="card__footer">
+          <div class="card__footer-inner">
+            <span class="card__price card__price--red">27,00 грн</span>
+            <span class="card__span card__price-old">29,70 грн</span>
+          </div>
+          <button class=" card__btn card__btn--cart btn-cart">В корзину</button>
+          <button class="card__btn card__btn--tomorrow btn-cart">На завтра</button>
+        </div>
+      </article>
+    </li>
+    <li class="section-slider__item swiper-slide">
+      <article class="card card--sale">
+        <button class="card__favorite card-favorite"></button>
+        <a class="card__link" href="./page-product.html">
+          <div class="card__img-cover">
+            <picture>
+              <source type="image/avif" srcset="./images/slider/image1@1x.avif 1x, ./images/slider/image1@2x.avif 2x">
+              <source type="image/webp" srcset="./images/slider/image1@1x.webp 1x, ./images/slider/image1@2x.webp 2x">
+              <img class="card__img" src="./images/slider/image1@1x.jpg" loading="lazy" decoding="async"
+                alt='Сок Ideas тыквенно-апельсиновый, 1л'>
+            </picture>
+          </div>
+          <div class="card__box">
+            <div class="card__body">
+              <div class="card__body-inner">
+                <span class="card__span card__availability">В наличии 4 шт</span>
+                <span class="card__span price">35,00 грн</span>
+              </div>
+              <h5 class="title section-h5">
+                Гранола Мюсли Bionova ягодные запечённые хрустящие, 400г
+
+              </h5>
+            </div>
+          </div>
+        </a>
+        <div class="card__footer">
+          <div class="card__footer-inner">
+            <span class="card__price">35,90 грн</span>
+            <span class="card__span card__price-old"></span>
+          </div>
+          <button class=" card__btn card__btn--cart btn-cart">В корзину</button>
+          <button class="card__btn card__btn--tomorrow btn-cart">На завтра</button>
+        </div>
+      </article>
+    </li>
+    <li class="section-slider__item swiper-slide">
+      <article class="card card--tomorrow">
+        <div class="sale">15%</div>
+        <button class="card__favorite card-favorite"></button>
+        <a class="card__link" href="./page-product.html">
+          <div class="card__img-cover">
+            <picture>
+              <source type="image/avif" srcset="./images/slider/image2@1x.avif 1x, ./images/slider/image2@2x.avif 2x">
+              <source type="image/webp" srcset="./images/slider/image2@1x.webp 1x, ./images/slider/image2@2x.webp 2x">
+              <img class="card__img" src="./images/slider/image2@1x.jpg" loading="lazy" decoding="async"
+                alt='Сок Ideas тыквенно-апельсиновый, 1л'>
+            </picture>
+          </div>
+          <div class="card__box">
+            <div class="card__body">
+              <div class="card__body-inner">
+                <span class="card__span card__availability">Появится завтра</span>
+                <span class="card__span price">47,00 грн</span>
+              </div>
+              <h5 class="title section-h5">
+                Сок Ideas тыквенно-апельсиновый, 1л
+              </h5>
+            </div>
+          </div>
+        </a>
+        <div class="card__footer">
+          <div class="card__footer-inner">
+            <span class="card__price card__price--red">47,00 грн</span>
+            <span class="card__span card__price-old">54,05 грн</span>
+          </div>
+          <button class=" card__btn card__btn--cart btn-cart">В корзину</button>
+          <button class="card__btn card__btn--tomorrow btn-cart">На завтра</button>
+        </div>
+      </article>
+    </li>
+    <li class="section-slider__item swiper-slide">
+      <article class="card card--none">
+        <div class="sale">10%</div>
+        <button class="card__favorite card-favorite"></button>
+        <a class="card__link" href="./page-product.html">
+          <div class="card__img-cover">
+            <picture>
+              <source type="image/avif" srcset="./images/card/image4@1x.avif 1x, ./images/card/image4@2x.avif 2x">
+              <source type="image/webp" srcset="./images/card/image4@1x.webp 1x, ./images/card/image4@2x.webp 2x">
+              <img class="card__img" src="./images/card/image4@1x.jpg" loading="lazy" decoding="async"
+                alt='Сок Ideas тыквенно-апельсиновый, 1л'>
+            </picture>
+          </div>
+          <div class="card__box">
+            <div class="card__body">
+              <div class="card__body-inner">
+                <span class="card__span card__availability">Не осталось</span>
+                <span class="card__span price">47,00 грн</span>
+              </div>
+              <h5 class="title section-h5">
+                Сок Ideas тыквенно-апельсиновый, 1л
+              </h5>
+            </div>
+          </div>
+        </a>
+        <div class="card__footer">
+          <div class="card__footer-inner">
+            <span class="card__price card__price--red">47,00 грн</span>
+            <span class="card__span card__price-old">51,70 грн</span>
+          </div>
+          <button class=" card__btn card__btn--cart btn-cart">В корзину</button>
+          <button class="card__btn card__btn--none btn-cart">Отложить</button>
+        </div>
+      </article>
+    </li>
+    <li class="section-slider__item swiper-slide">
+      <article class="card card--sale">
+        <div class="sale">10%</div>
+        <button class="card__favorite card-favorite"></button>
+        <a class="card__link" href="./page-product.html">
+          <div class="card__img-cover">
+            <picture>
+              <source type="image/avif" srcset="./images/card/image1@1x.avif 1x, ./images/card/image1@2x.avif 2x">
+              <source type="image/webp" srcset="./images/card/image1@1x.webp 1x, ./images/card/image1@2x.webp 2x">
+              <img class="card__img" src="./images/card/image1@1x.jpg" loading="lazy" decoding="async"
+                alt='Хлеб "Домашний" кирпичек, 680г'>
+            </picture>
+          </div>
+          <div class="card__box">
+            <div class="card__body">
+              <div class="card__body-inner">
+                <span class="card__span card__availability">В наличии 10 шт</span>
+                <span class="card__span price">27,00 грн</span>
+              </div>
+              <h5 class="title section-h5">
+                Хлеб "Домашний" кирпичик, 680г
+              </h5>
+            </div>
+          </div>
+        </a>
+        <div class="card__footer">
+          <div class="card__footer-inner">
+            <span class="card__price card__price--red">27,00 грн</span>
+            <span class="card__span card__price-old">29,70 грн</span>
+          </div>
+          <button class=" card__btn card__btn--cart btn-cart">В корзину</button>
+          <button class="card__btn card__btn--tomorrow btn-cart">На завтра</button>
+        </div>
+      </article>
+    </li>
+    <li class="section-slider__item swiper-slide">
+      <article class="card card--sale">
+        <button class="card__favorite card-favorite"></button>
+        <a class="card__link" href="./page-product.html">
+          <div class="card__img-cover">
+            <picture>
+              <source type="image/avif" srcset="./images/slider/image1@1x.avif 1x, ./images/slider/image1@2x.avif 2x">
+              <source type="image/webp" srcset="./images/slider/image1@1x.webp 1x, ./images/slider/image1@2x.webp 2x">
+              <img class="card__img" src="./images/slider/image1@1x.jpg" loading="lazy" decoding="async"
+                alt='Сок Ideas тыквенно-апельсиновый, 1л'>
+            </picture>
+          </div>
+          <div class="card__box">
+            <div class="card__body">
+              <div class="card__body-inner">
+                <span class="card__span card__availability">В наличии 4 шт</span>
+                <span class="card__span price">35,00 грн</span>
+              </div>
+              <h5 class="title section-h5">
+                Гранола Мюсли Bionova ягодные запечённые хрустящие, 400г
+
+              </h5>
+            </div>
+          </div>
+        </a>
+        <div class="card__footer">
+          <div class="card__footer-inner">
+            <span class="card__price">35,90 грн</span>
+            <span class="card__span card__price-old"></span>
+          </div>
+          <button class=" card__btn card__btn--cart btn-cart">В корзину</button>
+          <button class="card__btn card__btn--tomorrow btn-cart">На завтра</button>
+        </div>
+      </article>
+    </li>
+    <li class="section-slider__item swiper-slide">
+      <article class="card card--tomorrow">
+        <div class="sale">15%</div>
+        <button class="card__favorite card-favorite"></button>
+        <a class="card__link" href="./page-product.html">
+          <div class="card__img-cover">
+            <picture>
+              <source type="image/avif" srcset="./images/slider/image2@1x.avif 1x, ./images/slider/image2@2x.avif 2x">
+              <source type="image/webp" srcset="./images/slider/image2@1x.webp 1x, ./images/slider/image2@2x.webp 2x">
+              <img class="card__img" src="./images/slider/image2@1x.jpg" loading="lazy" decoding="async"
+                alt='Сок Ideas тыквенно-апельсиновый, 1л'>
+            </picture>
+          </div>
+          <div class="card__box">
+            <div class="card__body">
+              <div class="card__body-inner">
+                <span class="card__span card__availability">Появится завтра</span>
+                <span class="card__span price">47,00 грн</span>
+              </div>
+              <h5 class="title section-h5">
+                Сок Ideas тыквенно-апельсиновый, 1л
+              </h5>
+            </div>
+          </div>
+        </a>
+        <div class="card__footer">
+          <div class="card__footer-inner">
+            <span class="card__price card__price--red">47,00 грн</span>
+            <span class="card__span card__price-old">54,05 грн</span>
+          </div>
+          <button class=" card__btn card__btn--cart btn-cart">В корзину</button>
+          <button class="card__btn card__btn--tomorrow btn-cart">На завтра</button>
+        </div>
+      </article>
+    </li>
+    <li class="section-slider__item swiper-slide">
+      <article class="card card--none">
+        <div class="sale">10%</div>
+        <button class="card__favorite card-favorite"></button>
+        <a class="card__link" href="./page-product.html">
+          <div class="card__img-cover">
+            <picture>
+              <source type="image/avif" srcset="./images/card/image4@1x.avif 1x, ./images/card/image4@2x.avif 2x">
+              <source type="image/webp" srcset="./images/card/image4@1x.webp 1x, ./images/card/image4@2x.webp 2x">
+              <img class="card__img" src="./images/card/image4@1x.jpg" loading="lazy" decoding="async"
+                alt='Сок Ideas тыквенно-апельсиновый, 1л'>
+            </picture>
+          </div>
+          <div class="card__box">
+            <div class="card__body">
+              <div class="card__body-inner">
+                <span class="card__span card__availability">Не осталось</span>
+                <span class="card__span price">47,00 грн</span>
+              </div>
+              <h5 class="title section-h5">
+                Сок Ideas тыквенно-апельсиновый, 1л
+              </h5>
+            </div>
+          </div>
+        </a>
+        <div class="card__footer">
+          <div class="card__footer-inner">
+            <span class="card__price card__price--red">47,00 грн</span>
+            <span class="card__span card__price-old">51,70 грн</span>
+          </div>
+          <button class=" card__btn card__btn--cart btn-cart">В корзину</button>
+          <button class="card__btn card__btn--none btn-cart">Отложить</button>
+        </div>
+      </article>
+    </li>
+  </ul>
+  <div class="swiper-pagination common-pagination"></div>
+</div>
+  </div>
+
+</section>
+<!-- <script src="libs/swiper/swiper-bundle.min.js"></script> -->
+<!-- <script src="./src/js/sliders.js"></script> -->
+    <section class="section-supermarket section">
+  <div class="container">
+    <div class="section-head">
       <h3 class="section-h3">СУПЕРМАРКЕТ</h3>
       <a class="see-all" href="">
         Смотреть все
@@ -171,9 +485,9 @@
 </div>
   </div>
 </section>
-    <section class="section-cooking">
+    <section class="section-cooking section">
   <div class="container">
-    <div class="section-cooking__inner-title section-catalog__inner-title">
+    <div class="section-head">
       <h3 class="section-h3">КУЛИНАРИЯ</h3>
       <a class="see-all" href="">
         Смотреть все
@@ -215,9 +529,9 @@
   </div>
 
 </section>
-    <section class="section-freezing">
+    <section class="section-freezing section">
   <div class="container">
-    <div class="section-freezing__inner-title section-catalog__inner-title">
+    <div class="section-head">
       <h3 class="section-h3">ЗАМОРОЗКА</h3>
       <a class="see-all" href="">
         Смотреть все
@@ -255,9 +569,9 @@
   </div>
 
 </section>
-    <section class="section-other">
+    <section class="section-other section">
   <div class="container">
-    <div class="section-other__inner-title section-catalog__inner-title">
+    <div class="section-head">
       <h3 class="section-h3">ДРУГОЕ</h3>
       <a class="see-all" href="./other.html">
         Смотреть все
@@ -285,9 +599,9 @@
   </div>
 
 </section>
-    <section class="section-stock">
+    <section class="section-stock section">
   <div class="container">
-    <div class="section-stock__inner-title section-catalog__inner-title">
+    <div class="section-head">
       <h3 class="section-h3">АКЦИИ</h3>
       <a class="see-all" href="./stock.html">
         Смотреть все
@@ -295,13 +609,13 @@
           <use href="./images/sprite/sprite.svg#arrow-next"></use>
         </svg>
       </a>
-      <div class="stock-swiper__nav">
-        <button class="stock-swiper__btn stock-swiper-prev">
+      <div class="stock-swiper__nav swiper-nav">
+        <button class="swiper-nav__btn swiper-nav-prev">
           <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon prev">
             <use href="./images/sprite/sprite.svg#arrow-next"></use>
           </svg>
         </button>
-        <button class="stock-swiper__btn stock-swiper-next">
+        <button class="swiper-nav__btn swiper-nav-next">
           <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
             <use href="./images/sprite/sprite.svg#arrow-next"></use>
           </svg>
@@ -318,7 +632,7 @@
     <li class="catalog-stock__item swiper-slide">
       <a class="catalog-stock__link catalog-stock__link--child2" href="" style="background-color: #ff594d">
         <div class="catalog-stock__link-text">Праздник к&nbsp;<br>нам приходит
-          <span class="sale">15% скидка</span>
+          <span class="stock-sale">15% скидка</span>
         </div>
       </a>
     </li>
@@ -331,14 +645,14 @@
     <li class="catalog-stock__item swiper-slide">
       <a class="catalog-stock__link catalog-stock__link--child4" href="" style="background-color: #ffc425">
         <div class="catalog-stock__link-text">Комбо-набор 3&nbsp;<br>пиццы за&nbsp;500&nbsp;₴
-          <span class="sale">trio500</span>
+          <span class="stock-sale">trio500</span>
         </div>
       </a>
     </li>
     <li class="catalog-stock__item swiper-slide">
       <a class="catalog-stock__link catalog-stock__link--child1" href="" style="background-color: #cd5a7e">
         <div class="catalog-stock__link-text">Сделай предзаказ в&nbsp;<br>кулинарии со&nbsp;<br>скидкой
-          <span class="sale">20% скидка</span>
+          <span class="stock-sale">20% скидка</span>
         </div>
       </a>
     </li>
@@ -350,7 +664,7 @@
     <li class="catalog-stock__item swiper-slide">
       <a class="catalog-stock__link catalog-stock__link--child3" href="" style="background-color: #ffa68a">
         <div class="catalog-stock__link-text">Скидка на третий<br>товар в корзине<br>&laquo;Чистая линия&raquo;
-          <span class="sale">15% скидка</span>
+          <span class="stock-sale">15% скидка</span>
         </div>
       </a>
     </li>
@@ -365,7 +679,7 @@
   </div>
 
 </section>
-    <section class="section-delivery">
+    <section class="section-delivery section">
   <div class="container">
     <h3 class="section-delivery__title section-h3">ДОСТАВКА И ОПЛАТА</h3>
     <div class="section-delivery__inner">
@@ -395,10 +709,10 @@
       <div class="section-delivery__map">
         <span class="section-delivery__map-title">Карта доставки</span>
         <div class="section-delivery__thumb">
-          <iframe class="section-delivery__map-ifreme"
+          <!-- <iframe class="section-delivery__map-ifreme"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20537.995706450427!2d36.08101196861289!3d49.95042274015015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41279f6796f52923%3A0xf1e491463c7ca03d!2z0J_QtdGB0L7Rh9C40L0sINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYyNDE4!5e0!3m2!1sru!2sua!4v1722325622468!5m2!1sru!2sua"
             style="border:0; border-radius: 23px;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         </div>
       </div>
     </div>
@@ -568,9 +882,9 @@
 
 <div class="overlay"></div>
 
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- <script src="libs/slick/slick.min.js"></script> -->
-  <!-- <script src="libs/swiper/swiper-bundle.min.js"></script> -->
+
   <!--<script src="libs/smoothscroll/smooth-scroll.min.js"></script> -->
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <!-- <script src="./src/js/main.js"></script> -->
@@ -580,12 +894,18 @@
   <script src="./src/js/progress.js"></script>
   <script src="./src/js/to-top.js"></script> -->
 
-  <script src="js/main.min.js"></script>
+  <!-- <script src="js/main.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="./src/js/slider-hero.js"></script> -->
+  <script src="./src/js/section-slider.js"></script>
+  <!-- <script src="./src/js/slider-stock.js"></script> -->
 
+  <script src="./src/js/favorite.js"></script>
   <script src="./src/js/burgers.js"></script>
   <script src="./src/js/script.js"></script>
   <!-- <script src="./src/js/modal-login.js"></script> -->
-  <script src="./src/js/sliders.js"></script>
+  <!-- <script src="./src/js/sliders.js"></script> -->
 
 
 

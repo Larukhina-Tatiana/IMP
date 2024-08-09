@@ -1,133 +1,3 @@
-const heroSliderSpeed = 1500;
-
-const bodyStyles = window.getComputedStyle(document.body);
-const fooBar = bodyStyles.getPropertyValue("--hero-slider-speed"); //get
-
-document.body.style.setProperty("--hero-slider-speed", heroSliderSpeed + "ms"); //set
-
-const heroSlider = new Swiper(".hero-slider", {
-  slidesPerView: 1,
-  // loop: true,
-  // infinite: true,
-  // fade: true,
-  navigation: {
-    nextEl: ".hero-arrow--next",
-    prevEl: ".hero-arrow--prev",
-  },
-  // speed: heroSliderSpeed,
-  // autoplay: {
-  //   delay: 1000,
-  // },
-  // breakpoints: {
-  //   768: {},
-  // },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
-// if (document.querySelector(".splide")) {
-//   var mySlider = new Splide(".splide", {
-//     perPage: 4,
-//     arrows: false,
-//     gap: "20px",
-//     breakpoints: {
-//       1199: {
-//         perPage: 3,
-//         gap: "20px",
-//         // height: "6rem",
-//       },
-//       684: {
-//         perPage: 2,
-//         gap: "20px",
-//         // height: "6rem",
-//       },
-//       480: {
-//         perPage: 1,
-//         gap: ".7rem",
-//         height: "6rem",
-//       },
-//     },
-//   });
-//   mySlider.mount();
-// }
-
-// if (document.querySelector(".splide1")) {
-//   var mySlider1 = new Splide(".splide1", {
-//     perPage: 4,
-//     arrows: true,
-//     gap: "30px",
-//     breakpoints: {
-//       1199: {
-//         perPage: 3,
-//         gap: "20px",
-//       },
-//       768: {
-//         perPage: 2,
-//         gap: "10px",
-//       },
-//       // 480: {
-//       //   perPage: 1,
-//       //   gap: ".7rem",
-//       //   height: "6rem",
-//       // },
-//     },
-//   });
-//   mySlider1.mount();
-// }
-// if (document.querySelector(".splide2")) {
-//   var mySlider2 = new Splide(".splide2", {
-//     perPage: 4,
-//     arrows: true,
-//     gap: "30px",
-//     breakpoints: {
-//       1199: {
-//         perPage: 3,
-//         gap: "30px",
-//       },
-//       768: {
-//         perPage: 2,
-//         gap: "10px",
-//       },
-//       // 480: {
-//       //   perPage: 1,
-//       //   gap: ".7rem",
-//       //   height: "6rem",
-//       // },
-//     },
-//   });
-//   mySlider2.mount();
-// }
-
-// if (document.querySelector(".card-product__slider")) {
-//   $(function () {
-//     $(".card-product__slider").slick({
-//       fade: true,
-//       dots: true,
-//       slidesToShow: 1,
-//       slidesToScroll: 1,
-//       arrows: false,
-//       infinite: true,
-//       asNavFor: ".card-product__dots-list",
-//       focusOnSelect: false,
-//     });
-//   });
-
-//   $(function () {
-//     $(".card-product__dots-list").slick({
-//       dots: false,
-//       slidesToShow: 4,
-//       slidesToScroll: 1,
-//       // centerMode: true,
-//       arrows: false,
-//       infinite: true,
-//       asNavFor: ".card-product__list",
-//       focusOnSelect: true,
-//     });
-//   });
-// }
-
 if (document.querySelector(".stock-swiper")) {
   var swiperTvo = new Swiper(".stock-swiper", {
     slidesPerView: 1,
@@ -195,6 +65,45 @@ if (workInsideGalery) {
     // },
     thumbs: {
       swiper: workSlider,
+    },
+  });
+}
+
+if (document.querySelector(".common-swiper")) {
+  var swiperCommon = new Swiper(".common-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 12,
+    navigation: false,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    breakpoints: {
+      456: {
+        slidesPerView: 2,
+        // pagination: {
+        //   type: "fraction",
+        // },
+      },
+      690: {
+        slidesPerView: 3,
+        navigation: {
+          nextEl: ".stock-swiper-prev",
+          prevEl: ".stock-swiper-next",
+        },
+      },
+      1288: {
+        slidesPerView: 4,
+        spaceBetween: 16,
+        navigation: {
+          nextEl: ".stock-swiper-prev",
+          prevEl: ".stock-swiper-next",
+        },
+      },
+    },
+    on: {
+      init: function (swiperCommon) {},
     },
   });
 }

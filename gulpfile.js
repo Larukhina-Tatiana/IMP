@@ -152,7 +152,7 @@ function scripts() {
     src([
       // "https://unpkg.com/aos@2.3.1/dist/aos.js",
       "node_modules/jquery/dist/jquery.js",
-      "node_modules/swiper/swiper-bundle.js",
+      // "node_modules/swiper/swiper-bundle.js",
       "node_modules/mixitup/dist/mixitup.js",
       // "libs/mixitup3/mixitup.min.js",
       // "libs/smoothscroll/smooth-scroll.min.js",
@@ -205,7 +205,7 @@ function images() {
       .pipe(newer("images"))
       .pipe(imagemin())
 
-      .pipe(dest("images/card"))
+      .pipe(dest("images/slider"))
   );
 }
 

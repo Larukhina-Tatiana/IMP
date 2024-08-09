@@ -1,10 +1,5 @@
 .section-other {
   // padding-top: 157px;
-  padding-top: clamp(4.063rem, 1.837rem + 9.89vw, 9.813rem);
-
-  &__inner-title {
-    margin-bottom: 20px;
-  }
 
   .section-catalog__link {
     color: $plantation;
