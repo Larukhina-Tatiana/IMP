@@ -43,6 +43,7 @@ function htmlInclude() {
     "./src/html/index.html",
     "./src/html/page-product.html",
     "./src/html/page-catalog.html",
+    "./src/html/page-stock.html",
     // "./src/html/select.html",
   ])
     .pipe(
