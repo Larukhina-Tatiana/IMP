@@ -1,26 +1,27 @@
-<section class="discounts">
+<section class="section-stock section">
   <div class="container">
-    <div class="discounts__head section-head">
-      <h3 class="section-h3">СКИДКИ</h3>
-      <a class="see-all" href="">
+    <div class="section-head">
+      <h3 class="section-h3">АКЦИИ</h3>
+      <a class="see-all" href="./stock.html">
         Смотреть все
         <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon see all">
           <use href="./images/sprite/sprite.svg#arrow-next"></use>
         </svg>
       </a>
-      <div class="swiper-nav">
-        <button class="swiper-button swiper-prev" aria-label="Предыдущий слайд">
-          <svg class="catalog-menu__svg" aria-label="icon prev">
+      <div class="stock-swiper__nav swiper-nav">
+        <button class="swiper-nav__btn swiper-nav-prev">
+          <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon prev">
             <use href="./images/sprite/sprite.svg#arrow-next"></use>
           </svg>
         </button>
-        <button class="swiper-button swiper-next" aria-label="Следующий слайд">
+        <button class="swiper-nav__btn swiper-nav-next">
           <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
             <use href="./images/sprite/sprite.svg#arrow-next"></use>
           </svg>
         </button>
       </div>
     </div>
-    @include('section-slider.html')
+    @include('catalog-stock.html')
   </div>
+
 </section>

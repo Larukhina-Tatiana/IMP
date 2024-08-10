@@ -1,6 +1,6 @@
 if (document.querySelector(".common-swiper")) {
   var swiperCommon = new Swiper(".common-swiper", {
-    slidesPerView: 2.2,
+    slidesPerView: 2,
     spaceBetween: 12,
     // navigation: false,
     pagination: {
@@ -10,20 +10,20 @@ if (document.querySelector(".common-swiper")) {
 
     breakpoints: {
       425: {
-        slidesPerView: 2.5,
+        slidesPerView: 2.2,
       },
       560: {
-        slidesPerView: 3,
+        slidesPerView: 2.5,
       },
       691: {
-        slidesPerView: 3.3,
+        slidesPerView: 3,
         navigation: {
           nextEl: ".swiper-next",
           prevEl: ".swiper-prev",
         },
       },
       920: {
-        slidesPerView: 3.7,
+        slidesPerView: 3.5,
         navigation: {
           nextEl: ".swiper-next",
           prevEl: ".swiper-prev",

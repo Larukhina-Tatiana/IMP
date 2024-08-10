@@ -61,7 +61,7 @@
 
     &-arrow {
       position: absolute;
-      top: 50%;
+      top: 45%;
       transform: translate(0, -50%);
       display: flex;
       align-items: center;
@@ -107,8 +107,8 @@
     .swiper-pagination-bullets.swiper-pagination-horizontal,
     .swiper-pagination-custom,
     .swiper-pagination-fraction {
-      bottom: 35px;
-      left: 52px;
+      bottom: 13%;
+      left: 5.5%;
 
       @media screen and (width < 768.99px) {
         bottom: 0;
@@ -171,8 +171,6 @@
         max-width: none;
         width: 100%;
       }
-
-
     }
   }
 

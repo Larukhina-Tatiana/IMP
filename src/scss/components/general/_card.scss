@@ -5,13 +5,13 @@
   display: flex;
   flex-direction: column;
   border: 1px solid $alto;
-  // border-radius: 20px;
   border-radius: clamp(0.688rem, 0.47rem + 0.97vw, 1.25rem);
   // width: 304px;
   // min-height: 406px;
   width: clamp(9.75rem, 6.169rem + 15.91vw, 19rem);
-  height: clamp(15.438rem, 11.591rem + 17.1vw, 25.375rem);
+  // height: clamp(15.438rem, 11.591rem + 17.1vw, 25.375rem);
   background: var(--white);
+
 
 
 
@@ -21,14 +21,6 @@
     // right: 18px;
     top: 5%;
     right: 7%;
-  }
-
-  &__link {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-grow: 1;
   }
 
   &__img-cover {
@@ -47,8 +39,19 @@
   }
 
   &__box {
-    // padding: 0 19px;
-    padding: 0 clamp(0.563rem, 0.321rem + 1.08vw, 1.188rem);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    margin-top: 3px;
+    padding: 0 clamp(0.563rem, 0.321rem + 1.08vw, 1.188rem) clamp(0.75rem, 0.532rem + 0.97vw, 1.313rem) clamp(0.563rem, 0.321rem + 1.08vw, 1.188rem);
+  }
+
+  &__body {
+    &:not(:last-child) {
+      margin-bottom: clamp(0.563rem, 0.466rem + 0.43vw, 0.813rem);
+    }
   }
 
   &__body-inner {
@@ -56,13 +59,8 @@
     margin-bottom: clamp(0.375rem, 0.254rem + 0.54vw, 0.688rem);
     display: flex;
     justify-content: space-between;
-
-    // адаптив
-    // width: 100%;
-    //   display: flex;
-    //   flex-direction: row-reverse;
-    //   justify-content: space-between;
   }
+
 
   &__span {
     // font-size: 14px;
@@ -73,16 +71,13 @@
 
 
   &__footer {
-    // margin-top: 13px;
-    margin-top: clamp(0.563rem, 0.466rem + 0.43vw, 0.813rem);
-    // padding: 0 19px 21px 19px;
-    padding: 0 clamp(0.563rem, 0.321rem + 1.08vw, 1.188rem) clamp(0.75rem, 0.532rem + 0.97vw, 1.313rem) clamp(0.563rem, 0.321rem + 1.08vw, 1.188rem);
+    width: 100%;
+    margin-top: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 6px;
-
   }
 
 
@@ -102,8 +97,6 @@
   }
 
   &__price-old {
-    // font-size: 14px;
-    // font-size: clamp(0.5rem, 0.355rem + 0.65vw, 0.875rem);
     text-decoration: line-through;
   }
 
@@ -116,6 +109,15 @@
 
   &__btn--tomorrow {
     display: none;
+  }
+
+  @media screen and (width < 425.99px) {
+    &__footer-inner {
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -138,7 +140,6 @@
   .card__availability {
     color: $old-rose;
   }
-
 
   .card__btn--cart {
     display: none;

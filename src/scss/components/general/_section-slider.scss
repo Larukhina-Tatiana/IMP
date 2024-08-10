@@ -2,5 +2,13 @@
   // width: 1290px;
   padding-top: 20px;
 
+  @media screen and (width > 690.99px) {
+    .swiper-pagination {
+      display: none;
+    }
+  }
 
+  .swiper-slide {
+    height: auto;
+  }
 }

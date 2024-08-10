@@ -9,8 +9,6 @@
     margin-bottom: 20px;
   }
 
-  &__inner-title {}
-
   &__link {
     position: relative;
     // width: 304px;
@@ -28,7 +26,7 @@
     border-radius: clamp(1.563rem, 0.764rem + 3.55vw, 3.625rem);
     background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
     @include transition ($transition-property: (transform, box-shadow));
 
     @media (any-hover: hover) {
@@ -43,6 +41,12 @@
       content: '';
       top: 15.5%;
       left: 13%;
+    }
+  }
+
+  @media screen and (width < 1024.99px) {
+    &__link {
+      background-size: contain;
     }
   }
 }

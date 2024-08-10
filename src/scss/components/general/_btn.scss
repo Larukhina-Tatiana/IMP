@@ -89,6 +89,10 @@
       background-color: $red;
     }
   }
+
+  @media screen and (width < 425.99px) {
+    width: 100%;
+  }
 }
 
 .btn-transparent {

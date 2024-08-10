@@ -25,8 +25,8 @@ if (document.querySelector(".stock-swiper")) {
         slidesPerView: 2.5,
         pagination: false,
         navigation: {
-          nextEl: ".swiper-nav-prev",
-          prevEl: ".swiper-nav-next",
+          nextEl: ".swiper-nav-next",
+          prevEl: ".swiper-nav-prev",
         },
       },
       810: {
