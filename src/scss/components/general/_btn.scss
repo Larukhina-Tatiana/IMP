@@ -96,10 +96,10 @@
 }
 
 .btn-transparent {
-  // padding: 14px 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 14px 28px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   @extend %second-family-600;
   // font-size: 22px;
   font-size: clamp(0.938rem, 0.768rem + 0.75vw, 1.375rem);

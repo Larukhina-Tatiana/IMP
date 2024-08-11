@@ -1,1 +1,11 @@
-.page {}
+.page-title {
+  &:not(:last-child) {
+    // margin-bottom: 66px;
+    margin-bottom: clamp(0.813rem, -0.47rem + 5.7vw, 4.125rem);
+  }
+}
+
+.page-section {
+  // margin-top: 56px;
+  margin-top: clamp(0.688rem, -0.401rem + 4.84vw, 3.5rem);
+}
