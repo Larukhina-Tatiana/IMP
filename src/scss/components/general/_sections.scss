@@ -54,4 +54,8 @@
   align-items: center;
   // gap: 29px;
   gap: clamp(0.813rem, 0.571rem + 1.08vw, 1.438rem);
+
+  @media screen and (width < 425.99px) {
+    justify-content: space-between;
+  }
 }
