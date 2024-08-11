@@ -1,0 +1,46 @@
+.breadcrumbs {
+  margin-bottom: 5px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__link {
+    color: $tundora;
+    @include transition ($transition-property: color);
+
+
+    // &:focus {
+    //   outline: 2px solid var(--primary);
+    //   outline-offset: 2px;
+    // }
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $text;
+      }
+    }
+
+    &::after {
+      content: "/";
+      margin-right: 4px;
+      margin-left: 4px;
+    }
+
+    &:active {
+      color: $text;
+    }
+  }
+
+  &__nolink {
+    color: $text;
+  }
+
+  @media screen and (width < 768.01px) {
+    &__list {
+      flex-wrap: wrap;
+    }
+  }
+}
