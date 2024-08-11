@@ -9,42 +9,4 @@
   @media screen and (width < 690.99px) {
     display: none;
   }
-
-
-  // .swiper-nav__btn {
-
-  //   svg {
-  //     width: 29px;
-  //     height: 29px;
-  //     border-radius: 100%;
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: center;
-  //     background-color: transparent;
-  //     padding: 9px 8px;
-
-  //     @include transition ($transition-property: (color, background-color));
-  //   }
-
-  //   @media (any-hover: hover) {
-  //     &:hover svg {
-  //       color: $white;
-  //       background-color: $yellow;
-  //     }
-  //   }
-  // }
-
-  // .swiper-nav-prev {
-  //   svg {
-  //     transform: rotate(180deg);
-  //   }
-  // }
-
-  // .swiper-nav-next.swiper-button-disabled,
-  // .swiper-nav-prev.swiper-button-disabled {
-  //   opacity: 0.3;
-  //   pointer-events: none;
-  //   cursor: auto;
-  // }
-
 }

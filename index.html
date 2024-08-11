@@ -15,7 +15,457 @@
 
 <body class="page-home" id="page">
 
-  
+  <header class="header">
+  <div class="container">
+    <div class="header__box">
+      <div class="header__top">
+        <a class="header__logo logo" href="./index.html">
+          <img class="logo-svg" src="./images/icons/logo.svg" alt="Логотип">
+        </a>
+        <div class="catalog-menu">
+  <button class="header__catalog-btn catalog-menu__btn-main btn-main" aria-label="Каталог">
+    <span class="btn-main__line"></span>
+    <span class="btn-main__line"></span>
+    <span class="btn-main__line"></span>
+    <span class="btn-main__line"></span>
+    Каталог
+  </button>
+  <div class="catalog-menu__ground">
+    <ul class="catalog-menu__list">
+      <li class="catalog-menu__item">
+        <button class="catalog-menu__btn-secondary btn--catalog catalog-menu__btn-secondary--active"
+          data-menu-active>Акции
+          <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+            <use href="./images/sprite/sprite.svg#arrow-next"></use>
+          </svg>
+        </button>
+        <div class="dropdown-menu dropdown-menu--active">
+          <ul class="dropdown-menu__list">
+            <li class="dropdown-menu__item dropdown-menu__item--mb">
+              <a class="dropdown-menu__link dropdown-menu__link--title" href="./stock.html">
+                Акции
+              </a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Сделай предзаказ
+                в кулинарии
+                со скидкой</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Праздник
+                к нам приходит</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Скидка на третий
+                товар в корзине
+                «Чистая линия»</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Комбо-набор
+                3 пиццы за 1500 ₴</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="catalog-menu__item">
+        <button class="catalog-menu__btn-secondary">Популярное
+          <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+            <use href="./images/sprite/sprite.svg#arrow-next"></use>
+          </svg>
+        </button>
+        <div class="dropdown-menu">
+          <ul class="dropdown-menu__list">
+            <li class="dropdown-menu__item dropdown-menu__item--mb">
+              <a class="dropdown-menu__link dropdown-menu__link--title" href="./popular.html">Популярное</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Пункт1</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="catalog-menu__item">
+        <button class="catalog-menu__btn-secondary">Супермаркет
+          <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+            <use href="./images/sprite/sprite.svg#arrow-next"></use>
+          </svg>
+        </button>
+        <div class="dropdown-menu">
+          <ul class="dropdown-menu__list">
+            <li class="dropdown-menu__item dropdown-menu__item--mb">
+              <a class="dropdown-menu__link dropdown-menu__link--title" href="./supermarket.html">Супермаркет</a>
+              <!-- <a class="dropdown-menu__link" href="">Супермаркет</a> -->
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Вода и напитки</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Молоко, масло и яйца</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Снэки и сухофрукты</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Кофе, чай и сладости</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Макароны и крупы</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Хлеб и выпечка</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Масло, соусы и специи</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Консервы и соления</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="catalog-menu__item">
+        <button class="catalog-menu__btn-secondary">Кулинария
+          <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+            <use href="./images/sprite/sprite.svg#arrow-next"></use>
+          </svg>
+        </button>
+        <div class="dropdown-menu">
+          <ul class="dropdown-menu__list">
+            <li class="dropdown-menu__item dropdown-menu__item--mb">
+              <a class="dropdown-menu__link dropdown-menu__link--title" href="./cooking.html">Кулинария</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Выпечка</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Пиццы</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Гриль-меню</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Свежее мясо</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Салаты</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Супы</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Горячие блюда</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Десерты</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="catalog-menu__item">
+        <button class="catalog-menu__btn-secondary">Заморозка
+          <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+            <use href="./images/sprite/sprite.svg#arrow-next"></use>
+          </svg>
+        </button>
+        <div class="dropdown-menu">
+          <ul class="dropdown-menu__list">
+            <li class="dropdown-menu__item dropdown-menu__item--mb">
+              <a class="dropdown-menu__link dropdown-menu__link--title" href="./freezing.html">Заморозка</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Пельмени, вареники и равиоли</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Хинкали и манты</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Полуфабрикаты</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Замороженные овощи</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Рыба и морепродукты</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Мясо</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="catalog-menu__item">
+        <button class="catalog-menu__btn-secondary">Другое
+          <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+            <use href="./images/sprite/sprite.svg#arrow-next"></use>
+          </svg>
+        </button>
+        <div class="dropdown-menu">
+          <ul class="dropdown-menu__list">
+            <li class="dropdown-menu__item dropdown-menu__item--mb">
+              <a class="dropdown-menu__link dropdown-menu__link--title" href="./other.html">Другое</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Красота и гигиена</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Стирка и уборка</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Полезные мелочи</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Бытовая техника</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="catalog-menu__item">
+        <button class="catalog-menu__btn-secondary">Заморозка
+          <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+            <use href="./images/sprite/sprite.svg#arrow-next"></use>
+          </svg>
+        </button>
+        <div class="dropdown-menu">
+          <ul class="dropdown-menu__list">
+            <li class="dropdown-menu__item dropdown-menu__item--mb">
+              <a class="dropdown-menu__link dropdown-menu__link--title" href="./freezing.html">Заморозка</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Пельмени, вареники и равиоли</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Хинкали и манты</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Полуфабрикаты</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Замороженные овощи</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Рыба и морепродукты</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Мясо</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="catalog-menu__item">
+        <button class="catalog-menu__btn-secondary">Другое
+          <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+            <use href="./images/sprite/sprite.svg#arrow-next"></use>
+          </svg>
+        </button>
+        <div class="dropdown-menu">
+          <ul class="dropdown-menu__list">
+            <li class="dropdown-menu__item dropdown-menu__item--mb">
+              <a class="dropdown-menu__link dropdown-menu__link--title" href="./other.html">Другое</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Красота и гигиена</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Стирка и уборка</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Полезные мелочи</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">Бытовая техника</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="catalog-menu__item">
+        <button class="catalog-menu__btn-secondary">Продукция от «Ильинского
+          <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+            <use href="./images/sprite/sprite.svg#arrow-next"></use>
+          </svg>
+        </button>
+        <div class="dropdown-menu">
+          <ul class="dropdown-menu__list">
+            <li class="dropdown-menu__item dropdown-menu__item--mb">
+              <a class="dropdown-menu__link dropdown-menu__link--title" href="./Ilyinskyr.html">Продукция от
+                «Ильинского</a>
+              <!-- <a class="dropdown-menu__link" href="">Другое</a> -->
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">1</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">2</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">3</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="catalog-menu__item">
+        <button class="catalog-menu__btn-secondary">Продукция от «Ильинского
+          <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
+            <use href="./images/sprite/sprite.svg#arrow-next"></use>
+          </svg>
+        </button>
+        <div class="dropdown-menu">
+          <ul class="dropdown-menu__list">
+            <li class="dropdown-menu__item dropdown-menu__item--mb">
+              <a class="dropdown-menu__link dropdown-menu__link--title" href="./Ilyinskyr.html">Продукция от
+                «Ильинского</a>
+              <!-- <a class="dropdown-menu__link" href="">Другое</a> -->
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">1</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">2</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__link" href="">3</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+        <div class="header__search-form search">
+  <input class="search__input" type="text" placeholder="Начать поиск" autocomplete="off">
+  <button class="search__btn" type="submit">
+    <svg class="header__icons-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z"
+        stroke="#565656" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M16.4429 16.4438L20.9992 21.0001" stroke="#565656" stroke-width="1.5" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </button>
+</div>
+        <div class="header__actions actions">
+          <div class="receiving">
+  <button class="receiving__main" data-path="first" data-animation="fadeInUp" data-speed="500"></button>
+  <button class="receiving__secondary" data-path="first" data-animation="fadeInUp" data-speed="500">
+    <span class="receiving__text">Выберите способ получения</span>
+    <span class="receiving__title">Доставка или самовывоз</span>
+  </button>
+</div>
+<div class="modal">
+  <div class="modal__container" data-target="first">
+    <button class="modal-close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="none">
+        <circle cx="19" cy="19" r="19" fill="#F2F3F5" />
+        <path fill="#AAA" d="m24.148 11.46 1.863 1.862-13.04 13.04-1.863-1.863z" />
+        <path fill="#AAA" d="m26.01 24.499-1.863 1.862-13.04-13.04 1.863-1.862z" />
+      </svg>
+    </button>
+    <div class="modal-content">
+      <div class="modal-content__left">
+        <ul class="tabs-buttons__list">
+          <li class="tabs-buttons__item">
+            <button class="tabs-buttons tabs-buttons--delivery" data-filter=".delivery">Доставка
+              <span class="tabs-buttons__text">бесплатно от 1000₴</span>
+            </button>
+          </li>
+          <li class="tabs-buttons__item">
+            <button class="tabs-buttons tabs-buttons--pickup" data-filter=".pickup">Самовывоз
+              <span class="tabs-buttons__text">бесплатно</span>
+            </button>
+          </li>
+        </ul>
+        <ul class="tabs-content">
+          <li class="tabs-content__item mix delivery">
+            delivery
+          </li>
+          <li class="tabs-content__item mix pickup">
+            pickup
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+          <a class="header__favirite favorite" href="">
+  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="none">
+    <path fill="currentColor"
+      d="M20.176 2.21A6.165 6.165 0 0 0 15.764.358c-1.667 0-3.24.66-4.417 1.856a.478.478 0 0 1-.68 0l-.01-.01A6.172 6.172 0 0 0 6.238.349c-1.667 0-3.23.655-4.408 1.852A6.32 6.32 0 0 0 0 6.672C0 8.36.652 9.947 1.834 11.14l8.503 8.61a.948.948 0 0 0 1.35 0l8.48-8.596A6.346 6.346 0 0 0 22 6.682a6.317 6.317 0 0 0-1.824-4.472Z" />
+  </svg>
+</a>
+          <section class="header__user user">
+  <button class="user__btn tooltip" aria-label="Авторизация">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" fill="none">
+      <path fill="currentColor"
+        d="M8.906 9.957c2.404 0 4.527-2.133 4.735-4.754.104-1.317-.335-2.545-1.235-3.457-.89-.902-2.134-1.398-3.5-1.398-1.377 0-2.622.493-3.506 1.39-.894.905-1.33 2.135-1.23 3.464.205 2.622 2.328 4.755 4.736 4.755ZM17.786 17.803c-.362-2.05-1.49-3.772-3.262-4.98-1.575-1.074-3.57-1.665-5.618-1.665-2.048 0-4.043.59-5.617 1.664-1.773 1.208-2.901 2.93-3.262 4.98-.083.47.03.935.307 1.275.127.155.285.28.464.364a1.3 1.3 0 0 0 .572.124h15.072a1.3 1.3 0 0 0 .573-.124c.179-.084.337-.208.464-.363.277-.34.39-.805.307-1.275Z" />
+    </svg>
+    <span class="tooltiptext">Войти</span>
+  </button>
+  <div class="user__go-login go-login">
+    <div class="go-login__text">
+      <h4 class="go-login__title section-h4">
+        Авторизируйтесь
+      </h4>
+    </div>
+    <ul class="go-login__list">
+      <li class="go-login__item go-login__item--sale">Покупайте продукты со скидкой</li>
+      <li class="go-login__item go-login__item--delivery">Заказывайте товары с доставкой день в день</li>
+      <li class="go-login__item go-login__item--stock">Узнавайте первыми и участвуйте в акциях</li>
+    </ul>
+    <button class="go-login__btn btn" data-path="form-popup">
+      Войти по номеру телефона
+    </button>
+
+    <div class="modal-overlay">
+      <div class="modal-login modal--1" data-target="form-popup">
+        Окно 1
+      </div>
+    </div>
+
+  </div>
+</section>
+
+          <div class="header__cart cart"></div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <nav class="header__nav nav">
+  <ul class="nav__list">
+    <li class="nav__item">
+      <a class="nav__link nav__link--supermarket" href="./supermarket.html">
+        Супермаркет
+      </a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link nav__link--cooking" href="./cooking.html">
+        Кулинария
+      </a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link nav__link--freezing" href="./freezing.html">
+        Заморозка
+      </a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link nav__link--other" href="./other.html">
+        Другое
+      </a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link nav__link--stock" href="./stock.html">
+        Акции
+      </a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link nav__link--shops" href="./shops.html">
+        Магазины
+      </a>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+  </div>
+</header>
   <main>
 
     <section class="hero">
@@ -695,13 +1145,13 @@
           <use href="./images/sprite/sprite.svg#arrow-next"></use>
         </svg>
       </a>
-      <div class="stock-swiper__nav swiper-nav">
-        <button class="swiper-nav__btn swiper-nav-prev">
+      <div class="stock__nav swiper-nav">
+        <button class="stock-prev stock-button">
           <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon prev">
             <use href="./images/sprite/sprite.svg#arrow-next"></use>
           </svg>
         </button>
-        <button class="swiper-nav__btn swiper-nav-next">
+        <button class="stock-next stock-button">
           <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
             <use href="./images/sprite/sprite.svg#arrow-next"></use>
           </svg>
@@ -760,7 +1210,7 @@
       </a>
     </li>
   </ul>
-  <div class="swiper-pagination catalog-stock-pagination"></div>
+  <div class="swiper-pagination"></div>
 </div>
   </div>
 
@@ -795,10 +1245,10 @@
       <div class="section-delivery__map">
         <span class="section-delivery__map-title">Карта доставки</span>
         <div class="section-delivery__thumb">
-          <!-- <iframe class="section-delivery__map-ifreme"
+          <iframe class="section-delivery__map-ifreme"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20537.995706450427!2d36.08101196861289!3d49.95042274015015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41279f6796f52923%3A0xf1e491463c7ca03d!2z0J_QtdGB0L7Rh9C40L0sINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYyNDE4!5e0!3m2!1sru!2sua!4v1722325622468!5m2!1sru!2sua"
             style="border:0; border-radius: 23px;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
@@ -983,20 +1433,18 @@
   <script src="js/main.min.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
   <!-- <script src="libs/swiper/swiper-bundle.min.js"></script> -->
-  <script src="./src/js/slider-hero.js"></script>
-  <script src="./src/js/section-slider.js"></script>
-  <script src="./src/js/slider-stock.js"></script>
+  <!-- <script src="./src/js/slider-hero.js"></script> -->
+  <!-- <script src="./src/js/section-slider.js"></script> -->
+  <!-- <script src="./src/js/slider-stock.js"></script> -->
 
-  <script src="./src/js/favorite.js"></script>
+  <!-- <script src="./src/js/favorite.js"></script> -->
   <script src="./src/js/burgers.js"></script>
-  <script src="./src/js/script.js"></script>
+  <!-- <script src="./src/js/script.js"></script> -->
   <!-- <script src="./src/js/modal-login.js"></script> -->
   <!-- <script src="./src/js/sliders.js"></script> -->
 
 
-
-
-  <script src="./src/js/my-mixitup.js"></script>
+  <!-- <script src="./src/js/my-mixitup.js"></script> -->
 
 </body>
 

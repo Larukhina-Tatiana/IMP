@@ -1,10 +1,14 @@
 .section-stock {
-  // padding-top: 128px;
-
-  &__left {
-    max-width: 404px;
-    width: 100%;
+  @media screen and (width > 690.99px) {
+    .swiper-pagination {
+      display: none;
+    }
   }
+
+  // &__left {
+  //   max-width: 404px;
+  //   width: 100%;
+  // }
 }
 
 // .stock-swiper {
@@ -16,54 +20,4 @@
 //     width: 222px;
 //   }
 
-// }
-
-// .stock-swiper__nav {
-
-//   margin-left: auto;
-//   padding: 9px 8px;
-//   color: $yellow;
-//   border: 1px solid #ffe7b9;
-//   border-radius: 58px;
-//   background: #fff8eb;
-
-//   @media screen and (width < 610.99px) {
-//     display: none;
-//   }
-// }
-
-// .stock-swiper__btn {
-
-//   @media (any-hover: hover) {
-//     &:hover svg {
-//       color: $white;
-//       background-color: $yellow;
-//     }
-//   }
-
-//   svg {
-//     width: 29px;
-//     height: 29px;
-//     border-radius: 100%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     background-color: transparent;
-//     padding: 9px 8px;
-
-//     @include transition ($transition-property: (color, background-color));
-//   }
-// }
-
-// .stock-swiper-prev {
-//   svg {
-//     transform: rotate(180deg);
-//   }
-// }
-
-// .stock-swiper-next.swiper-button-disabled,
-// .stock-swiper-prev.swiper-button-disabled {
-//   opacity: 0.3;
-//   pointer-events: none;
-//   cursor: auto;
 // }
