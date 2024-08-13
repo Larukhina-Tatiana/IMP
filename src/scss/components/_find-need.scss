@@ -1,0 +1,119 @@
+.find-need {
+  // margin-top: 133px;
+  margin-top: clamp(3.75rem, 1.984rem + 7.85vw, 8.313rem);
+  // margin-bottom: 120px;
+  margin-bottom: clamp(2.5rem, 0.565rem + 8.6vw, 7.5rem);
+  // padding: 41px 24px 24px 62px;
+
+  // border: 1px solid #ffe7b9;
+  // border-radius: 16px;
+  // background-color: #ffecca;
+
+
+  &__inner {
+    padding: 41px clamp(0.563rem, 0.2rem + 1.61vw, 1.5rem) 24px clamp(0.563rem, -0.72rem + 5.7vw, 3.875rem);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px 10px;
+
+    border: 1px solid #ffe7b9;
+    border-radius: 16px;
+    background-color: #ffecca;
+  }
+
+  &__title-box {
+    color: $rebel;
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 21px;
+    }
+  }
+
+  &__box {
+    width: 100%;
+  }
+
+  &__form-inner {
+    display: flex;
+    align-items: center;
+    // gap: 35px;
+    gap: clamp(0.938rem, 0.454rem + 2.15vw, 2.188rem);
+    flex-wrap: wrap;
+    margin-bottom: 9px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    font-weight: 700;
+
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    .jq-checkbox {
+      border-radius: 50%;
+    }
+
+    .jq-checkbox,
+    .jq-radio {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      // vertical-align: -4px;
+      width: 17px;
+      height: 17px;
+      margin: 0;
+      // border: 1px solid #c3c3c3;
+      border: none;
+      background: rgba(255, 169, 0, 0.35);
+      box-shadow: none;
+      cursor: pointer;
+    }
+
+
+    .jq-radio.checked .jq-radio__div {
+      width: 7px;
+      height: 7px;
+      margin: 0;
+      border-radius: 100%;
+      border-bottom: none;
+      border-left: none;
+      transform: none;
+      background: $red;
+      box-shadow: none;
+    }
+  }
+
+  &__input {
+    padding: 5px 5px 6px 20px;
+    font-weight: 400;
+    font-size: clamp(0.75rem, 0.556rem + 0.86vw, 1.25rem);
+    border: 1px solid #ffe7b9;
+    border-radius: 16px;
+    width: 381px;
+    // height: 36px;
+    background: var(--white);
+    color: #c3b4b4;
+  }
+
+  @media screen and (width < 664.99px) {
+
+    &__input {
+      width: 100%;
+    }
+  }
+}
