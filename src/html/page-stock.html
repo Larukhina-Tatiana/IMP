@@ -14,60 +14,8 @@
   <main>
     @include('breadcrumbs-stock.html')
     @include('stock.html')
-    <section class="recommendations">
-      <div class="container">
-        <div class="recommendations__head section-head">
-          <h3 class="section-h3">Рекомендации для вас</h3>
-          <div class="swiper-nav">
-            <button class="swiper-button swiper-prev" aria-label="Предыдущий слайд">
-              <svg class="catalog-menu__svg" aria-label="icon prev">
-                <use href="./images/sprite/sprite.svg#arrow-next"></use>
-              </svg>
-            </button>
-            <button class="swiper-button swiper-next" aria-label="Следующий слайд">
-              <svg class="catalog-menu__svg" width="7" height="12" aria-label="icon next">
-                <use href="./images/sprite/sprite.svg#arrow-next"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-        @include('section-slider.html')
-      </div>
-    </section>
-    <section class="find-need container">
-      <div class="find-need__inner">
-        <div class="find-need__title-box">
-          <h2 class="section-h2 find-need__title">Не нашли, что искали?</h2>
-          <strong class="find-need__call">
-            Оставьте ссылку на товар или бренд.
-          </strong>
-        </div>
-
-        <form action="#" class="find-need__form">
-          <div class="find-need__form-inner">
-            <ul class="find-need__list">
-              <li class="find-need__item">
-                <label class="find-need__label">
-                  <input class="filter-style" type="radio" name="radio">
-                  Товар
-                </label>
-              </li>
-              <li class="find-need__item">
-                <label class="find-need__label">
-                  <input class="filter-style" type="radio" name="radio">
-                  Бренд
-                </label>
-              </li>
-            </ul>
-            <input class="find-need__input" type="text" placeholder="Ссылка" autocomplete="off">
-          </div>
-          <button class="find-need__btn btn-transparent btn-transparent--bg-red">Отправить</button>
-        </form>
-
-        <!-- @include('.html') -->
-
-      </div>
-    </section>
+    @include('recommendations.html')
+    @include('find-need.html')
   </main>
   @include('footer.html')
   <script src="js/main.min.js"></script>
