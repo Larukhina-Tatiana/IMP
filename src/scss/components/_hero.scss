@@ -43,8 +43,9 @@
 
 
     &__btn {
-      width: clamp(8.125rem, 4.69rem + 15.27vw, 17rem);
-      height: clamp(2.125rem, 1.593rem + 2.37vw, 3.5rem);
+      display: inline-block;
+      // width: clamp(8.125rem, 4.69rem + 15.27vw, 17rem);
+      // height: clamp(2.125rem, 1.593rem + 2.37vw, 3.5rem);
 
       @media screen and (width < 768.99px) {
         &--desktop {
