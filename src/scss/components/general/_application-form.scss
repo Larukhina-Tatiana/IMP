@@ -1,0 +1,103 @@
+.application-form {
+
+
+  &__label {
+    display: inline-block;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+  }
+
+  &__input {
+    width: 100%;
+    padding: 17px 5px 12px 20px;
+
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+
+    border-radius: 10px;
+    background-color: var(--white);
+    border: none;
+
+    &--name {
+      text-transform: uppercase;
+    }
+  }
+
+
+  &__select {
+    width: 100%;
+
+
+  }
+
+  .jq-selectbox:focus-visible {
+    outline: 1px solid rgba(255, 169, 0, .45);
+  }
+
+  select {
+    border: none;
+  }
+
+  .jq-selectbox__select {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding: 17px 5px 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: inherit;
+    font-size: inherit;
+    letter-spacing: 0;
+    color: rgba(0, 0, 0, 0.5);
+    background: $white;
+    box-shadow: none;
+    text-shadow: none;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+
+    @media (any-hover: hover) {
+      &:hover {
+        border: none;
+        background: $white !important;
+      }
+    }
+
+  }
+
+  .jq-selectbox__dropdown {
+    width: 100% !important;
+    font-size: inherit;
+    background: $white;
+    border: 1px solid rgba(255, 169, 0, .45);
+  }
+
+
+  .checkbox__label {
+    // display: inline;
+  }
+
+  .checkbox__text {
+    display: inline;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text);
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .policy {
+    display: inline-flex;
+    text-decoration: underline .3px solid $text;
+    text-underline-offset: 3px;
+  }
+}

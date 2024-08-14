@@ -116,6 +116,11 @@
     color: var(--red);
     border: 2px solid var(--red);
   }
+
+  &--color-text {
+    color: var(--text);
+    border: 2px solid var(--text);
+  }
 }
 
 .see-all {

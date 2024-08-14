@@ -1,0 +1,38 @@
+.vacancy {
+  height: 100%;
+  width: 307px;
+  display: flex;
+  flex-direction: column;
+  padding: 34px 20px 33px 33px;
+  align-items: flex-start;
+  border-radius: 30px;
+  background-position: top 41% right;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+
+  &__article-box {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+
+    &:not(:last-child) {
+      margin-bottom: 27px;
+    }
+  }
+
+  &__descr {
+    line-height: 1.2;
+    text-wrap: balance;
+  }
+
+  &__btn {
+    margin-top: auto;
+  }
+}

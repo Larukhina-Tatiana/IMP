@@ -1,0 +1,35 @@
+.form-vacancies {
+  // margin-top: 132px;
+  margin-top: clamp(3.75rem, 2.008rem + 7.74vw, 8.25rem);
+
+  &__inner {
+    padding: 52px 43px 39px 52px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    border: 1px solid #ffe7b9;
+    border-radius: 16px;
+    background-color: #ffecca;
+  }
+
+  &__title-box {
+    max-width: 480px;
+    background-image:
+      -webkit-image-set(url('../../images/vacancies/like1x.png') type('image/png') 1x,
+        url('../../images/vacancies/like2x.png') type('image/png') 2x);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__form {
+    max-width: 592px;
+  }
+}

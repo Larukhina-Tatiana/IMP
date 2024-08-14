@@ -44,6 +44,7 @@ function htmlInclude() {
     "./src/html/page-product.html",
     "./src/html/page-catalog.html",
     "./src/html/page-stock.html",
+    "./src/html/page-vacancies.html",
     // "./src/html/select.html",
   ])
     .pipe(
@@ -170,6 +171,7 @@ function scripts() {
       "./src/js/sliders.js",
       "./src/js/favorite.js",
       "./src/js/script.js",
+      "./src/js/filter-style.js",
       // "./src/js/progress.js",
       // "./src/js/to-top.js",
       // "./src/js/accordeon.js",
