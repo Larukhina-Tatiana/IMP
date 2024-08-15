@@ -1,20 +1,18 @@
 .application-form {
 
-
   &__label {
     display: inline-block;
     width: 100%;
 
     &:not(:last-child) {
-      margin-bottom: 12px;
+      margin-bottom: 16px;
     }
-
   }
 
   &__input {
     width: 100%;
     padding: 17px 5px 12px 20px;
-
+    font-size: clamp(1.125rem, 1.077rem + 0.22vw, 1.25rem);
     font-weight: 600;
     color: rgba(0, 0, 0, 0.5);
 
@@ -30,8 +28,8 @@
 
   &__select {
     width: 100%;
-
-
+    font-size: clamp(1.125rem, 1.077rem + 0.22vw, 1.25rem);
+    color: rgba(0, 0, 0, 0.5);
   }
 
   .jq-selectbox:focus-visible {
@@ -66,7 +64,6 @@
         background: $white !important;
       }
     }
-
   }
 
   .jq-selectbox__dropdown {
@@ -74,11 +71,6 @@
     font-size: inherit;
     background: $white;
     border: 1px solid rgba(255, 169, 0, .45);
-  }
-
-
-  .checkbox__label {
-    // display: inline;
   }
 
   .checkbox__text {
@@ -90,14 +82,22 @@
   }
 
   &__bottom {
+    margin-top: 27px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 26px;
   }
 
   .policy {
     display: inline-flex;
     text-decoration: underline .3px solid $text;
     text-underline-offset: 3px;
+  }
+
+  &__btn {
+    padding: 9px 39px 14px 40px;
+    font-size: 20px;
+    font-weight: 600;
   }
 }

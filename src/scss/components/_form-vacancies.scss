@@ -3,7 +3,7 @@
   margin-top: clamp(3.75rem, 2.008rem + 7.74vw, 8.25rem);
 
   &__inner {
-    padding: 52px 43px 39px 52px;
+    padding: clamp(1.5rem, 0.823rem + 3.01vw, 3.25rem) clamp(1.5rem, 1.016rem + 2.15vw, 2.75rem) 39px clamp(1.5rem, 1.016rem + 2.15vw, 2.75rem);
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -20,16 +20,42 @@
         url('../../images/vacancies/like2x.png') type('image/png') 2x);
     background-position: bottom right;
     background-repeat: no-repeat;
-    background-size: auto;
+    // background-size: auto;
+    background-size: clamp(5.813rem, 4.433rem + 6.13vw, 9.375rem) clamp(5.813rem, 4.433rem + 6.13vw, 9.375rem);
   }
 
   &__title {
     &:not(:last-child) {
-      margin-bottom: 30px;
+      margin-bottom: clamp(0.75rem, -0.024rem + 3.44vw, 2.75rem);
     }
   }
 
   &__form {
     max-width: 592px;
+  }
+
+  @media screen and (width < 1024.99px) {
+
+    &.container {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &__form {
+      max-width: 100%;
+    }
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__title-box {
+      max-width: 100%;
+      background-size: contain;
+    }
+
+    &__title {
+      width: 80%;
+    }
   }
 }

@@ -37,8 +37,8 @@
   &__btn {
     margin-top: -9px;
     margin-left: auto;
-    width: clamp(11.188rem, 8.938rem + 10vw, 17rem);
-    height: clamp(1.938rem, 1.333rem + 2.69vw, 3.5rem);
+    // width: clamp(11.188rem, 8.938rem + 10vw, 17rem);
+    // height: clamp(1.938rem, 1.333rem + 2.69vw, 3.5rem);
   }
 
   @media screen and (width < 1097.99px) {
