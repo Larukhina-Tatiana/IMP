@@ -1,6 +1,7 @@
 .form-vacancies {
   // margin-top: 132px;
   margin-top: clamp(3.75rem, 2.008rem + 7.74vw, 8.25rem);
+  margin-bottom: clamp(3.75rem, 2.008rem + 7.74vw, 8.25rem);
 
   &__inner {
     padding: clamp(1.5rem, 0.823rem + 3.01vw, 3.25rem) clamp(1.5rem, 1.016rem + 2.15vw, 2.75rem) 39px clamp(1.5rem, 1.016rem + 2.15vw, 2.75rem);

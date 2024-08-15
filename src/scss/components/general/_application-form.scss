@@ -3,6 +3,7 @@
   &__label {
     display: inline-block;
     width: 100%;
+    font-weight: 600;
 
     &:not(:last-child) {
       margin-bottom: 16px;
@@ -28,6 +29,7 @@
 
   &__select {
     width: 100%;
+    font-weight: 600;
     font-size: clamp(1.125rem, 1.077rem + 0.22vw, 1.25rem);
     color: rgba(0, 0, 0, 0.5);
   }
@@ -99,5 +101,9 @@
     padding: 9px 39px 14px 40px;
     font-size: 20px;
     font-weight: 600;
+  }
+
+  .application-form__btn--inside {
+    display: none;
   }
 }

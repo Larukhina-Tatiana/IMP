@@ -1,0 +1,128 @@
+.graph-modal__container {
+  width: 1290px;
+  // height: 840px;
+  padding-top: 56px;
+  padding-right: 11px;
+  padding-bottom: 56px;
+  padding-left: 54px;
+
+}
+
+
+
+
+
+
+.page-modal {
+
+  .simplebar-content {
+    height: 746px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .simplebar-track.simplebar-vertical {
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    border-radius: 9px;
+    background-color: #e0e0e0;
+  }
+
+  .simplebar-scrollbar:before {
+    // height: 561px;
+    background: var(--accent-color);
+    border-radius: 9px;
+    inset: 0;
+    opacity: 1;
+  }
+
+  .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+    top: 0;
+    bottom: 0;
+  }
+
+  .simplebar-scrollbar.simplebar-visible::before {
+    opacity: 1;
+  }
+
+
+  &__title {
+    padding-top: 7px;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 13px;
+  }
+
+  &__content {
+    // overflow-y: auto;
+    height: 746px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    &--cashier {
+      background-image:
+        -webkit-image-set(url('../images/vacancies/cashier1x.png') type('image/png') 1x,
+          url('../images/vacancies/cashier2x.png') type('image/png') 2x);
+    }
+  }
+
+  &__content-left {
+    padding-left: 72px;
+  }
+
+  &__list {
+    margin-top: 54px;
+  }
+
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 37px;
+    }
+  }
+
+  &__box-title {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  &__box-descr {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+
+  &__content-right {
+    margin-top: 6px;
+    margin-right: -30px;
+    padding: 31px 24px 36px;
+    border: 1px solid #ffe7b9;
+    border-radius: 16px;
+    width: 443px;
+    height: 464px;
+    background: #ffecca;
+  }
+
+
+
+  .application-form {
+    width: 100%;
+  }
+
+  .application-form__btn--inside {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .application-form__btn--main {
+    display: none;
+  }
+}
