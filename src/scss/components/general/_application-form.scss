@@ -12,8 +12,9 @@
 
   &__input {
     width: 100%;
-    padding: 17px 5px 12px 20px;
-    font-size: clamp(1.125rem, 1.077rem + 0.22vw, 1.25rem);
+    // padding: 17px 5px 12px 20px;
+    padding: clamp(0.625rem, 0.456rem + 0.75vw, 1.063rem) 5px 12px clamp(0.625rem, 0.383rem + 1.08vw, 1.25rem);
+    font-size: clamp(1rem, 0.903rem + 0.43vw, 1.25rem);
     font-weight: 600;
     color: rgba(0, 0, 0, 0.5);
 
@@ -30,7 +31,7 @@
   &__select {
     width: 100%;
     font-weight: 600;
-    font-size: clamp(1.125rem, 1.077rem + 0.22vw, 1.25rem);
+    font-size: clamp(1rem, 0.903rem + 0.43vw, 1.25rem);
     color: rgba(0, 0, 0, 0.5);
   }
 
@@ -46,8 +47,9 @@
     width: 100%;
     display: flex;
     align-items: center;
-    height: 56px;
-    padding: 17px 5px 12px 20px;
+    max-height: 56px;
+    // padding: 17px 5px 12px 20px;
+    padding: clamp(0.625rem, 0.456rem + 0.75vw, 1.063rem) 5px 12px clamp(0.625rem, 0.383rem + 1.08vw, 1.25rem);
     border: none;
     border-radius: 10px;
     font-weight: inherit;
@@ -79,12 +81,14 @@
     display: inline;
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 16px;
+    // font-size: 16px;
+    font-size: clamp(0.75rem, 0.653rem + 0.43vw, 1rem);
     color: var(--text);
   }
 
   &__bottom {
-    margin-top: 27px;
+    // margin-top: 27px;
+    margin-top: clamp(0.5rem, 0.04rem + 2.04vw, 1.688rem);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -99,11 +103,18 @@
 
   &__btn {
     padding: 9px 39px 14px 40px;
-    font-size: 20px;
+    // font-size: 20px;
+    font-size: clamp(1rem, 0.903rem + 0.43vw, 1.25rem);
     font-weight: 600;
   }
 
   .application-form__btn--inside {
     display: none;
+  }
+
+  .jq-selectbox__trigger-arrow {
+    content: url('../images/icons/trigger-arrow.svg');
+    width: 12px;
+    height: 9px;
   }
 }
