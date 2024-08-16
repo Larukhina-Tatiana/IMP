@@ -11,9 +11,10 @@
   }
 
   &__input {
+    height: clamp(2.625rem, 2.286rem + 1.51vw, 3.5rem);
     width: 100%;
     // padding: 17px 5px 12px 20px;
-    padding: clamp(0.625rem, 0.456rem + 0.75vw, 1.063rem) 5px 12px clamp(0.625rem, 0.383rem + 1.08vw, 1.25rem);
+    padding: clamp(0.625rem, 0.456rem + 0.75vw, 1.063rem) 5px clamp(0.75rem, 0.653rem + 0.43vw, 1rem) clamp(0.625rem, 0.383rem + 1.08vw, 1.25rem);
     font-size: clamp(1rem, 0.903rem + 0.43vw, 1.25rem);
     font-weight: 600;
     color: rgba(0, 0, 0, 0.5);
@@ -47,9 +48,10 @@
     width: 100%;
     display: flex;
     align-items: center;
-    max-height: 56px;
+    // height: 56px;
+    height: clamp(2.625rem, 2.286rem + 1.51vw, 3.5rem);
     // padding: 17px 5px 12px 20px;
-    padding: clamp(0.625rem, 0.456rem + 0.75vw, 1.063rem) 5px 12px clamp(0.625rem, 0.383rem + 1.08vw, 1.25rem);
+    padding: clamp(0.625rem, 0.456rem + 0.75vw, 1.063rem) 5px clamp(0.75rem, 0.653rem + 0.43vw, 1rem) clamp(0.625rem, 0.383rem + 1.08vw, 1.25rem);
     border: none;
     border-radius: 10px;
     font-weight: inherit;
