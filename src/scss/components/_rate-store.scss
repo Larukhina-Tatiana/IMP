@@ -61,7 +61,7 @@
   &__box {
     position: relative;
     z-index: 2;
-    text-align: right;
+    // text-align: right;
   }
 
   &__call {
@@ -83,6 +83,7 @@
   @media screen and (width < 1024.99px) {
     &__inner {
       flex-direction: column;
+      align-items: flex-start;
     }
 
     &__btn {
