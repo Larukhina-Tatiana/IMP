@@ -10,6 +10,15 @@
   background-repeat: no-repeat;
   background-size: auto;
 
+  @include transition ($transition-property: (box-shadow, transform));
+
+  @media (any-hover: hover) {
+    &:hover {
+      transform: skewY(-3deg) rotateY(20deg);
+      box-shadow: var(--box-shadow);
+    }
+  }
+
 
   &__article-box {
     margin-bottom: 24px;

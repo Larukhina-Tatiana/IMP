@@ -12,3 +12,10 @@ if (document.querySelector(".catalog__list")) {
     },
   });
 }
+if (document.querySelector(".contacts__content")) {
+  var mixer = mixitup(".contacts__box", {
+    load: {
+      filter: ".all",
+    },
+  });
+}

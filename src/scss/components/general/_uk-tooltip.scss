@@ -1,0 +1,30 @@
+.uk-tooltip {
+  /* 1 */
+  display: none;
+  /* 2 */
+  position: absolute;
+  z-index: 1030;
+  --uk-position-offset: 10px;
+  --uk-position-viewport-offset: 10;
+  /* 3 */
+  top: 0;
+  /* 4 */
+  box-sizing: border-box;
+  max-width: 200px;
+  padding: 3px 6px;
+  /* 5 */
+  background: red;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Show */
+.uk-tooltip.uk-active {
+  display: block;
+}
+
+:focus-visible {
+  outline: 2px dotted $red;
+}

@@ -1,0 +1,24 @@
+.register-element {
+  display: flex;
+  gap: 15px;
+
+
+  &__title {
+    font-size: clamp(1.25rem, 1.202rem + 0.22vw, 1.375rem);
+  }
+
+  &__time {
+    margin-top: 15px;
+
+    &::before {
+      content: url(../images/contacts/clock.svg);
+    }
+  }
+
+  &__name,
+  &__city,
+  &__street,
+  &__time {
+    font-size: clamp(1.125rem, 1.077rem + 0.22vw, 1.25rem);
+  }
+}

@@ -45,7 +45,7 @@ function htmlInclude() {
     "./src/html/page-catalog.html",
     "./src/html/page-stock.html",
     "./src/html/page-vacancies.html",
-    // "./src/html/select.html",
+    "./src/html/page-contacts.html",
   ])
     .pipe(
       fileinclude({
@@ -166,6 +166,7 @@ function scripts() {
       // "node_modules/siema/dist/siema.min.js",
       // "node_modules/aos/dist/aos.js",
       "libs/formstyler/jquery.formstyler.min.js",
+      "libs/tooltip/uikit.min.js",
       // "js/ion.rangeSlider.min.js",
       // "js/jquery.rateyo.js",
       "./src/js/burgers.js",
@@ -178,8 +179,8 @@ function scripts() {
       // "./src/js/accordeon.js",
       "libs/graph-modal/graph-modal.min.js",
       "./src/js/my-mixitup.js",
-      // "./src/js/modals.js",
-      // "./src/js/selects.js",
+      "./src/js/modals.js",
+      "./src/js/selects.js",
       // "./src/js/tabs.js",
       // "js/modal.js",
       // Для подключения многих (всех) файлов js? Обязательно исключать main.min.js
@@ -276,4 +277,4 @@ exports.build = series(cleanDist, building);
 
 // exports.default = parallel(styles, images, scripts, watching);
 
-exports.default = series(parallel(htmlInclude, images), styles, watchFiles);
+exports.default = series(parallel(htmlInclude), images, styles, watchFiles);
