@@ -13,18 +13,9 @@ if (document.querySelector(".catalog__list")) {
   });
 }
 if (document.querySelector(".contacts__content")) {
-  // if ($(window).width() > 768.99) {
-  //   var mixer = mixitup(".contacts__box", {
-  //     load: {
-  //       filter: ".all",
-  //     },
-  //   });
-  // }
-  // if ($(window).width() < 768) {
   var mixer = mixitup(".contacts__box", {
     load: {
       filter: ".map",
     },
   });
 }
-// }

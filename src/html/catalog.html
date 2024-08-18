@@ -16,8 +16,9 @@
       @include('aside.html')
 
       <div class="catalog__content">
-        <ul class="tabs-buttons__list">
-          <li class="tabs-buttons__item">
+        <!-- <div class=""> -->
+        <ul class="tabs-buttons__list overflow">
+          <li class=" tabs-buttons__item">
             <button class="tabs-buttons tabs-buttons--catalog" data-filter=".all">Всё</button>
           </li>
           <li class="tabs-buttons__item">
@@ -39,13 +40,14 @@
             <button class="tabs-buttons tabs-buttons--catalog" data-filter=".vegetarians">Вегетарианцам</button>
           </li>
           <li class="tabs-buttons__item">
-            <button class="tabs-buttons tabs-buttons--catalog" data-filter=".nogluten">Безглютеновая продукция</button>
+            <button class="tabs-buttons tabs-buttons--catalog" data-filter=".nogluten">Безглютеновая
+              продукция</button>
           </li>
           <li class="tabs-buttons__item">
             <button class="tabs-buttons tabs-buttons--catalog" data-filter=".pizza">Пицца</button>
           </li>
         </ul>
-
+        <!-- </div> -->
         <div class="catalog__box">
           <ul class="catalog__list">
             <li class="catalog__item mix all bread">
