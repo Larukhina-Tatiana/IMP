@@ -12,7 +12,23 @@
     }
   }
 
-  &__tel {
+  &__tel,
+  &__email {
     font-weight: 700;
+  }
+
+  @media screen and (width < 768.99px) {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+    }
+  }
+
+  @media screen and (width < 425.99px) {
+    &__list {
+      justify-content: flex-start;
+    }
   }
 }

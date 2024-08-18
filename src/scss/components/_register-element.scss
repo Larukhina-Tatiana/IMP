@@ -21,4 +21,8 @@
   &__time {
     font-size: clamp(1.125rem, 1.077rem + 0.22vw, 1.25rem);
   }
+
+  // @media screen and (width < 768.99px) {
+  //   width: 314px;
+  // }
 }
