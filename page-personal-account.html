@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
+  <title>Интернет-Личный кабинет</title>
+  <!-- <link rel="stylesheet" href="libs/slick/slick.css"> -->
+  <!-- <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+  <div class="container">
+    <div class="header__box">
+      <div class="header__top">
+        <a class="header__logo logo" href="./index.html">
+          <img class="logo-svg" src="./images/icons/logo.svg" alt="Логотип">
+        </a>
+        
+        
+        <!-- <div class="header__actions actions"> -->
+        
+        
+        
+
+        <!-- <div class="header__cart cart"></div> -->
+      </div>
+    </div>
+    <div class="header__bottom">
+      <nav class="header__nav nav overflow">
+  <ul class="nav__list">
+    <li class="nav__item">
+      <a class="nav__link nav__link--supermarket" href="./supermarket.html">
+        Супермаркет
+      </a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link nav__link--cooking" href="./cooking.html">
+        Кулинария
+      </a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link nav__link--freezing" href="./freezing.html">
+        Заморозка
+      </a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link nav__link--other" href="./other.html">
+        Другое
+      </a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link nav__link--stock" href="./page-stock.html">
+        Акции
+      </a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link nav__link--shops" href="./shops.html">
+        Магазины
+      </a>
+    </li>
+  </ul>
+</nav>
+    </div>
+    <!-- </div> -->
+  </div>
+</header>
+  <main>
+    <nav class="breadcrumbs" title="breadcrumbs navigation">
+  <div class="container">
+    <div class="breadcrumbs__inner">
+      <ol class="breadcrumbs__list mobile-overflow">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="./index.html">Главная</a></li>
+        <li class="breadcrumbs__item"><span class="breadcrumbs__nolink">Личный кабинет</span></li>
+      </ol>
+    </div>
+  </div>
+</nav>
+    <section class="personal-account">
+  <div class="container">
+    <h3 class="section-h3">Личный кабинет</h3>
+    <ul class="tabs-buttons__list">
+      <li class="tabs-buttons__item">
+        <button class="tabs-buttons tabs-buttons--personal-account" data-filter=".personal-data">Личные данные</button>
+      </li>
+      <li class="tabs-buttons__item">
+        <button class="tabs-buttons tabs-buttons--personal-account" data-filter=".order-history">История
+          заказов</button>
+      </li>
+      <li class="tabs-buttons__item">
+        <button class="tabs-buttons tabs-buttons--personal-account" data-filter=".featured">Избранное</button>
+      </li>
+    </ul>
+
+    <div class="contacts__box">
+      <div class="contacts__map mix personal-data">
+        <div class="personal-data__content">
+          <form action="#" class="personal-data__form personal-data-form">
+            <label class="application-form__label" for="name">
+              <input class="application-form__input application-form__imput--name" type="text" name="name" id="name"
+                placeholder="Ф.И.О.">
+            </label>
+            <label class="application-form__label" for="phone">
+              <input class="application-form__input" type="tel" name="phone" id="phone" placeholder="Телефон"
+                required="">
+            </label>
+            <label class="application-form__label" for="birth">
+              <input class="application-form__input" type="date" name="birth" id="birth" placeholder="Дата рождения"
+                required="">
+              <span>
+                Дарим подарки в день рождения.
+                К сожалению, дату нельзя изменить.
+              </span>
+            </label>
+            <label class="application-form__label" for="email">
+              <input class="application-form__input" type="email" name="email" id="email" required="">
+              <span>
+                Сообщим по почте о бонусах, акциях и новых продуктах
+              </span>
+            </label>
+
+            <button class="btn">Сохранить</button>
+          </form>
+          <div class="personal-data__card-info card-info">
+            <div class="card-info__inner">
+              <p class="personal-data__card-info-text">
+                Полчайте кэшбек до 5%
+                с каждого заказа
+                и оплачивайте покупки
+              </p>
+              <span>
+                Карта №a437503
+              </span>
+            </div>
+            <div class="card-info__bonuses">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contacts__register contacts-register mix list all">
+
+
+      </div>
+    </div>
+    
+  </div>
+
+</section>
+  </main>
+
+  <footer class="footer">
+  <!-- <a href="#page" data-scroll class="to-top">
+    <span class="to-top__text">Go to top</span>
+    <span class="to-top__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+        <path fill="#fff" fill-rule="evenodd"
+          d="M4.293 15.707a1 1 0 0 1 0-1.414l7-7a1 1 0 0 1 1.414 0l7 7a1 1 0 0 1-1.414 1.414L12 9.414l-6.293 6.293a1 1 0 0 1-1.414 0Z"
+          clip-rule="evenodd" />
+      </svg>
+    </span>
+  </a> -->
+  <div class="container">
+    <div class="footer__inner">
+      <nav class="footer__nav" title="secondary navigation">
+        <div class="footer__nav-col">
+          <span class="footer__title">Ильинский онлайн</span>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="./cooking.html">Кулинария</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="./supermarket.html">Супермаркет</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Заморозка</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Другое</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <span class="footer__title">Ильинский клуб</span>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="./page-stock.html">Акции</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Доставка и оплата</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Программа лояльности</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Политика конфиденциальности</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="./page-vacancies.html">Вакансии</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__communication footer-communication">
+          <ul class="footer-communication__list">
+            <li class="footer-communication__item">
+              <a class="footer-communication__link footer-communication__link--phone" href="tel:+38000490999">+38 (000)
+                49-09-99<span>Ежедневно c&nbsp;09:00 до&nbsp;21:00</span></a>
+            </li>
+            <li class="footer-communication__item">
+              <a class="footer-communication__link footer-communication__link--compas"
+                href="./page-contacts.html">Адреса
+                магазинов</a>
+            </li>
+            <li class="footer-communication__item">
+              <a class="footer-communication__link footer-communication__link--insta" href="">Следите за нами</a>
+            </li>
+            <li class="footer-communication__item">
+              <a class="footer-communication__link footer-communication__link--mail"
+                href="maito:feedback@ilinsky.com">Обратная связь</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <form class="footer__form footer-form">
+        <p class="footer-form__title">
+          Подпишитесь на&nbsp;вкусные и&nbsp;полезые новости
+        </p>
+        <div class="footer-form__inner">
+          <label class="footer-form__label" for="e-mail">
+            <input class="footer-form__input" type="email" name="e-mail" id="e-mail" required>
+          </label>
+          <button class="footer-form__btn btn-transparent btn-transparent--bg-white" type="submit">Подписаться</button>
+        </div>
+        <input class="checkbox" type="checkbox" name="policy" id="policy" checked="">
+        <label class="checkbox__label" for="policy">
+          <span class="checkbox__castom-icon"></span>
+          <span class="checkbox__text">Согласен с&nbsp;политикой конфиденциальности</span>
+        </label>
+      </form>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">
+        &copy;&nbsp;2022 Ильинский онлайн&nbsp;&mdash; доставкатоваров и&nbsp;продуктов на&nbsp;дом
+      </p>
+      <p class="footer__copyright">
+        Информация на&nbsp;сайте не&nbsp;является публичной офертой
+      </p>
+      <ul class="footer-render">
+  <li class="footer-render__item">
+    <a class="footer-render__link" href="">
+      <img src="./images/icons/visa.svg" alt="иконка карты виза" width="37">
+    </a>
+  </li>
+  <li class="footer-render__item">
+    <a class="footer-render__link" href="">
+      <img src="./images/icons/mastercard.svg" alt="иконка карты мастеркард" width="117">
+    </a>
+  </li>
+  <li class="footer-render__item">
+    <a class="footer-render__link" href="">
+      <img src="./images/icons/googlePay.svg" alt="иконка карты мастеркард" width="44">
+    </a>
+  </li>
+</ul>
+    </div>
+  </div>
+</footer>
+
+<div class="overlay"></div>
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <!-- <script src="libs/slick/slick.min.js"></script> -->
+  <!-- <script src="libs/swiper/swiper-bundle.min.js"></script> -->
+  <!--<script src="libs/smoothscroll/smooth-scroll.min.js"></script> -->
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <!-- <script src="./src/js/main.js"></script> -->
+  <!-- <script src="./src/js/burger.js"></script>-->
+  <!--<script src="./src/js/video.js"></script>
+  
+  <script src="./src/js/progress.js"></script>
+  <script src="./src/js/to-top.js"></script> -->
+
+  <script src="js/main.min.js"></script>
+  <!-- <script src=" js/jquery.formstyler.min.js"></script> -->
+
+  <!-- <script src="./src/js/burgers.js"></script> -->
+  <!-- <script src="./src/js/script.js"></script> -->
+  <!-- <script src="./src/js/modal-login.js"></script> -->
+  <!-- <script src="./src/js/sliders.js"></script> -->
+  <!-- <script src="./src/js/favorite.js"></script> -->
+  <!-- <script src="./src/js/selects.js"></script> -->
+  <!-- <script src="./src/js/filter-style.js"></script> -->
+  <script src="./src/js/titles.js"></script>
+
+
+
+
+  <!-- <script src="./src/js/my-mixitup.js"></script> -->
+
+</body>
+
+</html>

@@ -46,6 +46,7 @@ function htmlInclude() {
     "./src/html/page-stock.html",
     "./src/html/page-vacancies.html",
     "./src/html/page-contacts.html",
+    "./src/html/page-personal-account.html",
   ])
     .pipe(
       fileinclude({

@@ -1,0 +1,71 @@
+<section class="personal-account">
+  <div class="container">
+    <h3 class="section-h3">Личный кабинет</h3>
+    <ul class="tabs-buttons__list">
+      <li class="tabs-buttons__item">
+        <button class="tabs-buttons tabs-buttons--personal-account" data-filter=".personal-data">Личные данные</button>
+      </li>
+      <li class="tabs-buttons__item">
+        <button class="tabs-buttons tabs-buttons--personal-account" data-filter=".order-history">История
+          заказов</button>
+      </li>
+      <li class="tabs-buttons__item">
+        <button class="tabs-buttons tabs-buttons--personal-account" data-filter=".featured">Избранное</button>
+      </li>
+    </ul>
+
+    <div class="contacts__box">
+      <div class="contacts__map mix personal-data">
+        <div class="personal-data__content">
+          <form action="#" class="personal-data__form personal-data-form">
+            <label class="application-form__label" for="name">
+              <input class="application-form__input application-form__imput--name" type="text" name="name" id="name"
+                placeholder="Ф.И.О.">
+            </label>
+            <label class="application-form__label" for="phone">
+              <input class="application-form__input" type="tel" name="phone" id="phone" placeholder="Телефон"
+                required="">
+            </label>
+            <label class="application-form__label" for="birth">
+              <input class="application-form__input" type="date" name="birth" id="birth" placeholder="Дата рождения"
+                required="">
+              <span>
+                Дарим подарки в день рождения.
+                К сожалению, дату нельзя изменить.
+              </span>
+            </label>
+            <label class="application-form__label" for="email">
+              <input class="application-form__input" type="email" name="email" id="email" required="">
+              <span>
+                Сообщим по почте о бонусах, акциях и новых продуктах
+              </span>
+            </label>
+
+            <button class="btn">Сохранить</button>
+          </form>
+          <div class="personal-data__card-info card-info">
+            <div class="card-info__inner">
+              <p class="personal-data__card-info-text">
+                Полчайте кэшбек до 5%
+                с каждого заказа
+                и оплачивайте покупки
+              </p>
+              <span>
+                Карта №a437503
+              </span>
+            </div>
+            <div class="card-info__bonuses">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contacts__register contacts-register mix list all">
+
+
+      </div>
+    </div>
+    <!-- @include('catalog-cooking.html') -->
+  </div>
+
+</section>
