@@ -73,6 +73,7 @@
 }
 
 .btn-cart {
+  padding: 8px 24px;
   border: 1px solid var(--red);
   // border-radius: 60px;
   border-radius: clamp(0.563rem, -0.671rem + 5.48vw, 3.75rem);
@@ -91,7 +92,7 @@
   }
 
   @media screen and (width < 425.99px) {
-    width: 100%;
+    // width: 100%;
   }
 }
 
@@ -138,7 +139,7 @@
   // padding: clamp(0.375rem, 0.302rem + 0.32vw, 0.563rem) clamp(0.813rem, 0.571rem + 1.08vw, 1.438rem) clamp(0.563rem, 0.49rem + 0.32vw, 0.75rem) clamp(0.938rem, 0.792rem + 0.65vw, 1.313rem);
 
 
-  border: 1px solid #ffe7b9;
+  border: 1px solid $peach;
   // border-radius: 16px;
   border-radius: clamp(0.75rem, 0.653rem + 0.43vw, 1rem);
   background: #fff8eb;

@@ -1,21 +1,26 @@
 .actions {
   display: flex;
   align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 
 
   &__price {
-    margin-right: 22px;
+    margin-right: 12px;
     font-weight: 700;
-    font-size: 32px;
+    font-size: clamp(1.375rem, 1.133rem + 1.08vw, 2rem);
   }
 
   &__btn {
-    margin-right: 10px;
+    font-weight: 600;
+    font-size: 20px;
+
   }
 
   &__favorite.favorite {
-    width: 44px;
-    height: 42px;
+    padding: 11px;
+    // width: 44px;
+    // height: 42px;
     border-radius: 100%;
   }
 }

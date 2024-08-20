@@ -5,7 +5,7 @@
   margin-bottom: clamp(2.5rem, 0.565rem + 8.6vw, 7.5rem);
   // padding: 41px 24px 24px 62px;
 
-  // border: 1px solid #ffe7b9;
+  // border: 1px solid $peach;
   // border-radius: 16px;
   // background-color: #ffecca;
 
@@ -17,7 +17,7 @@
     flex-wrap: wrap;
     gap: 30px 10px;
 
-    border: 1px solid #ffe7b9;
+    border: 1px solid $peach;
     border-radius: 16px;
     background-color: #ffecca;
   }
@@ -102,7 +102,7 @@
     padding: 5px 5px 6px 20px;
     font-weight: 400;
     font-size: clamp(0.75rem, 0.556rem + 0.86vw, 1.25rem);
-    border: 1px solid #ffe7b9;
+    border: 1px solid $peach;
     border-radius: 16px;
     width: 381px;
     // height: 36px;

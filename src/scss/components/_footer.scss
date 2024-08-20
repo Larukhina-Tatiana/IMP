@@ -18,7 +18,8 @@
   &__nav {
     display: flex;
     // gap: 66px;
-    gap: clamp(1.563rem, -13.003rem + 21.24vw, 4.125rem);
+    // gap: clamp(1.563rem, -13.003rem + 21.24vw, 4.125rem);
+    gap: clamp(0.938rem, -2.23rem + 7.88vw, 4.125rem);
   }
 
   &__title {

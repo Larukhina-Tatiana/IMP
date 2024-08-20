@@ -72,6 +72,18 @@
   </div>
 </header>
   <main>
+    <nav class="breadcrumbs" title="breadcrumbs navigation">
+  <div class="container">
+    <div class="breadcrumbs__inner">
+      <ol class="breadcrumbs__list mobile-overflow">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="./index.html">Главная</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="./page-catalog.html">Каталог</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="./page-catalog.html">Супермаркет</a></li>
+        <li class="breadcrumbs__item"><span class="breadcrumbs__nolink">Блинчики замороженные Фруктовая Коллекция с малиной</span></li>
+      </ol>
+    </div>
+  </div>
+</nav>
     <section class="product">
   <div class="container">
     <div class="product__inner">
@@ -81,19 +93,19 @@
             <div class="swiper-slide">
               <div class="product__cover-big">
                 <img src="image/png" srcset="./images/product/image1@1x.png 1x, ./images/product/image1@2x.png 2x"
-                  loading="lazy" decoding="async" alt="Блинчики замороженные Сибирская Коллекция с малиной">
+                  loading="lazy" decoding="async" alt="Блинчики замороженные Фруктовая Коллекция с малиной">
               </div>
             </div>
             <div class="swiper-slide">
               <div class="product__cover-big">
                 <img src="image/png" srcset="./images/product/image1@1x.png 1x, ./images/product/image1@2x.png 2x"
-                  loading="lazy" decoding="async" alt="Блинчики замороженные Сибирская Коллекция с малиной">
+                  loading="lazy" decoding="async" alt="Блинчики замороженные Фруктовая Коллекция с малиной">
               </div>
             </div>
             <div class="swiper-slide">
               <div class="product__cover-big">
                 <img src="image/png" srcset="./images/product/image1@1x.png 1x, ./images/product/image1@2x.png 2x"
-                  loading="lazy" decoding="async" alt="Блинчики замороженные Сибирская Коллекция с малиной">
+                  loading="lazy" decoding="async" alt="Блинчики замороженные Фруктовая Коллекция с малиной">
               </div>
             </div>
           </div>
@@ -104,21 +116,21 @@
               <div class="product__cover-small">
                 <img class="product__img-small" src="image/png"
                   srcset="./images/product/s-image2@1x.png 1x, ./images/product/s-image2@2x.png 2x" loading="lazy"
-                  decoding="async" alt="Блинчики замороженные Сибирская Коллекция с малиной">
+                  decoding="async" alt="Блинчики замороженные Фруктовая Коллекция с малиной">
               </div>
             </div>
             <div class="swiper-slide">
               <div class="product__cover-small">
                 <img class="product__img-small" src="image/png"
                   srcset="./images/product/s-image3@1x.png 1x, ./images/product/s-image3@2x.png 2x" loading="lazy"
-                  decoding="async" alt="Блинчики замороженные Сибирская Коллекция с малиной">
+                  decoding="async" alt="Блинчики замороженные Фруктовая Коллекция с малиной">
               </div>
             </div>
             <div class="swiper-slide">
               <div class="product__cover-small">
                 <img class="product__img-small" src="image/png"
                   srcset="./images/product/s-image4@1x.png 1x, ./images/product/s-image4@2x.png 2x" loading="lazy"
-                  decoding="async" alt="Блинчики замороженные Сибирская Коллекция с малиной">
+                  decoding="async" alt="Блинчики замороженные Фруктовая Коллекция с малиной">
               </div>
             </div>
           </div>
@@ -126,13 +138,25 @@
       </div>
 
       <div class="product__description">
-        <div class="product__subtitle">Сибирская Коллекция</div>
-        <h3 class="product__title section-h3 section-h3--ttn">Блинчики замороженные Сибирская Коллекция с малиной</h3>
+        <div class="product__subtitle">Фруктовая Коллекция</div>
+        <h3 class="product__title section-h3 section-h3--ttn">Блинчики замороженные Фруктовая Коллекция с малиной</h3>
         <span class="product__weight">400 г</span>
         <span class="product__decor">・</span>
         <span class="product__availability">В наличии 4 шт</span>
         <div class="product__actions actions">
           <span class="actions__price">376,00 ₴/шт</span>
+          <div class="stepper">
+  <button class="stepper__btn stepper__btn--up" aria-label="Увеличить количество">
+    +
+  </button>
+  <label class="stepper__field">
+    <input type="text" value="1" maxlength="3" class="stepper__input">
+    <span class="stepper__text">шт</span>
+  </label>
+  <button class="stepper__btn stepper__btn--down stepper__btn--disabled" aria-label="Уменьшить количество">
+    -
+  </button>
+</div>
           <button class="actions__btn btn-cart">В корзину</button>
           <button class="actions__favorite favorite">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="none">
@@ -306,7 +330,7 @@
 
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
   <!-- <script src="libs/slick/slick.min.js"></script> -->
-  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="libs/swiper/swiper-bundle.min.js"></script> -->
   <!--<script src="libs/smoothscroll/smooth-scroll.min.js"></script> -->
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <!-- <script src="./src/js/main.js"></script> -->
@@ -318,15 +342,16 @@
 
   <script src="js/main.min.js"></script>
 
-  <script src="./src/js/burgers.js"></script>
-  <script src="./src/js/script.js"></script>
+  <!-- <script src="./src/js/burgers.js"></script> -->
+  <!-- <script src="./src/js/script.js"></script> -->
   <!-- <script src="./src/js/modal-login.js"></script> -->
   <script src="./src/js/slider-product.js"></script>
+  <script src="./src/js/stepper.js"></script>
 
 
 
 
-  <script src="./src/js/my-mixitup.js"></script>
+  <!-- <script src="./src/js/my-mixitup.js"></script> -->
 
 </body>
 
