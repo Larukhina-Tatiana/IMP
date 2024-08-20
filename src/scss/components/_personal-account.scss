@@ -1,0 +1,57 @@
+.personal-account {
+
+
+  &__title {
+    margin-bottom: clamp(0.875rem, 0.294rem + 2.58vw, 2.375rem);
+  }
+
+  &__tabs-list {
+    position: relative;
+
+    padding-bottom: 6px;
+    display: flex;
+    gap: 7px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 4px;
+      bottom: 0;
+      left: 0;
+      background-color: #e0e0e0;
+      border-radius: 9px;
+    }
+  }
+
+  &__tabs {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+    font-size: clamp(0.875rem, 0.681rem + 0.86vw, 1.375rem);
+    color: rgba(0, 0, 0, 0.5);
+    @include transition ($transition-property: (color));
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 4px;
+      bottom: -6px;
+      left: 0;
+      background-color: transparent;
+      border-radius: 9px;
+      z-index: 2;
+      @include transition ($transition-property: (background-color));
+    }
+  }
+}
+
+.mixitup-control-active {
+  color: $text;
+}
+
+.mixitup-control-active.personal-account__tabs::after {
+  background-color: $red;
+}

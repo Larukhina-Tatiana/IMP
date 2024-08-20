@@ -12,10 +12,10 @@ if (document.querySelector(".catalog__list")) {
     },
   });
 }
-if (document.querySelector(".contacts__content")) {
-  var mixer = mixitup(".contacts__box", {
+if (document.querySelector(".personal-account__tabs-list")) {
+  var mixer = mixitup(".personal-account__box", {
     load: {
-      filter: ".map",
+      filter: ".data",
     },
   });
 }
