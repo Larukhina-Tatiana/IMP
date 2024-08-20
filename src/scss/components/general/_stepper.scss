@@ -5,9 +5,6 @@
   align-items: center;
   gap: 25px;
   border-radius: 58px;
-
-  // width: 146px;
-  // height: 42px;
   color: var(--yellow);
   background-color: $serenade;
   user-select: none;
@@ -42,7 +39,6 @@
     text-align: center;
     border-radius: 100%;
     background-color: transparent;
-    // outline: 1px solid red;
     width: 29px;
     height: 29px;
     flex-shrink: 0;
