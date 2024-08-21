@@ -1,9 +1,15 @@
 .personal-data {
   margin-top: 52px;
 
+  &__card {
+    margin-top: 24px;
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
     gap: 15px;
+    flex-wrap: wrap-reverse;
   }
+
 }

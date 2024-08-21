@@ -18,25 +18,31 @@
       <div class="personal-data mix data">
         <div class="personal-data__content">
           <form action="#" class="personal-data__form form-personal-data ">
-
-            <label class="form-personal-data__label" for="name">Имя
-              <input class="form-personal-data__input form-personal-data__imput--name" type="text" name="name" id="name"
-                placeholder="Ф.И.О.">
-            </label>
-            <label class="form-personal-data__label" for="phone">Номер телефона
-              <input class="form-personal-data__input" type="tel" name="phone" id="phone" placeholder="Телефон"
-                required="">
-            </label>
             <div class="form-personal-data__inner">
-              <label class="form-personal-data__label" for="birth">День рождения
-                <input class="form-personal-data__input" type="date" name="birth" id="birth" placeholder="Дата рождения"
+              <label class="form-personal-data__label" for="name">
+                <span class="form-personal-data__label-title">Имя</span>
+                <input class="form-personal-data__input" type="text" name="name" id="name" placeholder="Имя Фамилия"
                   required="">
+              </label>
+            </div>
+            <div class="form-personal-data__inner">
+              <label class="form-personal-data__label" for="phone">
+                <span class="form-personal-data__label-title">Номер телефона</span>
+                <input class="form-personal-data__input" type="tel" name="phone" id="phone" placeholder="Телефон"
+                  required="">
+              </label>
+            </div>
+            <div class="form-personal-data__inner">
+              <label class="form-personal-data__label" for="birth">
+                <span class="form-personal-data__label-title">День рождения</span>
+                <input class="form-personal-data__input" type="date" name="birth" id="birth" required="">
               </label>
               <span class="form-personal-data__descr">Дарим подарки в&nbsp;день рождения.
                 К&nbsp;сожалению, дату нельзя изменить.</span>
             </div>
             <div class="form-personal-data__inner">
-              <label class="form-personal-data__label" for="email">Эл. почта
+              <label class="form-personal-data__label" for="email">
+                <span class="form-personal-data__label-title">Эл. почта</span>
                 <input class="form-personal-data__input" type="email" name="email" id="email" required="">
               </label>
               <span class="form-personal-data__descr">
@@ -44,33 +50,34 @@
               </span>
             </div>
 
-            <button class="btn">Сохранить</button>
-            <button class="btn">Выйти</button>
+            <button class="personal-data__btn btn">Сохранить</button>
+            <button class="personal-data__btn btn">Выйти</button>
           </form>
-          <div class="personal-data__card-info card-info">
-            <div class="card-info__inner">
-              <p class="personal-data__card-info-text">
-                Полчайте кэшбек до&nbsp;5% с&nbsp;каждого заказа и&nbsp;оплачивайте покупки
-              </p>
-              <span>
-                Карта №a437503
-              </span>
-            </div>
-            <div class="card-info__bonuses">
-              <span>
-                Бонусы
-              </span>
-              <span>
-                16
-              </span>
+          <div class="personal-data__card">
+            <div class="personal-data__card-info card-info">
+              <div class="card-info__content">
+                <strong class="card-info__call">
+                  Полчайте кэшбек до&nbsp;5% с&nbsp;каждого заказа и&nbsp;оплачивайте покупки
+                </strong>
+                <span class="card-info__num">
+                  Карта №A437503
+                </span>
+              </div>
+              <div class="card-info__bonuses">
+                <span class="card-info__bonuses-name">
+                  Бонусы
+                </span>
+                <span class="card-info__bonuses-quantity">
+                  16
+                </span>
+              </div>
+
             </div>
           </div>
-
         </div>
-      </div>
 
+      </div>
+      <!-- @include('catalog-cooking.html') -->
     </div>
-    <!-- @include('catalog-cooking.html') -->
-  </div>
 
 </section>
