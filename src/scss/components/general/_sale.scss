@@ -11,5 +11,19 @@
   color: $white;
   border-radius: clamp(0.688rem, 0.47rem + 0.97vw, 1.25rem) 0;
   background: var(--red);
+}
 
+.at-work {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 91px;
+  max-height: 23px;
+  padding: 3px 8px;
+  font-weight: 700;
+  font-size: 16px;
+  // font-size: clamp(0.75rem, 0.46rem + 1.29vw, 1.5rem);
+  color: $white;
+  border-radius: 10px 0;
+  background: var(--red);
 }
