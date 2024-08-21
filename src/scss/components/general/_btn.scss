@@ -118,6 +118,23 @@
     border: 2px solid var(--red);
   }
 
+  &--bg-grey {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    color: $mischka;
+    border: 2px solid $alto;
+    @include transition ($transition-property: (color, background-color));
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $white;
+        background-color: $mischka;
+      }
+    }
+  }
+
   &--color-text {
     color: var(--text);
     border: 2px solid var(--text);

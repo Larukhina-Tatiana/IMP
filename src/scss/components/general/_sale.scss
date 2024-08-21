@@ -13,17 +13,25 @@
   background: var(--red);
 }
 
-.at-work {
+.order__label {
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 91px;
+  // max-width: 91px;
   max-height: 23px;
-  padding: 3px 8px;
+  padding: 2px 10px;
   font-weight: 700;
-  font-size: 16px;
-  // font-size: clamp(0.75rem, 0.46rem + 1.29vw, 1.5rem);
+  // font-size: 16px;
+  font-size: clamp(0.75rem, 0.653rem + 0.43vw, 1rem);
   color: $white;
-  border-radius: 10px 0;
-  background: var(--red);
+  border-radius: clamp(0.5rem, 0.452rem + 0.22vw, 0.625rem) 0;
+
+
+  &--at-work {
+    background: var(--red);
+  }
+
+  &--completed {
+    background: $mischka;
+  }
 }

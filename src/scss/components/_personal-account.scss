@@ -1,7 +1,8 @@
 .personal-account {
   // padding-top: 20px;
   padding-top: clamp(0.063rem, -0.421rem + 2.15vw, 1.313rem);
-  padding-bottom: 139px;
+  // padding-bottom: 139px;
+  padding-bottom: clamp(3.313rem, 1.232rem + 9.25vw, 8.688rem);
 
   &__title {
     margin-bottom: clamp(0.875rem, 0.149rem + 3.23vw, 2.75rem);
