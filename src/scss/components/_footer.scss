@@ -83,7 +83,8 @@
 .footer-communication {
 
   &__link {
-    padding-left: 37px;
+    // padding-left: 37px;
+    padding-left: clamp(1.688rem, 1.446rem + 1.08vw, 2.313rem);
 
     span {
       display: block;
@@ -95,7 +96,8 @@
     &--phone {
       margin-bottom: 8px;
       font-weight: 600;
-      font-size: 20px;
+      // font-size: 20px;
+      font-size: clamp(1rem, 0.903rem + 0.43vw, 1.25rem);
       background: url(../images/icons/phone-call2.svg) left top 15% / 24px 24px no-repeat;
     }
 

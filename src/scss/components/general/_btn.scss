@@ -116,6 +116,14 @@
   &--bg-red {
     color: var(--red);
     border: 2px solid var(--red);
+    @include transition ($transition-property: (color, background-color));
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $white;
+        background-color: $red;
+      }
+    }
   }
 
   &--bg-grey {
@@ -123,14 +131,14 @@
     align-items: center;
     justify-content: center;
     gap: 7px;
-    color: $mischka;
-    border: 2px solid $alto;
+    color: $tundora;
+    border: 2px solid $tundora;
     @include transition ($transition-property: (color, background-color));
 
     @media (any-hover: hover) {
       &:hover {
         color: $white;
-        background-color: $mischka;
+        background-color: $tundora;
       }
     }
   }
