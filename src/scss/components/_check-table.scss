@@ -1,13 +1,17 @@
 .check-table {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c4c4c4;
 
   &__name {
     width: 201px;
+    padding-bottom: 10px;
   }
 
   &__value {
     font-weight: 700;
     text-align: right;
-    padding-bottom: 9px;
+    padding-bottom: 10px;
+
 
     &--red {
       color: var(--red);
