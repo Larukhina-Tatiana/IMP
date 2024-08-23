@@ -233,3 +233,15 @@
     gap: 10px;
   }
 }
+
+.page-order.graph-modal__container {
+
+  // padding-top: 56px;
+  padding-right: 11px;
+  // padding-bottom: 56px;
+  // padding-left: clamp(.313rem, -.921rem + 5.48vw, 3.5rem);
+  padding-top: clamp(1.625rem, 0.899rem + 3.23vw, 3.5rem);
+  // padding-right: clamp(0.875rem, -0.867rem + 7.74vw, 5.375rem);
+  padding-bottom: clamp(0.938rem, -0.296rem + 5.48vw, 4.125rem);
+  padding-left: clamp(1.625rem, 0.633rem + 4.41vw, 4.188rem);
+}
