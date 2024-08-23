@@ -80,7 +80,7 @@
       <div class="history-order mix order-history">
         <p class="history-order__text">
           Если не&nbsp;понравился вкус или качество продукта&nbsp;&mdash; поможем по&nbsp;всем вопросам.
-          <a href="tel:+ 88009999999">Поддержка 8&nbsp;800&nbsp;999 99&nbsp;99</a>
+          <a href="tel:+88009999999">Поддержка 8&nbsp;800&nbsp;999 99&nbsp;99</a>
         </p>
 
         <ul class="history-order__list order-box">
@@ -88,18 +88,18 @@
             <article class="order order--at-work">
               <div class="order__label order__label--at-work">в работе</div>
               <div class="order__body">
-                <a href="" class="order__link">
+                <button class="order__link" data-animation="fade" data-speed="300" data-graph-path="id-56940724-1">
                   <span class=" order__num">
                     Заказ №56940724-1
                   </span>
-                </a>
+                </button>
                 <div class="order__inner">
                   <h6 class="section-h6 order__title">
                     Доставка
                   </h6>
-                  <time class="order__date" datetime="2024-05-15">15.05.2024</time>
+                  <time class="order-date" datetime="2024-05-15">15.05.2024</time>
                 </div>
-                <address class="order__address">
+                <address class="order-address">
                   ул. Новая, д. 13, кв 33<br>
                   г. Песочин, Харьковская обл.
                 </address>
@@ -115,18 +115,19 @@
             <article class="order order--completed">
               <div class="order__label order__label--completed">выполнен</div>
               <div class="order__body">
-                <a href="./page-order-popup.html" class="order__link">
+                <button class="order__link" data-animation="fade" data-speed="300" data-graph-path="id-54940724-1">
                   <span class=" order__num">
                     Заказ №54940724-1
                   </span>
-                </a>
+                </button>
+
                 <div class="order__inner">
                   <h6 class="section-h6 order__title">
                     Самовывоз
                   </h6>
-                  <time class="order__date" datetime="2024-05-01">01.05.2024</time>
+                  <time class="order-date" datetime="2024-05-01">01.05.2024</time>
                 </div>
-                <address class="order__address">
+                <address class="order-address">
                   ул. Новая, д. 13, кв 33<br>
                   г. Песочин, Харьковская обл.
                 </address>
@@ -156,9 +157,9 @@
                   <h6 class="section-h6 order__title">
                     Доставка
                   </h6>
-                  <time class="order__date" datetime="2024-05-15">05.04.2024</time>
+                  <time class="order-date" datetime="2024-05-15">05.04.2024</time>
                 </div>
-                <address class="order__address">
+                <address class="order-address">
                   ул. Новая, д. 13, кв 33<br>
                   г. Песочин, Харьковская обл.
                 </address>
@@ -188,9 +189,9 @@
                   <h6 class="section-h6 order__title">
                     Доставка
                   </h6>
-                  <time class="order__date" datetime="2024-05-15">05.04.2024</time>
+                  <time class="order-date" datetime="2024-05-15">05.04.2024</time>
                 </div>
-                <address class="order__address">
+                <address class="order-address">
                   ул. Новая, д. 13, кв 33<br>
                   г. Песочин, Харьковская обл.
                 </address>
@@ -209,7 +210,8 @@
           </li>
         </ul>
       </div>
-      <!-- @include('catalog-cooking.html') -->
+      @include('modals.html')
     </div>
+  </div>
 
 </section>

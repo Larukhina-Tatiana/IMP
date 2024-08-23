@@ -52,7 +52,7 @@
   }
 
 
-  &__title {
+  &-title {
     padding-top: 7px;
     font-weight: 700;
     font-size: clamp(1.375rem, 1.133rem + 1.08vw, 2rem);
@@ -220,5 +220,16 @@
     opacity: 1;
     transform: translateY(0);
     transition: opacity var(--transition-time), transform var(--transition-time);
+  }
+}
+
+.page-modal.page-order {
+
+  .simplebar-content {
+    width: 100%;
+    height: 805px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
   }
 }

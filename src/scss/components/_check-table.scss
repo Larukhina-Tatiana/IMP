@@ -1,0 +1,16 @@
+.check-table {
+
+  &__name {
+    width: 201px;
+  }
+
+  &__value {
+    font-weight: 700;
+    text-align: right;
+    padding-bottom: 9px;
+
+    &--red {
+      color: var(--red);
+    }
+  }
+}
