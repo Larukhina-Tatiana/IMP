@@ -235,7 +235,7 @@
 }
 
 .page-order.graph-modal__container {
-
+  border-radius: 20px;
   // padding-top: 56px;
   padding-right: 11px;
   // padding-bottom: 56px;
@@ -244,4 +244,18 @@
   // padding-right: clamp(0.875rem, -0.867rem + 7.74vw, 5.375rem);
   padding-bottom: clamp(0.938rem, -0.296rem + 5.48vw, 4.125rem);
   padding-left: clamp(1.625rem, 0.633rem + 4.41vw, 4.188rem);
+}
+
+.page-tracking.graph-modal__container {
+  max-width: 577px;
+  width: 100%;
+  padding-top: 25px;
+  padding-right: 38px;
+  padding-bottom: 71px;
+  padding-left: 30px;
+}
+
+.tracking.page-modal__content {
+  height: 577px;
+  display: block;
 }

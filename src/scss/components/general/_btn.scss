@@ -127,9 +127,7 @@
   }
 
   &--bg-grey {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // justify-content: center;
     gap: 7px;
     color: $tundora;
     border: 2px solid $tundora;
@@ -190,4 +188,9 @@
 
 .send-check {
   text-decoration: underline;
+}
+
+.btn-flex {
+  display: flex;
+  align-items: center;
 }

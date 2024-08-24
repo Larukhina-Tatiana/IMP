@@ -1,0 +1,79 @@
+.tracking {
+
+
+  &__title {
+    margin-bottom: 34px;
+    line-height: 1.3;
+  }
+
+  &__descr {
+    &:not(:last-child) {
+      margin-bottom: 51px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    // gap: 71px;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  &__item {
+    width: 130px;
+    // border-top: 4px solid $red;
+  }
+
+
+  &__el {
+    position: relative;
+    padding-top: 74px;
+
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 80px;
+      height: 4px;
+      top: 20px;
+      right: -36px;
+      z-index: 4;
+    }
+
+    &--before-red::before {
+      background-color: $red;
+    }
+
+    &--before-red-opaciti::before {
+      right: -43px;
+      background-color: rgba(255, 0, 0, 0.5);
+    }
+  }
+
+  &__check {
+    background-image: url('../images/icons/track-check.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  &__way {
+    background-image: url('../images/icons/track-way.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  &__circle {
+    background-image: url('../images/icons/track-circle.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  @media screen and (width < 560.99px) {}
+}
+
+.tracking.page-modal__content {
+  height: 315px;
+}
