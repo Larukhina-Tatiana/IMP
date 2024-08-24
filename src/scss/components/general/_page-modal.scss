@@ -60,7 +60,6 @@
   }
 
   &__content {
-    // overflow-y: auto;
     height: 746px;
     display: flex;
     justify-content: space-between;
@@ -103,7 +102,6 @@
     margin-top: 54px;
   }
 
-
   &__item {
     &:not(:last-child) {
       margin-bottom: 37px;
@@ -122,13 +120,11 @@
     &:not(:last-child) {
       margin-bottom: 16px;
     }
-
   }
 
 
   &__content-right {
     margin-top: 6px;
-    // margin-right: -30px;
     // padding: 31px 24px 36px;
     padding: clamp(0.938rem, 0.55rem + 1.72vw, 1.938rem) clamp(0.5rem, 0.113rem + 1.72vw, 1.5rem) clamp(0.938rem, 0.429rem + 2.26vw, 2.25rem);
     border: 1px solid $peach;
@@ -138,7 +134,6 @@
     background: #ffecca;
     flex-shrink: 0;
   }
-
 
 
   .application-form {
@@ -167,9 +162,7 @@
 
     @media (any-hover: hover) {
       &:hover {
-        // svg {
         background-color: #ffecca;
-        // }
       }
     }
 
@@ -236,12 +229,8 @@
 
 .page-order.graph-modal__container {
   border-radius: 20px;
-  // padding-top: 56px;
   padding-right: 11px;
-  // padding-bottom: 56px;
-  // padding-left: clamp(.313rem, -.921rem + 5.48vw, 3.5rem);
-  padding-top: clamp(1.625rem, 0.899rem + 3.23vw, 3.5rem);
-  // padding-right: clamp(0.875rem, -0.867rem + 7.74vw, 5.375rem);
+  padding-top: 46px;
   padding-bottom: clamp(0.938rem, -0.296rem + 5.48vw, 4.125rem);
   padding-left: clamp(1.625rem, 0.633rem + 4.41vw, 4.188rem);
 }
@@ -256,6 +245,6 @@
 }
 
 .tracking.page-modal__content {
-  height: 577px;
+  height: auto;
   display: block;
 }
