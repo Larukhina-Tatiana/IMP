@@ -1,4 +1,5 @@
 .receiving {
+  position: relative;
   display: flex;
   color: var(--white);
 
@@ -34,7 +35,56 @@
     font-size: 16px;
   }
 
-  .tabs-buttons__list {
-    gap: 15px;
+
+
+  &__map {
+    position: relative;
+    overflow: hidden;
+    padding-top: 34.9%;
+    border-radius: 0 20px 20px 0;
+    width: 765px;
+    height: 805px;
+    background-color: $serenade;
+  }
+
+
+}
+
+.receiving-content {
+  justify-content: space-between;
+
+  &__left {
+    padding: 33px 33px 56px;
+  }
+}
+
+.receiving-tabs {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+
+
+  &__buttons {
+    max-width: 221px;
+    width: 100%;
+    padding: 16px 25px;
+    font-weight: 700;
+    font-size: clamp(1rem, 0.903rem + 0.43vw, 1.25rem);
+    color: var(--cod-gray);
+    border: 1px solid rgba(255, 169, 0, 0.45);
+    border-radius: 16px;
+    background-color: $serenade;
+
+    // height: 87px;
+    &.mixitup-control-active {
+      border: 1px solid var(--yellow);
+      background: var(--yellow);
+      color: var(--white);
+    }
+  }
+
+  &__buttons-text {
+    font-weight: 600;
+    font-size: clamp(0.75rem, 0.653rem + 0.43vw, 1rem);
   }
 }

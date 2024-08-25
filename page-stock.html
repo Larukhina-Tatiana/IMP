@@ -20,7 +20,96 @@
         
         
         <!-- <div class="header__actions actions"> -->
-        
+        <div class="receiving">
+  <button class="receiving__main" data-path="first" data-animation="fadeInUp" data-speed="500"></button>
+  <button class="receiving__secondary" data-path="first" data-animation="fadeInUp" data-speed="500">
+    <span class="receiving__text">Выберите способ получения</span>
+    <span class="receiving__title">Доставка или самовывоз</span>
+  </button>
+</div>
+<div class="modal">
+  <div class="modal__container receiving__container" data-target="first">
+    <button class="modal-close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="none">
+        <circle cx="19" cy="19" r="19" fill="#F2F3F5" />
+        <path fill="#AAA" d="m24.148 11.46 1.863 1.862-13.04 13.04-1.863-1.863z" />
+        <path fill="#AAA" d="m26.01 24.499-1.863 1.862-13.04-13.04 1.863-1.862z" />
+      </svg>
+    </button>
+    <div class="modal-content receiving-content flex">
+      <div class="receiving-content__left">
+        <ul class="receiving-tabs">
+          <li class="receiving-tabs__item">
+            <button class="receiving-tabs__buttons" data-filter=".delivery">Доставка
+              <span class="receiving-tabs__buttons-text">бесплатно от 1000₴</span>
+            </button>
+          </li>
+          <li class="tabs-buttons__item receiving-tabs__item">
+            <button class="receiving-tabs__buttons" data-filter=".pickup">Самовывоз
+              <span class="receiving-tabs__buttons-text">бесплатно</span>
+            </button>
+          </li>
+        </ul>
+        <ul class="tabs-content receiving-content">
+          <li class="tabs-content__item mix delivery receiving-content__item">
+            <form action="#" class="receiving-content__form form-receiving--delivery form-receiving">
+              <p class="form-receiving__title">
+                Выберите адрес доставки
+
+                <label class="form-receiving__label form-receiving__label--address" for="location">
+                  <select class="form-receiving__select filter-style" name="location" id="location">
+                    <option value="" selected="selected">Введите адрес доставки</option>
+                    <option value="">г. Николаев</option>
+                    <option value="">г. Херсон</option>
+                    <option value="">г. Одесса</option>
+                    <option value="">г. Вознесенск</option>
+                  </select>
+                </label>
+              </p>
+              <p class="form-receiving__title">
+                Когда доставить?
+
+                <label class="form-receiving__label" for="date">Дата
+                  <select class="form-receiving__select filter-style" name="date" id="date">
+                    <option value="" selected="selected">сегодня</option>
+                    <option value="">г. Николаев</option>
+                    <option value="">г. Херсон</option>
+                    <option value="">г. Одесса</option>
+                    <option value="">г. Вознесенск</option>
+                  </select>
+                </label>
+                <label class="form-receiving__label" for="date">Время
+                  <select class="form-receiving__select filter-style" name="date" id="date">
+                    <option value="" selected="selected">сегодня</option>
+                    <option value="">г. Николаев</option>
+                    <option value="">г. Херсон</option>
+                    <option value="">г. Одесса</option>
+                    <option value="">г. Вознесенск</option>
+                  </select>
+                </label>
+              </p>
+              <fieldset>
+                <legend>Время</legend>
+                <label class="form-receiving__label" for="date">
+                  <input type="time" name="" id="">
+                </label>
+            </form>
+          </li>
+          <li class="tabs-content__item mix pickup receiving-content__item">
+            pickup
+          </li>
+        </ul>
+      </div>
+      <div class="receiving-content_right">
+        <div class="receiving__map">
+          <!-- <iframe class="contacts-map-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1283.5228889051305!2d36.096762066165816!3d49.95424375812025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41279f6796f52923%3A0xf1e491463c7ca03d!2z0J_QtdGB0L7Rh9C40L0sINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYyNDE4!5e0!3m2!1sru!2sua!4v1724572887202!5m2!1sru!2sua"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
         
         <section class="header__user user">
   <a class="user__btn tooltip" href="./page-personal-account.html">
