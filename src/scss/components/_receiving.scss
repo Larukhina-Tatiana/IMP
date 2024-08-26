@@ -1,5 +1,5 @@
 .receiving {
-  position: relative;
+  // position: relative;
   display: flex;
   color: var(--white);
 
@@ -40,7 +40,7 @@
   &__map {
     position: relative;
     overflow: hidden;
-    padding-top: 34.9%;
+    // padding-top: 34.9%;
     border-radius: 0 20px 20px 0;
     width: 765px;
     height: 805px;
@@ -60,20 +60,20 @@
 
 .receiving-tabs {
   display: flex;
-  justify-content: space-between;
   gap: 15px;
 
 
   &__buttons {
     max-width: 221px;
     width: 100%;
-    padding: 16px 25px;
+    padding: 20px 25px;
     font-weight: 700;
     font-size: clamp(1rem, 0.903rem + 0.43vw, 1.25rem);
     color: var(--cod-gray);
     border: 1px solid rgba(255, 169, 0, 0.45);
     border-radius: 16px;
     background-color: $serenade;
+    text-align: left;
 
     // height: 87px;
     &.mixitup-control-active {

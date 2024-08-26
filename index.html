@@ -43,7 +43,7 @@
     </button>
     <div class="modal-content receiving-content flex">
       <div class="receiving-content__left">
-        <ul class="receiving-tabs">
+        <ul class="receiving-content__tabs receiving-tabs">
           <li class="receiving-tabs__item">
             <button class="receiving-tabs__buttons" data-filter=".delivery">Доставка
               <span class="receiving-tabs__buttons-text">бесплатно от 1000₴</span>
@@ -55,14 +55,14 @@
             </button>
           </li>
         </ul>
-        <ul class="tabs-content receiving-content">
-          <li class="tabs-content__item mix delivery receiving-content__item">
+        <ul class="receiving-content__subject receiving-subject">
+          <li class="receiving-subject__item mix delivery ">
             <form action="#" class="receiving-content__form form-receiving--delivery form-receiving">
-              <p class="form-receiving__title">
-                Выберите адрес доставки
-
-                <label class="form-receiving__label form-receiving__label--address" for="location">
-                  <select class="form-receiving__select filter-style" name="location" id="location">
+              <fieldset class="form-receiving__fieldset form-receiving__fieldset--address">
+                <legend class="form-receiving__title">Выберите адрес доставки</legend>
+                <label class="form-receiving__label form-receiving__label--address" for="form-receiving-location">
+                  <select class="form-receiving__select filter-style" name="form-receiving-location"
+                    id="form-receiving-location">
                     <option value="" selected="selected">Введите адрес доставки</option>
                     <option value="">г. Николаев</option>
                     <option value="">г. Херсон</option>
@@ -70,37 +70,54 @@
                     <option value="">г. Вознесенск</option>
                   </select>
                 </label>
-              </p>
-              <p class="form-receiving__title">
-                Когда доставить?
+                <div class="form-receiving__latest-addresses latest-addresses">
+                  <span>Последние адреса</span>
 
-                <label class="form-receiving__label" for="date">Дата
-                  <select class="form-receiving__select filter-style" name="date" id="date">
-                    <option value="" selected="selected">сегодня</option>
-                    <option value="">г. Николаев</option>
-                    <option value="">г. Херсон</option>
-                    <option value="">г. Одесса</option>
-                    <option value="">г. Вознесенск</option>
-                  </select>
-                </label>
-                <label class="form-receiving__label" for="date">Время
-                  <select class="form-receiving__select filter-style" name="date" id="date">
-                    <option value="" selected="selected">сегодня</option>
-                    <option value="">г. Николаев</option>
-                    <option value="">г. Херсон</option>
-                    <option value="">г. Одесса</option>
-                    <option value="">г. Вознесенск</option>
-                  </select>
-                </label>
-              </p>
-              <fieldset>
+                  <ul class="latest-addresses__list">
+                    <li class="latest-addresses__item">
+                      ул. Новая, д. 13, посёлок Ильинское-Усово, городской округ Красногорск
+                    </li>
+                    <li class="latest-addresses__item">
+                      ул. Новая, д. 13, посёлок Ильинское-Усово, городской округ Красногорск
+                    </li>
+                  </ul>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-receiving__fieldset form-receiving__fieldset--deadlines">
+                <legend class="form-receiving__title">Когда доставить?</legend>
+                <div class="form-receiving__look">
+                  <label class="form-receiving__label" for="form-receiving-location-date">Дата
+                    <select class="form-receiving__select filter-style" name="form-receiving-location-date"
+                      id="form-receiving-location-date">
+                      <option value="" selected="selected">сегодня</option>
+                      <option value="">г. Николаев</option>
+                      <option value="">г. Херсон</option>
+                      <option value="">г. Одесса</option>
+                      <option value="">г. Вознесенск</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="form-receiving__look">
+                  <label class="form-receiving__label" for="form-receiving-location-time">Время
+                    <select class="form-receiving__select filter-style" name="form-receiving-location-time"
+                      id="form-receiving-location-time">
+                      <option value="" selected="selected">за 25 мин.</option>
+                      <option value="">с 21:00 до 23:00</option>
+                      <option value="">с 23:00 до 20:00</option>
+                    </select>
+                  </label>
+                </div>
+              </fieldset>
+              <!-- <fieldset>
                 <legend>Время</legend>
                 <label class="form-receiving__label" for="date">
                   <input type="time" name="" id="">
                 </label>
+              </fieldset> -->
             </form>
           </li>
-          <li class="tabs-content__item mix pickup receiving-content__item">
+          <li class="receiving-subject__item mix pickup">
             pickup
           </li>
         </ul>
@@ -1210,7 +1227,7 @@
   <!-- <script src="./src/js/sliders.js"></script> -->
 
 
-  <!-- <script src="./src/js/my-mixitup.js"></script> -->
+  <script src="./src/js/my-mixitup.js"></script>
 
 </body>
 
