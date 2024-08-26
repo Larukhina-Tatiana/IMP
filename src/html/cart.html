@@ -1,0 +1,54 @@
+<section class="cart">
+  <div class="container">
+    <div class="cart__box">
+      <div class="cart__content">
+        <div class="cart__head">
+          <h2 class="cart__title page-title-h2">Корзина</h2>
+          <button class="cart__btn btn btn-transparent btn-transparent--bg-grey">Очистить</button>
+        </div>
+
+        <ul class="cart__list">
+          <li class="cart__item">
+            <article class="cart__card cart-filling">
+              <a class="cart-filling__link-img" href="./page-product.html">
+                <img class="cart-filling__img" src="./images/cart/cart-img1.jpg" loading="lazy" decoding="async"
+                  alt='Пицца мини с ветчиной и сыром, замороженная, 0.44 кг'>
+              </a>
+              <div class="cart-filling__inner">
+                <a class="cart-filling__link-title" href="./page-product.html">
+                  <h6 class="title section-h6">
+                    Пицца мини с ветчиной и сыром, замороженная, 0.44 кг
+                  </h6>
+                </a>
+                <span class="cart-filling__span card__span card-availability">В наличии 2 шт</span>
+              </div>
+              <div class="cart__inner">
+                <!-- <span class="card__span price">27,00 грн</span> -->
+                <span class="card__price card__price--red">299,90 грн</span>
+                <span class="card__span card__price-old">409,00 грн</span>
+              </div>
+              <div class="stepper">
+                <button class="stepper__btn stepper__btn--up" aria-label="Увеличить количество">
+                  +
+                </button>
+                <label class="stepper__field">
+                  <input type="text" value="1" maxlength="3" class="stepper__input">
+                  <span class="stepper__text">шт</span>
+                </label>
+                <button class="stepper__btn stepper__btn--down stepper__btn--disabled"
+                  aria-label="Уменьшить количество">
+                  -
+                </button>
+              </div>
+              <button class="carе__favorite card-favorite"></button>
+              <!-- подсчет суммы -->
+              <!-- подсчет количества -->
+
+            </article>
+          </li>
+        </ul>
+      </div>
+      <div class="cart__check"></div>
+    </div>
+  </div>
+</section>

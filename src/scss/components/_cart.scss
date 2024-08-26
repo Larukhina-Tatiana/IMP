@@ -1,0 +1,35 @@
+.cart {
+  margin-bottom: clamp(4.375rem, 2.101rem + 10.11vw, 10.25rem);
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__content {
+    width: 66.13%;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: clamp(1.375rem, 0.988rem + 1.72vw, 2.375rem);
+  }
+
+  &__btn {
+    padding: 10px;
+  }
+
+  &__card {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  &__check {
+    width: 32%;
+    background-color: $serenade;
+  }
+}

@@ -1,0 +1,10 @@
+.cart-filling {
+  &__img {
+    width: clamp(6.25rem, 5.524rem + 3.23vw, 8.125rem);
+    height: clamp(6.25rem, 5.524rem + 3.23vw, 8.125rem);
+  }
+
+
+  &__link-title {}
+
+}
