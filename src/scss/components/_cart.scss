@@ -36,6 +36,24 @@
     border: 1px solid $alto;
   }
 
+  &__delite {
+    align-self: center;
+
+    svg {
+      fill: inherit;
+      @include transition ($transition-property: color);
+    }
+
+
+    @media (any-hover: hover) {
+      &:hover {
+        svg {
+          fill: $red;
+        }
+      }
+    }
+  }
+
   &__check {
     width: 32%;
     background-color: $serenade;
