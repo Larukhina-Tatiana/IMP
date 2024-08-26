@@ -25,8 +25,16 @@
   &__card {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
+  &__favorite {
+    width: 44px;
+    height: 42px;
+    background-color: $white;
+    border-radius: 100%;
+    border: 1px solid $alto;
+  }
 
   &__check {
     width: 32%;

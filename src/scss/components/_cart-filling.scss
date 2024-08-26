@@ -4,7 +4,12 @@
     height: clamp(6.25rem, 5.524rem + 3.23vw, 8.125rem);
   }
 
+  &__link-img {
+    border-radius: 20px;
+  }
 
-  &__link-title {}
+  &__link-title {
+    width: 292px;
+  }
 
 }
