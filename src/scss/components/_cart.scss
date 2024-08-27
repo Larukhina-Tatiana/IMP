@@ -18,8 +18,17 @@
     margin-bottom: clamp(1.375rem, 0.988rem + 1.72vw, 2.375rem);
   }
 
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
   &__btn {
     padding: 10px;
+    height: 42px;
+    display: flex;
+    align-items: center;
   }
 
   &__card {
@@ -37,10 +46,10 @@
   }
 
   &__delite {
-    align-self: center;
+    // align-self: center;
 
     svg {
-      fill: inherit;
+      fill: $yellow;
       @include transition ($transition-property: color);
     }
 
@@ -56,6 +65,5 @@
 
   &__check {
     width: 32%;
-    background-color: $serenade;
   }
 }

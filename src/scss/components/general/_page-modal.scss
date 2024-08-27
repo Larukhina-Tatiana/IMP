@@ -131,7 +131,7 @@
     border-radius: 16px;
     width: 443px;
     max-height: 464px;
-    background: #ffecca;
+    background: $sandy-beach;
     flex-shrink: 0;
   }
 
@@ -162,7 +162,7 @@
 
     @media (any-hover: hover) {
       &:hover {
-        background-color: #ffecca;
+        background-color: $sandy-beach;
       }
     }
 
