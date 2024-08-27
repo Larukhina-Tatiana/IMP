@@ -35,6 +35,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    // flex-wrap: wrap;
   }
 
   &__favorite {
@@ -43,6 +44,7 @@
     background-color: $white;
     border-radius: 100%;
     border: 1px solid $alto;
+    flex-shrink: 0;
   }
 
   &__delite {

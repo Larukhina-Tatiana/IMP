@@ -7,17 +7,17 @@
         </a>
         <!-- @include('catalog-menu.html') -->
         <!-- @include('search.html') -->
-        <!-- <div class="header__actions actions"> -->
-        @include('receiving.html')
-        @include('favorite.html')
-        @include('user.html')
+        <div class="header__actions actions">
+          @include('receiving.html')
+          @include('favorite.html')
+          @include('user.html')
 
-        <!-- <div class="header__cart cart"></div> -->
+          @include('header-cart.html')
+        </div>
       </div>
+      <div class="header__bottom">
+        @include('nav.html')
+      </div>
+      <!-- </div> -->
     </div>
-    <div class="header__bottom">
-      @include('nav.html')
-    </div>
-    <!-- </div> -->
-  </div>
 </header>
