@@ -2,7 +2,8 @@
   &__list {
     display: flex;
     align-items: center;
-    gap: 14px;
+    // gap: 14px;
+    gap: clamp(0.438rem, 0.268rem + 0.75vw, 0.875rem);
   }
 
   &__link {
