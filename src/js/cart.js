@@ -21,9 +21,9 @@ const priceWithoutSpaces = (str) => {
 const normalPrice = (str) => {
   return String(str).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, "$1 ");
 };
-
+// <div class="cart-sale sale">"${sale}"</div>
 const generateCartProduct = (
-  sale,
+  // sale,
   img,
   title,
   availability,
@@ -37,7 +37,7 @@ const generateCartProduct = (
   return `
               <li class="cart__item">
             <article class="cart__card cart-filling" data-id="${id}">
-                    <div class="cart-sale sale">"${sale}"</div>
+
               <a class="cart-filling__link-img" href="./page-product.html">
                 <img class="cart-filling__img" src="${img}" loading="lazy" decoding="async"
                   alt='${title}'>
@@ -100,15 +100,15 @@ const generateCartProduct = (
 
 btnCart.forEach((el) => {
   el.closest(".card").setAttribute("data-id", randomId());
-
   el.addEventListener("click", (e) => {
     let self = e.currentTarget;
     let parent = self.closest(".card");
     let id = parent.dataset.id;
+    console.log(id);
     let img = parent.querySelector(".card__img").getAttribute("src");
     console.log(img);
-    let sale = parent.querySelector(".sale").textContent;
-    console.log(sale);
+    // let sale = parent.querySelector(".sale").textContent;
+    // console.log(sale);
     let title = parent.querySelector(".title").textContent;
     console.log(title);
     let availability = parent.querySelector(".card-availability").textContent;

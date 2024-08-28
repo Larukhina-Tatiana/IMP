@@ -1,6 +1,8 @@
 .header {
-  padding-top: 23px;
-  padding-bottom: 25px;
+  // padding-top: 23px;
+  padding-top: clamp(0.438rem, 0.05rem + 1.72vw, 1.438rem);
+  // padding-bottom: 25px;
+  padding-bottom: clamp(1.313rem, 1.216rem + 0.43vw, 1.563rem);
 
 
   &__top {
