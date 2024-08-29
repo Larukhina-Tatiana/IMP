@@ -8,7 +8,7 @@
   &__top {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+
     // color: var(--white);
   }
 
@@ -34,5 +34,11 @@
   &__favorite {
     width: 50px;
     height: 48px;
+  }
+
+  @media screen and (width < 1290.99px) {
+    &__top {
+      justify-content: space-around;
+    }
   }
 }

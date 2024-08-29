@@ -1,15 +1,16 @@
 .catalog-menu {
-
-  // &__btn-main {
   position: relative;
-  // }
+
+  &__btn-main {
+    position: relative;
+  }
 
   &__ground {
     position: absolute;
     width: 53.33vw;
     padding: 41px 10px 28px 37px;
     top: 58px;
-    left: 16px;
+    left: -140%;
     border-radius: 14px;
     height: 403px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
@@ -53,8 +54,11 @@
     visibility: visible;
   }
 
+
+  // position: relative;
+
+
   &__item {
-    position: relative;
 
     &:not(:last-child) {
       margin-bottom: 26px;
