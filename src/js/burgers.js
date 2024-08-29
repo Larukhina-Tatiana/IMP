@@ -1,9 +1,9 @@
-if (".catalog-menu__btn") {
-  $(".catalog-menu__btn-main").on("click", function () {
-    $(".btn-main").toggleClass("btn-main-open");
-    $(".catalog-menu__ground").toggleClass("catalog-menu__ground--open");
-  });
-}
+// if (".catalog-menu__btn") {
+$(".catalog-menu__btn-main").on("click", function () {
+  $(".btn-main").toggleClass("btn-main-open");
+  $(".catalog-menu__ground").toggleClass("catalog-menu__ground--open");
+});
+// }
 //  Закрытие окна меню каталога при клике на любую точку экрана кроме меню каталога
 
 // проверяем клик на окне

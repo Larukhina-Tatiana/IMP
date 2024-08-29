@@ -1,15 +1,18 @@
 .receiving {
-  // position: relative;
   display: flex;
   color: var(--white);
 
   &__main {
+    height: clamp(2.063rem, 1.575rem + 2.17vw, 3rem);
+
     &::before {
       display: inline-block;
       content: '';
       background-color: rgba(255, 169, 0, 0.7);
-      width: 65px;
-      height: 48px;
+      // width: 65px;
+      width: clamp(2.688rem, 1.972rem + 3.18vw, 4.063rem);
+      // height: 48px;
+      height: clamp(2.063rem, 1.575rem + 2.17vw, 3rem);
       background: url(../images/icons/geolocation.svg) center center / 24px 24px no-repeat rgba(255, 169, 0, 0.7);
       border-radius: 16px 0 0 16px;
     }
@@ -36,7 +39,6 @@
   }
 
 
-
   &__map {
     position: relative;
     overflow: hidden;
@@ -47,6 +49,19 @@
     background-color: $serenade;
   }
 
+  @media screen and (width < 1290.99px) {
+    &__main {
+
+      &::before {
+        // border-radius: 16px;
+        border-radius: clamp(0.688rem, 0.567rem + 0.54vw, 1rem);
+      }
+    }
+
+    &__secondary {
+      display: none;
+    }
+  }
 
 }
 

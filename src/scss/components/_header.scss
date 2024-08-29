@@ -8,15 +8,18 @@
   &__top {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     // color: var(--white);
   }
 
   &__catalog-btn {
-    margin-right: 26px;
+    // margin-right: 26px;
+    margin-right: clamp(0.5rem, -2.542rem + 6.34vw, 1.625rem);
   }
 
   &__search-form {
-    margin-right: 26px;
+    // margin-right: 26px;
+    margin-right: clamp(0.5rem, -2.542rem + 6.34vw, 1.625rem);
   }
 
   &__actions {

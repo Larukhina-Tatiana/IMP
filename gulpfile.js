@@ -171,7 +171,7 @@ function scripts() {
       "libs/tooltip/uikit.min.js",
       // "js/ion.rangeSlider.min.js",
       // "js/jquery.rateyo.js",
-      "./src/js/burgers.js",
+      // "./src/js/burgers.js",
       "./src/js/sliders.js",
       "./src/js/favorite.js",
       "./src/js/script.js",

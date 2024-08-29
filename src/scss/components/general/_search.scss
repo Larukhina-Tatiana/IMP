@@ -17,10 +17,36 @@
 
   &__btn {
     position: absolute;
-    width: 24px;
-    height: 24px;
     top: 50%;
     transform: translateY(-50%);
     right: 17px;
+
+    & svg {
+      width: clamp(1rem, 0.806rem + 0.86vw, 1.5rem);
+      height: clamp(1rem, 0.806rem + 0.86vw, 1.5rem);
+    }
+  }
+
+  @media screen and (width < 1052.99px) {
+    border-radius: 11px;
+    // width: 43px;
+    width: clamp(2.688rem, 1.972rem + 3.18vw, 4.063rem);
+    // height: 48px;
+    height: clamp(2.063rem, 1.575rem + 2.17vw, 3rem);
+    background: rgba(255, 169, 0, 0.7);
+
+    &__input {
+      display: none;
+    }
+
+    &__btn {
+      color: $white;
+      top: 50%;
+      right: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+
   }
 }

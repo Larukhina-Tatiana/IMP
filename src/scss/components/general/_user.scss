@@ -8,7 +8,8 @@
     border: 1px solid $mercury;
     border-radius: 16px;
     width: 50px;
-    height: 48px;
+    // height: 48px;
+    height: clamp(2.063rem, 1.575rem + 2.17vw, 3rem);
     color: $mercury;
     background-color: var(--white);
 
