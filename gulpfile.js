@@ -213,7 +213,7 @@ function images() {
       .pipe(newer("images"))
       .pipe(imagemin())
 
-      .pipe(dest("images/recerving"))
+      .pipe(dest("images/hero"))
   );
 }
 
