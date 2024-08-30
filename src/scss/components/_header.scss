@@ -8,8 +8,11 @@
   &__top {
     display: flex;
     align-items: center;
-
     // color: var(--white);
+  }
+
+  &__tablet {
+    display: none;
   }
 
   &__catalog-btn {
@@ -41,10 +44,31 @@
       justify-content: space-around;
     }
   }
+
+  @media screen and (width < 768.99px) {
+    &__favorite {
+      svg {
+        color: $grandis;
+      }
+    }
+
+    .favorite {
+      border: none;
+    }
+
+    &__tablet {
+      display: block;
+    }
+  }
 }
 
 .header-tablet {
   padding: 14px 10px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
   background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
 }
