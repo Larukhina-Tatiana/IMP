@@ -1,12 +1,12 @@
 .dropdown-menu {
   position: absolute;
-  // width: 22.7%;
-  width: 335px;
+  width: 41.5%;
+  // width: 293px;
   height: 343px;
-  top: 41px;
-  left: 54%;
+  top: 44px;
+  left: 56.5%;
   // box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
-  background: var(--white);
+  background-color: $white;
   opacity: 0;
   visibility: hidden;
   overflow-x: hidden;
@@ -38,7 +38,7 @@
   }
 
   &__list {
-    padding: 6px;
+    // padding: 6px;
     width: 100%;
     height: 100%;
   }

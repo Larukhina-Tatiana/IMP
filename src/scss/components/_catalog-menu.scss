@@ -7,12 +7,12 @@
 
   &__ground {
     position: absolute;
-    width: 53.33vw;
-    padding: 41px 10px 28px 37px;
+    width: 53.3vw;
+    padding: 44px 10px 28px 35px;
     top: 58px;
     left: -140%;
     border-radius: 14px;
-    height: 403px;
+    height: 408px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
     background: var(--white);
     z-index: 5;
@@ -27,6 +27,7 @@
     padding-right: 23px;
     overflow-x: hidden;
     overflow-y: auto;
+    background-color: $white;
 
     &::-webkit-scrollbar {
       width: 4px;
@@ -34,7 +35,7 @@
 
     &::-webkit-scrollbar-thumb {
       // background-color: #FF9E9E;
-      background-color: #e0e0e0;
+      background-color: #ff9e9e;
       border-radius: 9px;
 
     }
