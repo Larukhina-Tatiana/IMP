@@ -174,6 +174,8 @@ function scripts() {
       // "./src/js/burgers.js",
       "./src/js/sliders.js",
       "./src/js/favorite.js",
+      "./src/js/menu.js",
+      // "./src/js/cart.js",
       "./src/js/script.js",
       "./src/js/filter-style.js",
       // "./src/js/progress.js",

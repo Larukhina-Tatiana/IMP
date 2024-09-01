@@ -39,4 +39,11 @@
     opacity: 1;
     z-index: 12;
   }
+
+  @media screen and (width < 768.99px) {
+    svg {
+      width: 13px;
+      height: 14px;
+    }
+  }
 }

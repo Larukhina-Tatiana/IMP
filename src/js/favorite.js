@@ -1,6 +1,6 @@
 // Иконка фаворит становиться залитой
-if (document.querySelector(".favorite")) {
-  $(".favorite").on("click", function () {
-    $(this).toggleClass("favorite--active");
+if (document.querySelector(".card-favorite")) {
+  $(".card-favorite").on("click", function () {
+    $(this).toggleClass("card-favorite--active");
   });
 }

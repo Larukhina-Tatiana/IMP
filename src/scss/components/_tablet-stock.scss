@@ -1,8 +1,12 @@
 .tablet-stock {
-  max-width: 50px;
-
+  // max-width: 50px;
+  // margin-right: 19px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 5px;
+  font-size: 8px;
+  text-align: center;
+  color: var(--textlight);
 }

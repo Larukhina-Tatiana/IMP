@@ -1,7 +1,7 @@
 .actions {
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 9px;
   flex-wrap: wrap;
 
 
@@ -17,10 +17,11 @@
 
   }
 
-  &__favorite.favorite {
+  &__favorite.card-favorite {
     padding: 11px;
-    // width: 44px;
-    // height: 42px;
+    width: 44px;
+    height: 42px;
     border-radius: 100%;
+    border: 1px solid $alto;
   }
 }
