@@ -177,7 +177,7 @@ function scripts() {
       "./src/js/menu.js",
       // "./src/js/cart.js",
       "./src/js/script.js",
-      "./src/js/filter-style.js",
+      // "./src/js/filter-style.js",
       // "./src/js/progress.js",
       // "./src/js/to-top.js",
       // "./src/js/accordeon.js",
@@ -185,6 +185,7 @@ function scripts() {
       "./src/js/my-mixitup.js",
       "./src/js/modals.js",
       "./src/js/selects.js",
+      // "./src/js/search.js",
       // "./src/js/tabs.js",
       // "js/modal.js",
       // Для подключения многих (всех) файлов js? Обязательно исключать main.min.js

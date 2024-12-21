@@ -27,15 +27,28 @@
     border-radius: 16px;
     background-color: $white;
     border: transparent;
+    padding-left: 10px;
   }
 
   &__btn {
     // width: 141px;
     display: flex;
     align-items: center;
-    border: 1px solid var(--white);
+    border: 2px solid var(--white);
     font-size: 18px;
     height: 46px;
+  }
+
+  &__alert {
+    position: fixed;
+    bottom: 19%;
+    width: 20%;
+    border-radius: 16px;
+    border: 2px solid var(--red);
+    text-align: center;
+    padding: 10px;
+    right: 2%;
+    background-color: var(--white);
   }
 
   @media screen and (width < 646.99px) {
