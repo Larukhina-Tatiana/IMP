@@ -1,1 +1,1 @@
-const modal = new GraphModal();
+let modal = new GraphModal();

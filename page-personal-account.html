@@ -656,25 +656,32 @@
     <div class="personal-account__box">
       <div class="personal-account__data personal-data mix data">
         <div class="personal-data__content">
-          <form action="#" class="personal-data__form form-personal-data ">
+
+
+
+
+
+          <form action="#" class="personal-data__form form-personal-data" id="formPersonalData">
             <div class="form-personal-data__inner">
               <label class="form-personal-data__label" for="name">
-                <span class="form-personal-data__label-title">Имя</span>
-                <input class="form-personal-data__input" type="text" name="name" id="name" placeholder="Имя Фамилия"
-                  required="">
+                <span class="form-personal-data__label-title">Имя*</span>
+                <input class="form-personal-data__input" type="text" inputmode="text" name="name" id="name"
+                  placeholder="Имя" required title="Введите имя" data-required
+                  data-reg="^[A-Za-zА-Яа-я]{1}[A-Za-zА-Яа-я-\']*[A-Za-zА-Яа-я]{1}$">
               </label>
             </div>
             <div class="form-personal-data__inner">
               <label class="form-personal-data__label" for="phone">
                 <span class="form-personal-data__label-title">Номер телефона</span>
-                <input class="form-personal-data__input" type="tel" name="phone" id="phone" placeholder="Телефон"
-                  required="">
+                <input class="form-personal-data__input" type="tel" inputmode="tel" name="phone" id="phone"
+                  placeholder="+380999999999" required data-required data-reg="^\+380\d{9}$" value="+380"
+                  title="Введите номер телефона в формате +380999999999">
               </label>
             </div>
             <div class="form-personal-data__inner">
               <label class="form-personal-data__label" for="birth">
                 <span class="form-personal-data__label-title">День рождения</span>
-                <input class="form-personal-data__input" type="date" name="birth" id="birth" required="">
+                <input class="form-personal-data__input" type="date" inputmode="numeric" name="birth" id="birth">
               </label>
               <span class="form-personal-data__descr">Дарим подарки в&nbsp;день рождения.
                 К&nbsp;сожалению, дату нельзя изменить.</span>
@@ -682,16 +689,20 @@
             <div class="form-personal-data__inner">
               <label class="form-personal-data__label" for="email">
                 <span class="form-personal-data__label-title">Эл. почта</span>
-                <input class="form-personal-data__input" type="email" name="email" id="email" required="">
+                <input class="form-personal-data__input" type="email" inputmode="email" name="email" id="email">
               </label>
               <span class="form-personal-data__descr">
                 Сообщим по&nbsp;почте о&nbsp;бонусах, акциях и&nbsp;новых продуктах
               </span>
             </div>
 
-            <button class="personal-data__btn btn">Сохранить</button>
-            <button class="personal-data__btn btn">Выйти</button>
+            <button class="personal-data__btn btn" name="save" type="submit">Сохранить</button>
+            <button class="personal-data__btn btn" type="reset">Выйти</button>
           </form>
+
+
+
+
           <div class="personal-data__card">
             <div class="personal-data__card-info card-info">
               <div class="card-info__content">
@@ -2625,6 +2636,8 @@
   <!-- <script src="./src/js/selects.js"></script> -->
   <!-- <script src="./src/js/filter-style.js"></script> -->
   <script src="./src/js/titles.js"></script>
+  <script src="./src/js/personal-data-form.js"></script>
+  <script src="./src/js/footer-form.js" type="module"></script>
 
 
 

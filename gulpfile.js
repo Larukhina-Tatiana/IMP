@@ -158,6 +158,8 @@ function scripts() {
       "node_modules/jquery/dist/jquery.js",
       "node_modules/swiper/swiper-bundle.js",
       "node_modules/mixitup/dist/mixitup.js",
+      "node_modules/lodash/lodash.min.js",
+
       // "libs/mixitup3/mixitup.min.js",
       // "libs/smoothscroll/smooth-scroll.min.js",
       "libs/choices/choices.min.js",
