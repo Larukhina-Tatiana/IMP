@@ -159,11 +159,12 @@ function scripts() {
       "node_modules/swiper/swiper-bundle.js",
       "node_modules/mixitup/dist/mixitup.js",
       "node_modules/lodash/lodash.min.js",
+      "node_modules/transfer-elements/dist/transfer-elements.js",
 
       // "libs/mixitup3/mixitup.min.js",
       // "libs/smoothscroll/smooth-scroll.min.js",
       "libs/choices/choices.min.js",
-      "libs/simplebar/simplebar.min.js",
+      // "libs/simplebar/simplebar.min.js",
       // "libs/slick/slick.min.js",
       // "node_modules/nouislider/dist/nouislider.js",
       // "node_modules/simplelightbox/dist/simple-lightbox.min.js",

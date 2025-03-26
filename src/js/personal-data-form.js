@@ -1,24 +1,23 @@
 const form = document.forms.formPersonalData;
 const btnSubmit = form.save;
-const STORAGE_KEY = "feedback-form-state";
-formData = {};
+
 let textError = "";
 
 form.addEventListener("submit", onFormSubmit);
 // refs.form.addEventListener("input", _throttle(onFormInput, 500));
-form.addEventListener("input", onFormInput);
-form.addEventListener("reset", onResetForm);
+
+form.addEventListener("reset", onFormReset);
 
 function onFormSubmit(event) {
   event.preventDefault(); //предотвращает перезагрузку(обновление страниы)
 
   if (validationForm(form)) {
-    // alert("Форма проверена");
-    const formData = new FormData(form);
+    alert("Форма проверена");
+    formData = new FormData(form);
     console.log(Object.fromEntries(formData));
   } else {
     event.preventDefault();
-    // alert("Форма не прошла валидацию");
+    alert("Форма не прошла валидацию");
   }
 }
 
@@ -74,23 +73,55 @@ function onTextError(inputError) {
   // }
 }
 
-function onFormInput(e) {
-  console.log(e.target.value);
+// function onFormInput(event) {
+//   console.log(event.target.value);
 
-  formData[e.target.name] = e.target.value;
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
-}
+//   formData[event.target.name] = event.target.value;
+//   localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
+// }
 
-function onResetForm(event) {
+function onFormReset(event) {
   // Очистка LS
   event.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);
+  console.log("Форма была сброшена!");
 }
 
-(function restoreFormOutput() {
-  const savedFormData = JSON.parse(localStorage.getItem(STORAGE_KEY));
+// Возврат из LS при обновлении страницы
+// function restoreFormOutput() {
+//   // const form = document.forms.formPersonalData;
+//   if (localStorage.getItem(STORAGE_KEY)) {
+//     formData = JSON.parse(localStorage.getItem(STORAGE_KEY));
+//     console.log(formData);
+//     for (let key in formData) {
+//       form.elements[key].value = formData[key].trim();
+//     }
+//   }
+// }
+const STORAGE_KEY = "feedback-form-state";
+let formData = {};
+const formLs = document.querySelector("#formPersonalData");
+formLs.addEventListener("input", onFormInput);
 
-  if (savedFormData) {
-    email.value = savedFormData.email;
+function onFormInput(event) {
+  formData[event.target.name] = event.target.value;
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
+}
+
+// Возврат из LS при обновлении страницы
+(function populateFormOutput() {
+  if (localStorage.getItem(STORAGE_KEY)) {
+    formData = JSON.parse(localStorage.getItem(STORAGE_KEY));
+    console.log(formData);
+    for (let key in formData) {
+      if (
+        formLs.elements[key].type === "chekbox" &&
+        formLs.elements[key].value === "on"
+      ) {
+        formLs.elements[key].checked = true;
+      } else {
+        formLs.elements[key].value = formData[key];
+      }
+    }
   }
 })();

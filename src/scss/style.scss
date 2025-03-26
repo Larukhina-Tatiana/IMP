@@ -1,13 +1,13 @@
-@import "././libs/graph-modal/graph-modal.min";
+@import "../../libs/graph-modal/graph-modal.min";
 @import "./modern-normalize.min";
 @import "./utils/vars";
-@import "././libs/swiper/swiper-bundle.min";
-@import "././libs/simplebar/simplebar";
+@import "../../libs/swiper/swiper-bundle.min";
+@import "../../libs/simplebar/simplebar";
 // @import "././libs/tooltip/uikit.min";
 // @import "././libs/slick/slick";
-// @import "././libs/choices/choices.min";
-@import "././libs/formstyler/jquery.formstyler";
-@import "././libs/formstyler/jquery.formstyler.theme";
+@import "../../libs/choices/choices.min";
+@import "../../libs/formstyler/jquery.formstyler";
+@import "../../libs/formstyler/jquery.formstyler.theme";
 @import "./utils/global";
 @import "./utils/fonts";
 @import "./utils/container";
@@ -16,6 +16,7 @@
 @import "./components/general/sections";
 @import "./components/general/uk-tooltip";
 @import "./components/general/_btn";
+@import "./components/general/_form";
 @import "./components/general/stepper";
 @import "./components/header";
 @import "./components/_catalog-menu";

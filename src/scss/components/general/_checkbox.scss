@@ -34,21 +34,21 @@
     }
   }
 
-  &__icon-check {
-    cursor: pointer;
-  }
+  // &__icon-check {
+  //   cursor: pointer;
+  // }
 
   &:checked + &__label &__castom-icon::after {
     opacity: 1;
   }
 
 
-  &:checked + &__label &__castom-icon &__icon-check {
-    .checkbox__castom-icon::after {
-      opacity: 1;
-    }
+  // &:checked + &__label &__castom-icon &__icon-check {
+  //   .checkbox__castom-icon::after {
+  //     opacity: 1;
+  //   }
 
-  }
+  // }
 
   &__text {
     cursor: pointer;

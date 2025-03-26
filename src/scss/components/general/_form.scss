@@ -1,0 +1,21 @@
+.form-label {
+
+  &:has([required]) .form-label-legend::after {
+    content: "*";
+    padding-inline: 0.25em;
+    color: red;
+  }
+}
+
+
+.progress-line {
+  width: 5px;
+  height: 3px;
+  background-color: rgb(255, 137, 0);
+  border-radius: 4px;
+}
+
+#phone-mask {
+  margin-bottom: 5px;
+  // text-align: center;
+}

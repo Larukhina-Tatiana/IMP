@@ -15,7 +15,7 @@ if (document.querySelector(".catalog__list")) {
 if (document.querySelector(".personal-account__tabs-list")) {
   var mixer = mixitup(".personal-account__box", {
     load: {
-      filter: ".order-history",
+      filter: ".data",
     },
   });
 }
